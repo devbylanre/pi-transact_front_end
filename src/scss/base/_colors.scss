@@ -1,0 +1,21 @@
+$colors: (
+  'none': none,
+  'inherit': inherit,
+  'black': #000000,
+  'white': #ffffff,
+  'primary': #2ecee3,
+  'yellow': #e6c329,
+  'red': #ed2b2b,
+  'blue': #2851e7,
+  'gray': #969393,
+  'orange': #e7732b,
+  'transparent': transparent,
+);
+
+$new-shades: shades($colors);
+
+@debug $new-shades;
+
+@include generate_css('text', (color, shades($colors)));
+@include generate_css('bg', (background-color, shades($colors)));
+@include generate_css('border', (border-color, shades($colors)));

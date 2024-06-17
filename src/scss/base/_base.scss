@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: $base-font-family;
+  src: url('../assets//fonts/Inter.woff2');
+  font-feature-settings: 'cv-10 1';
+}
+
+html {
+  font-size: $base-font-percentage;
+  font-family: $base-font-family;
+  line-height: inherit;
+}
