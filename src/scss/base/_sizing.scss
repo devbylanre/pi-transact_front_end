@@ -1,0 +1,46 @@
+$size: (
+  1: 1px,
+  2: 2px,
+  3: 4px,
+  4: 8px,
+  5: 10px,
+  6: 12px,
+  7: 16px,
+  8: 20px,
+  9: 24px,
+  10: 32px,
+  12: 36px,
+  14: 40px,
+  16: 48px,
+  20: 56px,
+  24: 64px,
+  32: 80px,
+  36: 96px,
+  40: 118px,
+  48: 140px,
+  56: 196px,
+  64: 232px,
+  72: 312px,
+  80: 380px,
+  88: 420px,
+  96: 520px,
+  min: 0px,
+  fit: fit-content,
+  auto: auto,
+);
+
+$width: map-merge(
+  $size,
+  (
+    max: $max-width,
+  )
+);
+$height: map-merge(
+  $size,
+  (
+    max: $max-height,
+  )
+);
+
+@include generate_css('h', $height, height);
+@include generate_css('w', $width, width);

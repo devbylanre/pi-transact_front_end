@@ -1,0 +1,17 @@
+$content: (
+  center,
+  start,
+  end,
+  baseline,
+  stretch,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly
+);
+
+$items: (start, end, center, baseline, stretch);
+$self: (auto, start, end, center, stretch);
+
+@include generate_css('place-self', (place-self, $self));
+@include generate_css('place-items', (place-items, $items));
+@include generate_css('place-content', (place-content, $content));

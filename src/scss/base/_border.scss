@@ -1,0 +1,46 @@
+$style: (solid, dashed, dotted, double, none, hidden);
+$width: (
+  0: 0px,
+  '': 1px,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+);
+
+$radius: (
+  none: 0rem,
+  xs: 0.125rem,
+  sm: 0.25rem,
+  md: 0.5rem,
+  lg: 0.75rem,
+  xl: 1rem,
+  2xl: 1.25rem,
+  3xl: 1.5rem,
+  4xl: 1.75rem,
+  5xl: 2rem,
+  6xl: 2.25rem,
+  7xl: 2.5rem,
+  8xl: 2.75rem,
+  9xl: 3rem,
+  max: 999px,
+);
+
+@include generate_css('border', $width, border-width);
+@include generate_css('border-t', $width, border-top-width);
+@include generate_css('border-b', $width, border-bottom-width);
+@include generate_css('border-s', $width, border-left-width);
+@include generate_css('border-e', $width, border-right-width);
+
+@include generate_css(
+  'border-x',
+  $width,
+  (border-left-width, border-right-width)
+);
+@include generate_css(
+  'border-y',
+  $width,
+  (border-top-width, border-bottom-width)
+);
+
+@include generate_css('border', $style, border-style);
+@include generate_css('radius', $radius, border-radius);

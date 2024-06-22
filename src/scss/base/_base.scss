@@ -5,13 +5,17 @@
 }
 
 @font-face {
-  font-family: $base-font-family;
-  src: url('../assets//fonts/Inter.woff2');
-  font-feature-settings: 'cv-10 1';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 100 900;
+  font-family: InterVariable;
+  src: url('../assets/fonts/Inter.woff2') format('woff2');
 }
 
 html {
-  font-size: $base-font-percentage;
-  font-family: $base-font-family;
   line-height: inherit;
+  letter-spacing: -0.05em;
+  font-family: $base-font-family;
+  font-size: $base-font-percentage;
+  font-feature-settings: 'cv10' 1;
 }

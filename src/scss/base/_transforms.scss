@@ -1,0 +1,91 @@
+$scale: (
+  0: scale(0),
+  25: scale(0.25),
+  50: scale(0.5),
+  75: scale(0.75),
+  100: scale(0.1),
+  125: scale(1.25),
+  150: scale(1.5),
+);
+
+$scaleX: (
+  0: scaleX(0),
+  25: scaleX(0.25),
+  50: scaleX(0.5),
+  75: scaleX(0.75),
+  100: scaleX(0.1),
+  125: scaleX(1.25),
+  150: scaleX(1.5),
+);
+$scaleY: (
+  0: scaleY(0),
+  25: scaleY(0.25),
+  50: scaleY(0.5),
+  75: scaleY(0.75),
+  100: scaleY(0.1),
+  125: scaleY(1.25),
+  150: scaleY(1.5),
+);
+
+@include generate_css('scale', $scale, transform);
+@include generate_css('scale-x', $scaleX, transform);
+@include generate_css('scale-y', $scaleY, transform);
+
+$rotate: (
+  0: rotate(0deg),
+  1: rotate(1deg),
+  2: rotate(2deg),
+  3: rotate(3deg),
+  6: rotate(6deg),
+  12: rotate(12deg),
+  45: rotate(45deg),
+  60: rotate(60deg),
+  90: rotate(90deg),
+  120: rotate(120deg),
+  180: rotate(180deg),
+);
+
+@include generate_css('rotate', $rotate, transform);
+
+$translateX: (
+  min: translateX(0),
+  xs: translateX(1px),
+  sm: translateX(0.125rem),
+  md: translateX(0.25rem),
+  lg: translateX(0.75rem),
+  xl: translateX(1rem),
+  2xl: translateX(1.25rem),
+  3xl: translateX(1.5rem),
+  4xl: translateX(1.75rem),
+  5xl: translateX(2rem),
+);
+
+$translateY: (
+  min: translateY(0),
+  xs: translateY(1px),
+  sm: translateY(0.125rem),
+  md: translateY(0.25rem),
+  lg: translateY(0.75rem),
+  xl: translateY(1rem),
+  2xl: translateY(1.25rem),
+  3xl: translateY(1.5rem),
+  4xl: translateY(1.75rem),
+  5xl: translateY(2rem),
+);
+
+@include generate_css('translate-x', $translateX, 'transform');
+@include generate_css('translate-y', $translateY, 'transform');
+
+$origin: (
+  top: top,
+  left: left,
+  right: right,
+  bottom: bottom,
+  center: center,
+  top-left: top left,
+  top-right: top right,
+  bottom-left: bottom left,
+  bottom-right: bottom right,
+);
+
+@include generate_css('origin', $origin, 'transform-origin');

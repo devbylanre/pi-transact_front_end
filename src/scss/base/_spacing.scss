@@ -1,0 +1,48 @@
+$values: (
+  0: 0px,
+  auto: auto,
+  4xs: 1px,
+  3xs: 2px,
+  2xs: 4px,
+  xs: 6px,
+  sm: 8px,
+  md: 12px,
+  lg: 16px,
+  xl: 20px,
+  2xl: 24px,
+  3xl: 32px,
+  4xl: 40px,
+  5xl: 48px,
+  6xl: 56px,
+  7xl: 64px,
+  8xl: 80px,
+  9xl: 96px,
+  10xl: 120px,
+);
+
+// paddings
+@include generate_css('p', $values, padding);
+@include generate_css('pt', $values, padding-top);
+@include generate_css('pb', $values, padding-bottom);
+@include generate_css('ps', $values, padding-left);
+@include generate_css('pe', $values, padding-right);
+@include generate_css('px', $values, (padding-left, padding-right));
+@include generate_css('py', $values, (padding-top, padding-bottom));
+
+// margins
+@include generate_css('m', $values, margin);
+@include generate_css('mt', $values, margin-top);
+@include generate_css('mb', $values, margin-bottom);
+@include generate_css('ms', $values, margin-left);
+@include generate_css('me', $values, margin-right);
+@include generate_css('mx', $values, (margin-left, margin-right));
+@include generate_css('my', $values, (margin-top, margin-bottom));
+
+// space-between
+@include generate_css('space-x', $values, margin-right, ' > :not(:last-child)');
+@include generate_css(
+  'space-y',
+  $values,
+  margin-bottom,
+  ' > :not(:last-child)'
+);

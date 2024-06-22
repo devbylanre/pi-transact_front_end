@@ -1,0 +1,26 @@
+$cursor: (
+  wait: wait,
+  auto: auto,
+  default: default,
+  pointer: pointer,
+  progress: progress,
+  not-allowed: not-allowed,
+);
+
+@include generate_css('cursor', $cursor, cursor);
+
+$pointer: (
+  none: none,
+  auto: auto,
+);
+
+@include generate_css('pointer', $pointer, pointer-events);
+
+$resize: (
+  none: none,
+  both: both,
+  y: vertical,
+  x: horizontal,
+);
+
+@include generate_css('resize', $resize, resize);

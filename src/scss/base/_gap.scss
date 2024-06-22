@@ -21,6 +21,6 @@ $gaps: (
   '12xl': 144px,
 );
 
-@include generate_css('gap', (gap, $gaps));
-@include generate_css('gap-x', (gap, $gaps));
-@include generate_css('gap-y', (gap, $gaps));
+@include generate_css('gap', $gaps, gap);
+@include generate_css('gap-x', $gaps, gap);
+@include generate_css('gap-y', $gaps, gap);
