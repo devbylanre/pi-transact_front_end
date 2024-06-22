@@ -14,26 +14,32 @@
   }
 }
 
-@mixin generate_css($prefix, $properties...) {
+@mixin generate_css($prefix, $properties, $default: '', $default-pseudo: '') {
   @each $breakpoint, $breakpoint-size in $breakpoints {
     $check: if($breakpoint == xs, '', #{$breakpoint}\:);
 
     @include respond_to($breakpoint) {
-      @each $property in $properties {
-        $property-name: nth($property, 1);
-        $property-value: nth($property, 2);
+      @each $property-key, $property-value in $properties {
+        $selector: '.#{$check}#{$prefix}-#{$property-key}#{$default-pseudo}';
 
-        @if type-of($property-value) == 'map' {
-          @each $key, $value in $property-value {
-            $selector: '.#{$check}#{$prefix}-#{$key}';
-            @each $pseudo-class, $pseudo-selector in $pseudos {
-              $selector: '#{$selector}, .#{$check}#{$pseudo-class}\\:#{$prefix}-#{$key}#{$pseudo-selector}';
+        @each $pseudo-class, $pseudo-selector in $pseudos {
+          $selector: '#{$selector}, .#{$check}#{$pseudo-class}\\:#{$prefix}-#{$property-key}#{$default-pseudo}#{$pseudo-selector}';
+        }
+
+        #{$selector} {
+          @if type-of($property-value) == map {
+            @each $key, $value in $property-value {
+              #{$key}: $value;
             }
-            #{$selector} {
-              #{$property-name}: $value;
+          } @else {
+            @if type-of($default) == list {
+              @each $key in $default {
+                #{$key}: $property-value;
+              }
+            } @else {
+              #{$default}: $property-value;
             }
           }
-        } @else {
         }
       }
     }
