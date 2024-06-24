@@ -10,6 +10,7 @@ const textVariants = classVariance('text-inherit', {
     transform: typography.transform,
     verticalAlign: typography.verticalAlign,
     color: colors.text,
+    decoration: typography.decoration,
   },
 });
 

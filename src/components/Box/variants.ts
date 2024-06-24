@@ -1,6 +1,8 @@
 import border from '../../props/border';
 import colors from '../../props/colors';
 import distribution from '../../props/distribution';
+import flex from '../../props/flex';
+import grid from '../../props/grid';
 import interaction from '../../props/interaction';
 import layout from '../../props/layout';
 import sizing from '../../props/sizing';
@@ -34,6 +36,7 @@ const boxVariants = classVariance('', {
     display: layout.display,
     position: layout.position,
     border: border.border,
+    radius: border.radius,
     borderStyle: border.style,
     borderTop: border.top,
     borderBottom: border.bottom,
@@ -60,6 +63,14 @@ const boxVariants = classVariance('', {
     resize: interaction.resize,
     borderColor: colors.border,
     backgroundColor: colors.background,
+    flex: flex.flex,
+    flexBasis: flex.basis,
+    gridRowSpan: grid.gridRowSpan,
+    gridColumnSpan: grid.gridColumnSpan,
+    gridRowStart: grid.gridRowStart,
+    gridRowEnd: grid.gridRowEnd,
+    gridColumnStart: grid.gridColumnStart,
+    gridColumnEnd: grid.gridColumnEnd,
   },
 });
 

@@ -17,13 +17,14 @@ const Text = React.forwardRef(
     const {
       as,
       className,
-      size,
+      size = 17,
       align,
-      weight,
-      color,
+      weight = 400,
+      color = 'gray-10',
       pseudos,
       transform,
       verticalAlign,
+      decoration,
       ...rest
     } = props;
 
@@ -39,6 +40,7 @@ const Text = React.forwardRef(
           color,
           transform,
           verticalAlign,
+          decoration,
           pseudos,
           className,
         })}

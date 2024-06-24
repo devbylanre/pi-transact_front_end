@@ -8,7 +8,7 @@ import transform from '../../props/transform';
 import transition from '../../props/transition';
 import classVariance from '../../utils/classVariance';
 
-const sectionVariants = classVariance('w-max', {
+const sectionVariants = classVariance('w-full', {
   variants: {
     m: spacing.m,
     mb: spacing.mb,

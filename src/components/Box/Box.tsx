@@ -6,7 +6,7 @@ import {
 import { VariantProps } from '../../types/variantType';
 import boxVariants from './variants';
 
-type BoxElements = 'div' | 'span';
+type BoxElements = 'div' | 'span' | 'nav' | 'ul' | 'li';
 type BoxProps = PolymorphicComponentPropWithRef<
   BoxElements,
   VariantProps<typeof boxVariants>
@@ -40,6 +40,7 @@ const Box = React.forwardRef(
       display,
       position,
       border,
+      radius,
       borderStyle,
       borderBottom,
       borderTop,
@@ -65,6 +66,15 @@ const Box = React.forwardRef(
       resize,
       borderColor,
       backgroundColor,
+      flex,
+      flexBasis,
+      gridRowSpan,
+      gridColumnSpan,
+      gridRowStart,
+      gridRowEnd,
+      gridColumnStart,
+      gridColumnEnd,
+      pseudos,
       ...rest
     } = props;
     const Component = (as || 'div') as React.ElementType;
@@ -96,6 +106,7 @@ const Box = React.forwardRef(
           display,
           position,
           border,
+          radius,
           borderStyle,
           borderBottom,
           borderTop,
@@ -121,6 +132,15 @@ const Box = React.forwardRef(
           resize,
           borderColor,
           backgroundColor,
+          flex,
+          flexBasis,
+          gridRowSpan,
+          gridColumnSpan,
+          gridRowStart,
+          gridRowEnd,
+          gridColumnStart,
+          gridColumnEnd,
+          pseudos,
           className,
         })}
         {...rest}

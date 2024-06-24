@@ -8,7 +8,7 @@ import transform from '../../props/transform';
 import transition from '../../props/transition';
 import classVariance from '../../utils/classVariance';
 
-const containerVariants = classVariance('w-max', {
+const containerVariants = classVariance('w-full', {
   variants: {
     m: spacing.m,
     mb: spacing.mb,
