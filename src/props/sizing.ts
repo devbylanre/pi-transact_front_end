@@ -5,6 +5,7 @@ const VALUES = [
   'max',
   'fit',
   'auto',
+  'full',
   1,
   2,
   3,

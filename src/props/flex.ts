@@ -21,9 +21,9 @@ const DIRECTION = ['row', 'column', 'row-alt', 'column-alt'] as const;
 
 const flex = {
   flex: { prefix: 'flex', values: FLEX, responsive: true },
-  flexWrap: { prefix: 'wrap', values: WRAP, responsive: true },
-  flexBasis: { prefix: 'basis', values: BASIS, responsive: true },
-  flexDirection: { prefix: 'direction', values: DIRECTION, responsive: true },
+  wrap: { prefix: 'wrap', values: WRAP, responsive: true },
+  basis: { prefix: 'basis', values: BASIS, responsive: true },
+  direction: { prefix: 'direction', values: DIRECTION, responsive: true },
 } satisfies VariantMap;
 
 export default flex;

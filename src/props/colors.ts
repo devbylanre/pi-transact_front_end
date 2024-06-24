@@ -1,13 +1,33 @@
 import { VariantMap } from '../types/variantType';
 
-type Suffixes = 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 95 | 100;
-type Suffix = `${Suffixes}`;
-
 const COLORS = [
   'inherit',
+  'current',
   'black',
   'white',
   'transparent',
+  'gray-10',
+  'gray-20',
+  'gray-30',
+  'gray-40',
+  'gray-50',
+  'gray-60',
+  'gray-70',
+  'gray-80',
+  'gray-90',
+  'gray-95',
+  'gray-100',
+  'primary-10',
+  'primary-20',
+  'primary-30',
+  'primary-40',
+  'primary-50',
+  'primary-60',
+  'primary-70',
+  'primary-80',
+  'primary-90',
+  'primary-95',
+  'primary-100',
   'red-10',
   'red-20',
   'red-30',

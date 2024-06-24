@@ -1,6 +1,6 @@
 import { VariantMap } from '../types/variantType';
 
-const CONTAINERS = ['xs', 'sm', 'lg', 'xl'] as const;
+const CONTAINERS = ['xs', 'sm', 'md', 'lg', 'xl'] as const;
 const DISPLAY = [
   'grid',
   'flex',

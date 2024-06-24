@@ -1,6 +1,7 @@
 import { VariantMap } from '../types/variantType';
 
 const VALUES = [
+  'auto',
   'min',
   'max',
   '4xs',
