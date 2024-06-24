@@ -2,7 +2,7 @@
   $result: ();
 
   @each $key, $color in $variants {
-    @if (index((black, white, transparent, inherit, none), $key)) {
+    @if (index((black, white, transparent, inherit, none, current), $key)) {
       $result: map-merge($result, (#{$key}: $color));
     } @else {
       $i: 1;

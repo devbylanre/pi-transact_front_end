@@ -12,10 +12,9 @@
   src: url('../assets/fonts/Inter.woff2') format('woff2');
 }
 
-html {
-  line-height: inherit;
-  letter-spacing: -0.05em;
+:root,
+button {
   font-family: $base-font-family;
-  font-size: $base-font-percentage;
-  font-feature-settings: 'cv10' 1;
+  font-feature-settings: 'liga' 1, 'calt' 1, 'cv10' 1; /* fix for Chrome */
+  font-size: 62.5%;
 }

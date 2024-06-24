@@ -1,61 +1,83 @@
 $font-sizes: (
+  inherit: inherit,
   10: (
     font-size: 1rem,
     line-height: 1.4,
+    letter-spacing: normal,
   ),
   12: (
     font-size: 1.2rem,
     line-height: 1.4,
+    letter-spacing: normal,
   ),
   13: (
     font-size: 1.3rem,
     line-height: 1.4,
+    letter-spacing: normal,
   ),
   14: (
     font-size: 1.4rem,
     line-height: 1.35,
+    letter-spacing: normal,
+  ),
+  16: (
+    font-size: 1.6rem,
+    line-height: 1.3,
+    letter-spacing: -0.009em,
   ),
   17: (
     font-size: 1.7rem,
-    line-height: 1.35,
+    line-height: 1.3,
+    letter-spacing: -0.009em,
   ),
   19: (
     font-size: 1.9rem,
-    line-height: 1.3,
+    line-height: 1.25,
+    letter-spacing: -0.007em,
   ),
   21: (
     font-size: 2.1rem,
-    line-height: 1.3,
+    line-height: 1.25,
+    letter-spacing: -0.005em,
   ),
   25: (
     font-size: 2.5rem,
     line-height: 1.25,
+    letter-spacing: -0.01em,
   ),
   32: (
     font-size: 3.2rem,
-    line-height: 1.25,
+    line-height: 1.2,
+    letter-spacing: -0.03em,
   ),
   40: (
     font-size: 4rem,
     line-height: 1.2,
+    letter-spacing: -0.03em,
   ),
   48: (
     font-size: 4.8rem,
     line-height: 1.2,
+    letter-spacing: -0.03em,
   ),
   56: (
     font-size: 5.6rem,
-    line-height: 1.2,
+    line-height: 1.1,
+    letter-spacing: -0.03em,
   ),
   64: (
     font-size: 6.4rem,
     line-height: 1.1,
+    letter-spacing: -0.03em,
   ),
   80: (
     font-size: 8rem,
-    line-height: 1.1,
+    line-height: 1,
+    letter-spacing: -0.03em,
   ),
 );
+
+@include generate_css('text', $font-sizes, font-size);
 
 $font-weights: (
   100: 100,
@@ -69,6 +91,8 @@ $font-weights: (
   900: 900,
 );
 
+@include generate_css('weight', $font-weights, font-weight);
+
 $text-aligns: (
   left: left,
   right: right,
@@ -76,11 +100,15 @@ $text-aligns: (
   justify: justify,
 );
 
+@include generate_css('text', $text-aligns, text-align);
+
 $text-transforms: (
   lowercase: lowercase,
   uppercase: uppercase,
   capitalize: capitalize,
 );
+
+@include generate_css('text', $text-transforms, text-transform);
 
 $vertical-aligns: (
   top: top,
@@ -93,7 +121,15 @@ $vertical-aligns: (
   text-bottom: text-bottom,
 );
 
-@include generate_css('text', $font-sizes, font-size);
-@include generate_css('weight', $font-weights, font-weight);
-@include generate_css('text', $text-transforms, text-transform);
-@include generate_css('text', $text-aligns, text-align);
+@include generate_css('vertical', $vertical-aligns, vertical-align);
+
+$decorations: (
+  underline: underline,
+  through: line-through,
+  overline: overline,
+  none: none,
+  auto: auto,
+  current: currentColor,
+);
+
+@include generate_css('text', $decorations, text-decoration);

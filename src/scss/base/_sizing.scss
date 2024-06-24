@@ -15,7 +15,6 @@ $size: (
   20: 56px,
   24: 64px,
   32: 80px,
-  36: 96px,
   40: 118px,
   48: 140px,
   56: 196px,
@@ -27,6 +26,7 @@ $size: (
   min: 0px,
   fit: fit-content,
   auto: auto,
+  full: 100%,
 );
 
 $width: map-merge(

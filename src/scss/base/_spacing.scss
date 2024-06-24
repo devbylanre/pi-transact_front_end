@@ -1,5 +1,5 @@
 $values: (
-  0: 0px,
+  min: 0px,
   auto: auto,
   4xs: 1px,
   3xs: 2px,
@@ -18,6 +18,7 @@ $values: (
   8xl: 80px,
   9xl: 96px,
   10xl: 120px,
+  max: 160px,
 );
 
 // paddings
@@ -46,3 +47,8 @@ $values: (
   margin-bottom,
   ' > :not(:last-child)'
 );
+
+// gaps
+@include generate_css('gap', $values, gap);
+@include generate_css('gap-y', $values, row-gap);
+@include generate_css('gap-x', $values, column-gap);

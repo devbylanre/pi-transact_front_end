@@ -6,6 +6,11 @@ $self: (
   stretch: stretch,
   baseline: baseline,
 );
+
+@include generate_css('self', $self, align-self);
+@include generate_css('place-self', $self, place-self);
+@include generate_css('justify-self', $self, justify-self);
+
 $content: (
   normal: normal,
   center: center,
@@ -17,6 +22,11 @@ $content: (
   around: space-around,
   evenly: space-evenly,
 );
+
+@include generate_css('content', $content, align-content);
+@include generate_css('place-content', $content, place-content);
+@include generate_css('justify-content', $content, justify-content);
+
 $items: (
   start: flex-start,
   end: flex-end,
@@ -25,6 +35,6 @@ $items: (
   stretch: stretch,
 );
 
-@include generate_css('self', $self, align-self);
 @include generate_css('items', $items, align-items);
-@include generate_css('content', $content, align-content);
+@include generate_css('place-items', $items, place-items);
+@include generate_css('justify-items', $items, justify-items);

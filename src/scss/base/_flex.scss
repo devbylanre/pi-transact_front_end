@@ -10,7 +10,7 @@ $basis: (
   '9\\/12': 75%,
   '10\\/12': 83.33%,
   '11\\/12': 91.67%,
-  'full': 100%,
+  max: 100%,
 );
 
 $direction: (
@@ -21,9 +21,9 @@ $direction: (
 );
 
 $wrap: (
-  wrap: wrap,
-  nowrap: nowrap,
-  wrap-alt: wrap-reverse,
+  yes: wrap,
+  no: nowrap,
+  alt: wrap-reverse,
 );
 
 $flex: (

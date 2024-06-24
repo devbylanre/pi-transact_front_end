@@ -6,6 +6,8 @@ $containers: (
   xl: 1240px,
 );
 
+@include generate_css('container', $containers, max-width);
+
 $display: (
   grid: grid,
   flex: flex,
@@ -18,20 +20,13 @@ $display: (
   inline-block: inline-block,
 );
 
-$object-fits: (
-  fit: fit,
-  cover: cover,
-  contain: contain,
-  scale-down: scale-down,
-);
+@include generate_css('display', $display, display);
 
-$position: (
-  fixed: fixed,
-  sticky: sticky,
-  static: static,
-  relative: relative,
-  absolute: absolute,
-);
+$object-fits: (fit, cover, contain, scale-down);
+
+$position: (fixed, sticky, static, relative, absolute);
+
+@include generate_css('position', $position, position);
 
 $move: (
   0: 0px,
@@ -54,11 +49,18 @@ $move: (
   '10xl': 120px,
 );
 
+@include generate_css('top', $move, top);
+@include generate_css('left', $move, left);
+@include generate_css('right', $move, right);
+@include generate_css('bottoms', $move, bottom);
+
 $visibility: (
   visible: visible,
   invisible: hidden,
   collapse: collapse,
 );
+
+@include generate_css('v', $visibility, visibility);
 
 $z-index: (
   0: 0,
@@ -72,11 +74,3 @@ $z-index: (
 );
 
 @include generate_css('z', $z-index, z-index);
-@include generate_css('v', $visibility, visibility);
-@include generate_css('d', $display, display);
-@include generate_css('position', $position, position);
-@include generate_css('container', $containers, max-width);
-@include generate_css('top', $move, top);
-@include generate_css('left', $move, left);
-@include generate_css('right', $move, right);
-@include generate_css('bottoms', $move, bottom);
