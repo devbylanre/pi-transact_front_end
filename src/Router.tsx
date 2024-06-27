@@ -3,6 +3,7 @@ import IndexPage from './pages/IndexPage';
 import RootLayout from './layouts/root/Layout';
 import { HelmetProvider } from 'react-helmet-async';
 import AboutPage from './pages/AboutPage';
+import SupportPage from './pages/SupportPage';
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <IndexPage /> },
       { path: 'about', element: <AboutPage /> },
+      { path: 'support', element: <SupportPage /> },
     ],
   },
 ]);
