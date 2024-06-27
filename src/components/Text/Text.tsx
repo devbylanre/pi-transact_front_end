@@ -3,7 +3,7 @@ import {
   PolymorphicComponentPropWithRef,
   PolymorphicRef,
 } from '../../types/polymorphicTypes';
-import { VariantProps } from '../../types/variantType';
+import { VariantProps } from '../../types/variantTypes';
 import textVariants from './variants';
 
 type TextElements = 'span' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';

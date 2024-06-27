@@ -3,7 +3,7 @@ import {
   PolymorphicComponentPropWithRef,
   PolymorphicRef,
 } from '../../types/polymorphicTypes';
-import { VariantProps } from '../../types/variantType';
+import { VariantProps } from '../../types/variantTypes';
 import flexVariants from './variants';
 
 type FlexElements = 'div' | 'span' | 'nav' | 'ul' | 'li';

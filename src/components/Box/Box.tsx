@@ -3,7 +3,7 @@ import {
   PolymorphicComponentPropWithRef,
   PolymorphicRef,
 } from '../../types/polymorphicTypes';
-import { VariantProps } from '../../types/variantType';
+import { VariantProps } from '../../types/variantTypes';
 import boxVariants from './variants';
 
 type BoxElements = 'div' | 'span' | 'nav' | 'ul' | 'li';
