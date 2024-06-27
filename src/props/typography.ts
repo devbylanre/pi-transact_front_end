@@ -1,7 +1,23 @@
 import { VariantMap } from '../types/variantType';
 
 const SIZES = [
-  10, 12, 13, 14, 16, 17, 19, 21, 25, 32, 40, 48, 56, 64, 80,
+  10,
+  12,
+  13,
+  14,
+  16,
+  17,
+  19,
+  21,
+  25,
+  32,
+  40,
+  48,
+  56,
+  64,
+  80,
+  96,
+  'inherit',
 ] as const;
 const WEIGHTS = [100, 200, 300, 400, 500, 600, 700] as const;
 const ALIGNS = ['left', 'right', 'center', 'justify'] as const;

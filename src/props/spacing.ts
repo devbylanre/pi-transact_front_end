@@ -21,6 +21,8 @@ const VALUES = [
   '8xl',
   '9xl',
   '10xl',
+  '11xl',
+  '12xl',
 ] as const;
 
 const spacing = {
