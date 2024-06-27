@@ -38,6 +38,8 @@ const gridVariants = classVariance('', {
     right: layout.right,
     display: layout.display,
     position: layout.position,
+    opacity: layout.opacity,
+    aspectRatio: layout.aspectRatio,
     border: border.border,
     radius: border.radius,
     borderStyle: border.style,

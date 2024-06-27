@@ -31,6 +31,7 @@ const Image = React.forwardRef(
       mt,
       mb,
       objectFit,
+      aspectRatio,
       radius,
       border,
       borderTop,
@@ -57,7 +58,7 @@ const Image = React.forwardRef(
       pseudos,
       ...rest
     } = props;
-    const Component = as || 'img';
+    const Component = as;
 
     return (
       <Component
@@ -78,6 +79,7 @@ const Image = React.forwardRef(
           mt,
           mb,
           objectFit,
+          aspectRatio,
           radius,
           border,
           borderTop,

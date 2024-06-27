@@ -1,13 +1,15 @@
 import React from 'react';
 import Flex, { FlexProps } from '../Flex/Flex';
 import { PolymorphicRef } from '../../types/polymorphicTypes';
-import { ImageProps } from '../Image/Image';
+import Image, { ImageProps } from '../Image/Image';
 import Text, { TextProps } from '../Text/Text';
 import AvatarProvider from '../../contexts/AvatarContext';
 import useAvatar from '../../hooks/useAvatar';
 
+type AvatarProps = FlexProps & { hasError?: boolean };
+
 type AvatarComponent = React.ForwardRefExoticComponent<
-  Omit<FlexProps, 'ref'> & React.RefAttributes<HTMLDivElement>
+  Omit<AvatarProps, 'ref'> & React.RefAttributes<HTMLDivElement>
 > & {
   Image: React.ForwardRefExoticComponent<
     Omit<ImageProps, 'ref'> & React.RefAttributes<HTMLImageElement>
@@ -18,11 +20,11 @@ type AvatarComponent = React.ForwardRefExoticComponent<
 };
 
 const Avatar = React.forwardRef(
-  (props: FlexProps, ref: PolymorphicRef<'div'>) => {
-    const { position = 'relative', ...rest } = props;
+  (props: AvatarProps, ref: PolymorphicRef<'div'>) => {
+    const { position = 'relative', hasError, ...rest } = props;
 
     return (
-      <AvatarProvider>
+      <AvatarProvider hasError={hasError}>
         <Flex
           ref={ref}
           position={position}
@@ -33,7 +35,7 @@ const Avatar = React.forwardRef(
   }
 ) as AvatarComponent;
 
-const Image = React.forwardRef(
+const ImageComponent = React.forwardRef(
   (props: ImageProps, ref: PolymorphicRef<'img'>) => {
     const { size = 4, radius = 'max', onError, ...rest } = props;
     const { isError, setIsError } = useAvatar();
@@ -59,7 +61,7 @@ const Image = React.forwardRef(
   }
 );
 
-const Fallback = React.forwardRef(
+const FallbackComponent = React.forwardRef(
   (props: TextProps, ref: PolymorphicRef<'span'>) => {
     const { size = 14, weight = 500, ...rest } = props;
     const { isError } = useAvatar();
@@ -79,6 +81,6 @@ const Fallback = React.forwardRef(
   }
 );
 
-Avatar.Image = Image;
-Avatar.Fallback = Fallback;
+Avatar.Image = ImageComponent;
+Avatar.Fallback = FallbackComponent;
 export default Avatar;

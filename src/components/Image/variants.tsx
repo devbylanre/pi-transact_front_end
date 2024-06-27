@@ -24,6 +24,7 @@ const imageVariants = classVariance('', {
     mt: spacing.mt,
     mb: spacing.mb,
     objectFit: layout.objectFit,
+    aspectRatio: layout.aspectRatio,
     radius: border.radius,
     border: border.border,
     borderTop: border.top,

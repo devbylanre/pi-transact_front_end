@@ -48,7 +48,7 @@ const Button = React.forwardRef(
       justifySelf,
       placeSelf,
       width,
-      height = 14,
+      height = 40,
       scale,
       scaleX,
       scaleY,

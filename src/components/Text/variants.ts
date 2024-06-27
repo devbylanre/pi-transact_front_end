@@ -2,7 +2,7 @@ import colors from '../../props/colors';
 import typography from '../../props/typography';
 import classVariance from '../../utils/classVariance';
 
-const textVariants = classVariance('text-inherit', {
+const textVariants = classVariance('', {
   variants: {
     size: typography.size,
     weight: typography.weight,

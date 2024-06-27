@@ -7,7 +7,7 @@ import { VariantProps } from '../../types/variantType';
 import flexVariants from './variants';
 
 type FlexElements = 'div' | 'span' | 'nav' | 'ul' | 'li';
-type FlexProps = PolymorphicComponentPropWithRef<
+export type FlexProps = PolymorphicComponentPropWithRef<
   FlexElements,
   VariantProps<typeof flexVariants>
 >;
@@ -42,6 +42,8 @@ const Flex = React.forwardRef(
       right,
       display = 'flex',
       position,
+      opacity,
+      aspectRatio,
       border,
       radius,
       borderStyle,
@@ -51,6 +53,7 @@ const Flex = React.forwardRef(
       borderRight,
       width,
       height,
+      size,
       scale,
       scaleX,
       scaleY,
@@ -118,6 +121,8 @@ const Flex = React.forwardRef(
           right,
           display,
           position,
+          opacity,
+          aspectRatio,
           border,
           radius,
           borderStyle,
@@ -127,6 +132,7 @@ const Flex = React.forwardRef(
           borderRight,
           width,
           height,
+          size,
           scale,
           scaleX,
           scaleY,

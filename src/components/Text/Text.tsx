@@ -7,13 +7,13 @@ import { VariantProps } from '../../types/variantType';
 import textVariants from './variants';
 
 type TextElements = 'span' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
-type TextProps<C extends TextElements> = PolymorphicComponentPropWithRef<
-  C,
+export type TextProps = PolymorphicComponentPropWithRef<
+  TextElements,
   VariantProps<typeof textVariants>
 >;
 
 const Text = React.forwardRef(
-  (props: TextProps<TextElements>, ref: PolymorphicRef<TextElements>) => {
+  (props: TextProps, ref: PolymorphicRef<TextElements>) => {
     const {
       as,
       className,
