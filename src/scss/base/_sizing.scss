@@ -1,32 +1,44 @@
 $size: (
-  1: 1px,
-  2: 2px,
-  3: 4px,
-  4: 8px,
-  5: 10px,
-  6: 12px,
-  7: 16px,
-  8: 20px,
-  9: 24px,
-  10: 32px,
-  12: 36px,
-  14: 40px,
-  16: 48px,
-  20: 56px,
-  24: 64px,
-  32: 80px,
-  40: 118px,
-  48: 140px,
-  56: 196px,
-  64: 232px,
-  72: 312px,
-  80: 380px,
-  88: 420px,
-  96: 520px,
-  min: 0px,
+  // 1rem is equivalent to 10px
+  1: 0.1rem,
+  2: 0.2rem,
+  3: 0.4rem,
+  4: 0.8rem,
+  10: 1rem,
+  12: 1.2rem,
+  16: 1.6rem,
+  20: 2rem,
+  24: 2.4rem,
+  32: 3.2rem,
+  40: 4rem,
+  48: 4.8rem,
+  56: 5.6rem,
+  64: 6.4rem,
+  80: 8rem,
+  96: 9.6rem,
+  140: 140rem,
+  192: 19.2rem,
+  256: 25.6rem,
+  320: 32rem,
+  392: 39.2rem,
+  440: 44rem,
+  520: 52rem,
+  640: 64rem,
+  min: 0rem,
+  1\/12: 8.33%,
+  2\/12: 16.67%,
+  3\/12: 25%,
+  4\/12: 33.33%,
+  5\/12: 41.67%,
+  6\/12: 50%,
+  7\/12: 58.33%,
+  8\/12: 64.67%,
+  9\/12: 75%,
+  10\/12: 80.33%,
+  11\/12: 91.67%,
   fit: fit-content,
   auto: auto,
-  full: 100%,
+  full: 100%
 );
 
 $width: map-merge(
@@ -43,4 +55,10 @@ $height: map-merge(
 );
 
 @include generate_css('h', $height, height);
+@include generate_css('min-h', $height, min-height);
+@include generate_css('max-h', $height, max-height);
+
 @include generate_css('w', $width, width);
+@include generate_css('min-w', $width, min-width);
+@include generate_css('max-h', $width, max-width);
+@include generate_css('size', $width, (width, height));

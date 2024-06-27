@@ -1,0 +1,32 @@
+@keyframes secureAnimation {
+  0% {
+    content: '••••••';
+  }
+  5% {
+    content: 'S•••••';
+  }
+  10% {
+    content: 'Se••••';
+  }
+  15% {
+    content: 'Sec•••';
+  }
+  20% {
+    content: 'Secu••';
+  }
+  25% {
+    content: 'Secur•';
+  }
+  40%,
+  100% {
+    content: 'Secure';
+  }
+}
+
+.secureText::before {
+  content: '••••••';
+}
+
+.animate--secureText::before {
+  animation: secureAnimation 1.5s ease 0s forwards;
+}

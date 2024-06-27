@@ -34,6 +34,6 @@ $flex: (
 );
 
 @include generate_css('flex', $flex, flex);
-@include generate_css('wrap', $wrap, flex-wrap);
+@include generate_css('flex-wrap', $wrap, flex-wrap);
 @include generate_css('basis', $basis, flex-basis);
 @include generate_css('flex', $direction, flex-direction);

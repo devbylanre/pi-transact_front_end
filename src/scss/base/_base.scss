@@ -7,14 +7,19 @@
 @font-face {
   font-display: swap;
   font-style: normal;
-  font-weight: 100 900;
-  font-family: InterVariable;
+  font-weight: 400 600;
+  font-family: Inter;
   src: url('../assets/fonts/Inter.woff2') format('woff2');
 }
 
-:root,
+html,
 button {
-  font-family: $base-font-family;
-  font-feature-settings: 'liga' 1, 'calt' 1, 'cv10' 1; /* fix for Chrome */
   font-size: 62.5%;
+  font-kerning: normal;
+  scroll-behavior: smooth;
+  font-family: $base-font-family;
+  -webkit-font-smoothing: antialiased;
+  font-variant-ligatures: common-ligatures contextual;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  font-feature-settings: 'kern', 'liga' 1, 'clig', 'calt' 1, 'cv10' 1;
 }

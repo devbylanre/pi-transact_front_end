@@ -1,12 +1,17 @@
-$base-font-family: InterVariable, Helvetica, Arial, sans-serif;
+$base-font-family: Inter, sans-serif;
 $base-font-percentage: 62.5%;
 
 $breakpoints: (
-  'xs': 0px,
-  'sm': 576px,
-  'md': 768px,
-  'lg': 992px,
-  'xl': 1200px,
+  'xs': 0rem,
+  // extra small devices >= 0px
+  'sm': 48rem,
+  // small devices >= 768px
+  'md': 77.5rem,
+  // medium devices >= 1240px
+  'lg': 90rem,
+  // large devices >= 1440px
+  'xl': 120rem,
+  // extra large devices >= 1920px
 );
 
 $pseudos: (

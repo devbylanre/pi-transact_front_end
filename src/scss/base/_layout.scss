@@ -1,9 +1,10 @@
 $containers: (
-  xs: 448px,
-  sm: 740px,
-  md: 992px,
-  lg: 1140px,
-  xl: 1240px,
+  xs: 60rem,
+  sm: 72rem,
+  md: 120rem,
+  lg: 136.6rem,
+  xl: 184rem,
+  full: 100%,
 );
 
 @include generate_css('container', $containers, max-width);
@@ -24,29 +25,37 @@ $display: (
 
 $object-fits: (fit, cover, contain, scale-down);
 
-$position: (fixed, sticky, static, relative, absolute);
+@include generate_css('object-fit', $object-fits, object-fit);
+
+$position: (
+  fixed: fixed,
+  sticky: sticky,
+  static: static,
+  relative: relative,
+  absolute: absolute,
+);
 
 @include generate_css('position', $position, position);
 
 $move: (
   0: 0px,
-  '4xs': 1px,
-  '3xs': 2px,
-  '2xs': 4px,
-  'xs': 6px,
-  'sm': 8px,
-  'md': 12px,
-  'lg': 16px,
-  'xl': 20px,
-  '2xl': 24px,
-  '3xl': 32px,
-  '4xl': 40px,
-  '5xl': 48px,
-  '6xl': 56px,
-  '7xl': 64px,
-  '8xl': 80px,
-  '9xl': 96px,
-  '10xl': 120px,
+  '4xs': 0.1rem,
+  '3xs': 0.2rem,
+  '2xs': 0.4rem,
+  'xs': 0.6rem,
+  'sm': 0.8rem,
+  'md': 1.2rem,
+  'lg': 1.6rem,
+  'xl': 2rem,
+  '2xl': 2.4rem,
+  '3xl': 3.2rem,
+  '4xl': 4rem,
+  '5xl': 4.8rem,
+  '6xl': 5.6rem,
+  '7xl': 6.4rem,
+  '8xl': 8rem,
+  '9xl': 9.6rem,
+  '10xl': 12rem,
 );
 
 @include generate_css('top', $move, top);
@@ -63,7 +72,7 @@ $visibility: (
 @include generate_css('v', $visibility, visibility);
 
 $z-index: (
-  0: 0,
+  min: 0,
   10: 1,
   20: 2,
   30: 3,
@@ -74,3 +83,37 @@ $z-index: (
 );
 
 @include generate_css('z', $z-index, z-index);
+
+$opacity: (
+  0: 0,
+  10: 0.1,
+  20: 0.2,
+  30: 0.3,
+  40: 0.4,
+  50: 0.5,
+  60: 0.6,
+  70: 0.7,
+  80: 0.8,
+  90: 0.9,
+  100: 1,
+);
+
+@include generate_css('opacity', $opacity, opacity);
+
+$aspect-ratio: (
+  1\/1: 1/1,
+  1\/2: 1/2,
+  2\/1: 2/1,
+  3\/1: 3/1,
+  3\/2: 3/2,
+  4\/1: 4/1,
+  4\/3: 4/3,
+  5\/4: 5/4,
+  9\/16: 9/16,
+  14\/9: 14/9,
+  16\/9: 16/9,
+  16\/10: 16/10,
+  auto: auto
+);
+
+@include generate_css('aspect-ratio', $aspect-ratio, aspect-ratio);

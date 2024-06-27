@@ -11,10 +11,10 @@ $width: (
 );
 
 @include generate_css('border', $width, border-width);
-@include generate_css('border-t', $width, border-top-width);
-@include generate_css('border-b', $width, border-bottom-width);
-@include generate_css('border-s', $width, border-left-width);
-@include generate_css('border-e', $width, border-right-width);
+@include generate_css('border-top', $width, border-top-width);
+@include generate_css('border-bottom', $width, border-bottom-width);
+@include generate_css('border-left', $width, border-left-width);
+@include generate_css('border-right', $width, border-right-width);
 
 @include generate_css(
   'border-x',
