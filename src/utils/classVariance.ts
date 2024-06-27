@@ -3,7 +3,7 @@ import {
   PseudosVariantMap,
   VariantMap,
   Variants,
-} from '../types/variantType';
+} from '../types/variantTypes';
 
 const addResponsiveClasses = <T extends VariantMap>(
   classes: string[],
