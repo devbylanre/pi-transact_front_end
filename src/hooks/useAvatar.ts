@@ -1,8 +1,8 @@
-import React, { useContext } from 'react';
-import { avatarContext } from '../contexts/AvatarContext';
+import { useContext } from 'react';
+import { AvatarContext } from '../contexts/AvatarContext';
 
 const useAvatar = () => {
-  const context = useContext(avatarContext);
+  const context = useContext(AvatarContext);
 
   if (!context) {
     throw new Error('AvatarProvider is not available');
