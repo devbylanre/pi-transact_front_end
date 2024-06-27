@@ -1,4 +1,4 @@
-import { VariantMap } from '../types/variantType';
+import { VariantMap } from '../types/variantTypes';
 
 const template = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 'none'] as const;
 const startOrEnd = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 'auto'] as const;

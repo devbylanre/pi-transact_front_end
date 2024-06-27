@@ -1,4 +1,4 @@
-import { VariantMap } from '../types/variantType';
+import { VariantMap } from '../types/variantTypes';
 
 const CURSOR = [
   'wait',

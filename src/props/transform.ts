@@ -1,4 +1,4 @@
-import { VariantMap } from '../types/variantType';
+import { VariantMap } from '../types/variantTypes';
 
 const SCALE = [0, 25, 50, 75, 100, 125, 150] as const;
 const ROTATE = [0, 1, 2, 3, 6, 12, 45, 90, 120, 180] as const;

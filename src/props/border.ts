@@ -1,4 +1,4 @@
-import { VariantMap } from '../types/variantType';
+import { VariantMap } from '../types/variantTypes';
 
 const WIDTH = [0, 1, 2, 4, 8] as const;
 const STYLE = [

@@ -1,4 +1,4 @@
-import { VariantMap } from '../types/variantType';
+import { VariantMap } from '../types/variantTypes';
 
 const items = ['start', 'end', 'center', 'baseline', 'stretch'] as const;
 const self = ['auto', 'start', 'end', 'center', 'stretch', 'baseline'] as const;
