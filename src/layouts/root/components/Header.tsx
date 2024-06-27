@@ -21,7 +21,7 @@ const Header = () => {
         py={'lg'}
         px={'sm'}
         mx={'auto'}
-        container={'xl'}
+        container={'lg'}
       >
         <Flex
           alignItems={'center'}

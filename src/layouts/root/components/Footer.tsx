@@ -6,6 +6,7 @@ import Box from '../../../components/Box/Box';
 import Grid from '../../../components/Grid/Grid';
 import { Link } from 'react-router-dom';
 import Flex from '../../../components/Flex/Flex';
+import Button from '../../../components/Button/Button';
 
 const groups = [
   {
@@ -46,6 +47,7 @@ const groups = [
 const Footer = () => {
   return (
     <Section
+      mt={'max'}
       pt={'10xl'}
       pb={'xl'}
       as={'footer'}
@@ -54,15 +56,15 @@ const Footer = () => {
       <Container
         px={'sm'}
         mx={'auto'}
-        container={'xl'}
+        container={'lg'}
       >
         <Grid
-          gap={{ initial: '3xl', lg: '8xl' }}
-          gridColumn={{ initial: 1, lg: 5 }}
+          gap={{ initial: '3xl', md: '8xl' }}
+          gridColumn={{ initial: 1, sm: 5 }}
         >
           <Box
             spaceY={'md'}
-            gridColumnSpan={{ initial: 1, lg: 2 }}
+            gridColumnSpan={{ initial: 1, md: 2 }}
           >
             <Text
               as={'h3'}
@@ -76,18 +78,27 @@ const Footer = () => {
               size={17}
               color={'gray-40'}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              numquam maxime atque laborum doloribus accusantium quibusdam
-              expedita? Eligendi ullam sed dignissimos, aliquam earum voluptate
-              ea molestias, culpa, eveniet placeat id.
+              Everything you need to build your business. Create and setup your
+              account in minutes. Get up and running fast.
             </Text>
+            <Button
+              px={'min'}
+              border={0}
+              radius={'min'}
+              height={'fit'}
+              transitionDuration={100}
+              backgroundColor={'inherit'}
+              pseudos={{ hover: { borderBottom: 1 } }}
+            >
+              How to: Setup Account
+            </Button>
           </Box>
 
           <React.Fragment>
             {groups.map((group) => (
               <Box
                 key={group.group}
-                spaceY={'lg'}
+                spaceY={'md'}
               >
                 <Text
                   as={'h4'}
@@ -130,7 +141,7 @@ const Footer = () => {
             ))}
           </React.Fragment>
 
-          <Box gridColumnSpan={{ initial: 1, lg: 2 }}>
+          <Box gridColumnSpan={{ initial: 1, md: 2 }}>
             <Box spaceY={'xs'}>
               <Text
                 as={'h3'}
@@ -153,11 +164,11 @@ const Footer = () => {
         px={'sm'}
         mt={'10xl'}
         mx={'auto'}
-        container={'xl'}
+        container={'lg'}
       >
         <Grid
-          gap={'lg'}
-          gridColumn={{ initial: 1, lg: 3 }}
+          gap={'md'}
+          gridColumn={{ initial: 1, md: 3 }}
         >
           <Box>
             <Text size={13}>Multi-language dropdown feature.</Text>
@@ -167,14 +178,14 @@ const Footer = () => {
             <Text
               as={'h4'}
               size={13}
-              align={{ initial: 'left', lg: 'center' }}
+              align={{ initial: 'left', md: 'center' }}
               color={'gray-40'}
             >
               &copy; Pi-Transact , Inc. All rights reserved
             </Text>
           </Box>
 
-          <Flex justifyContent={{ initial: 'start', lg: 'end' }}>
+          <Flex justifyContent={{ initial: 'start', md: 'end' }}>
             <Text size={13}>Social icons feature.</Text>
           </Flex>
         </Grid>
