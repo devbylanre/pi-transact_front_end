@@ -6,7 +6,7 @@ import {
 import { VariantProps } from '../../types/variantTypes';
 import buttonVariants from './variant';
 
-type ButtonProps = PolymorphicComponentPropWithRef<
+export type ButtonProps = PolymorphicComponentPropWithRef<
   'button',
   VariantProps<typeof buttonVariants>
 >;
@@ -42,8 +42,8 @@ const Button = React.forwardRef(
       borderRight,
       alignSelf,
       alignContent,
-      alignItems,
-      justifyContent,
+      alignItems = 'center',
+      justifyContent = 'center',
       justifyItems,
       justifySelf,
       placeSelf,

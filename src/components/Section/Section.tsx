@@ -7,7 +7,7 @@ import { VariantProps } from '../../types/variantTypes';
 import sectionVariants from './variants';
 
 type SectionElements = 'section' | 'div' | 'header' | 'footer';
-type SectionProps = PolymorphicComponentPropWithRef<
+export type SectionProps = PolymorphicComponentPropWithRef<
   SectionElements,
   VariantProps<typeof sectionVariants>
 >;

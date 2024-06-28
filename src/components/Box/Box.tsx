@@ -7,7 +7,7 @@ import { VariantProps } from '../../types/variantTypes';
 import boxVariants from './variants';
 
 type BoxElements = 'div' | 'span' | 'nav' | 'ul' | 'li';
-type BoxProps = PolymorphicComponentPropWithRef<
+export type BoxProps = PolymorphicComponentPropWithRef<
   BoxElements,
   VariantProps<typeof boxVariants>
 >;

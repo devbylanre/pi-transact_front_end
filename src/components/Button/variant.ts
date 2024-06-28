@@ -9,7 +9,7 @@ import transition from '../../props/transition';
 import typography from '../../props/typography';
 import classVariance from '../../utils/classVariance';
 
-const buttonVariants = classVariance('d-inline-flex', {
+const buttonVariants = classVariance('display-inline-flex', {
   variants: {
     p: spacing.p,
     pe: spacing.pe,

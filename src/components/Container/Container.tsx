@@ -7,7 +7,7 @@ import { VariantProps } from '../../types/variantTypes';
 import containerVariants from './variants';
 
 type ContainerElements = 'div' | 'span';
-type ContainerProps = PolymorphicComponentPropWithRef<
+export type ContainerProps = PolymorphicComponentPropWithRef<
   ContainerElements,
   VariantProps<typeof containerVariants>
 >;
