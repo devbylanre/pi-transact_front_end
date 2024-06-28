@@ -30,9 +30,10 @@ const Hero = () => {
             as={'h2'}
             weight={500}
             align={'center'}
-            size={{ initial: 64, md: 80, lg: 96 }}
+            size={{ initial: 64, sm: 80, lg: 96 }}
+            style={{ maxWidth: '80rem' }}
           >
-            Legendary support for legendary businesses
+            Smart support for smart businesses
           </Text>
 
           <Text
@@ -42,9 +43,8 @@ const Hero = () => {
             align={'center'}
             style={{ maxWidth: '70rem' }}
           >
-            Building great SaaS products is hard. Whether you’re starting out or
-            already running a successful business, our team is here to help you
-            stay on track.
+            Get started with the trusted support your business needs. Reach our
+            support team or check out our FAQs.
           </Text>
         </Flex>
       </Container>

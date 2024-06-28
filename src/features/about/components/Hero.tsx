@@ -9,7 +9,7 @@ const Hero = () => {
     <Section px={'md'}>
       <Container
         mx={'auto'}
-        container={'sm'}
+        container={'xs'}
       >
         <Flex
           gapY={'6xl'}
@@ -21,9 +21,9 @@ const Hero = () => {
             as={'h1'}
             weight={500}
             align={'center'}
-            size={{ initial: 64, md: 80, lg: 96 }}
+            size={{ initial: 64, sm: 80, lg: 96 }}
           >
-            Fast financing when you need it
+            Here for you.
           </Text>
 
           <Text
@@ -31,7 +31,8 @@ const Hero = () => {
             size={16}
             align={'center'}
           >
-            (We’re an Australian born company with people all over the world)
+            Pi-Transact is a web-3 business, aiding businesses and individuals
+            making finance more accessible leveraging the Pi-Network.
           </Text>
         </Flex>
       </Container>

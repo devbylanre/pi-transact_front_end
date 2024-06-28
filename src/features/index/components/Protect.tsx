@@ -27,7 +27,7 @@ const Protect = () => {
           justifyContent={'between'}
           backgroundColor={'gray-100'}
           p={{ initial: '2xl', md: '5xl' }}
-          aspectRatio={{ initial: '1/1', md: '2/1' }}
+          aspectRatio={{ initial: '1/1', sm: '2/1', md: '3/2' }}
         >
           <Flex
             flex={'full'}
@@ -37,9 +37,9 @@ const Protect = () => {
             <Text
               ref={ref}
               as={'h2'}
-              size={{ initial: 32, md: 56 }}
               weight={500}
               align={'center'}
+              size={{ initial: 40, sm: 48, md: 56 }}
               className={`${inView && 'animate--secureText'} secureText`}
             >
               <Text

@@ -20,15 +20,15 @@ const Values = () => {
             as={'h2'}
             weight={500}
             align={'center'}
-            size={{ initial: 32, md: 40, lg: 48 }}
+            size={{ initial: 40, sm: 48 }}
           >
             Our values
           </Text>
         </Box>
         <Grid
           mt={'6xl'}
-          gap={'8xl'}
-          gridColumn={{ initial: 1, md: 2, lg: 3 }}
+          gap={{ initial: '6xl', sm: '8xl' }}
+          gridColumn={{ initial: 1, sm: 2, md: 3 }}
         >
           {Array.from('abcdef').map((char) => (
             <Box

@@ -20,11 +20,10 @@ const Customer = () => {
             as={'h2'}
             weight={500}
             align={'center'}
-            size={{ initial: 40, md: 48, lg: 56 }}
+            size={{ initial: 48, sm: 56, lg: 64 }}
           >
-            Get a little help from some friends
+            Save. Send. Spend.
           </Text>
-
           <Text
             as={'h3'}
             weight={500}
@@ -40,7 +39,7 @@ const Customer = () => {
       <Container
         mt={'6xl'}
         mx={'auto'}
-        container={'md'}
+        container={'lg'}
       >
         <Box
           radius={'2xl'}
@@ -50,8 +49,8 @@ const Customer = () => {
 
         <Grid
           mt={'5xl'}
-          gridColumn={{ initial: 1, md: 3 }}
-          gap={{ initial: '5xl', md: '8xl' }}
+          gridColumn={{ initial: 1, sm: 3 }}
+          gap={{ initial: '6xl', md: '8xl' }}
         >
           {Array.from('abc').map((char) => (
             <Box
@@ -60,19 +59,18 @@ const Customer = () => {
             >
               <Text
                 as={'h3'}
-                size={{ initial: 21, md: 25 }}
                 weight={500}
+                size={19}
               >
-                One-to-one guidance from our team
+                Send money to your contacts
               </Text>
               <Text
                 as={'p'}
                 size={16}
               >
-                Our team is here to help you get going. We’ll provide hands-on
-                help from your very first question through to your first
-                customer sign up. They’re available by email, Slack, and
-                Discord. Whatever works for you.
+                A lot of businesses still need to use traditional passwords for
+                access. Roll out passwords with ease and when they're ready to
+                make the move you can convert with the flick of a switch.
               </Text>
             </Box>
           ))}

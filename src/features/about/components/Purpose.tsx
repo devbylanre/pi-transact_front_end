@@ -1,7 +1,6 @@
 import React from 'react';
 import Section from '../../../components/Section/Section';
 import Container from '../../../components/Container/Container';
-import Box from '../../../components/Box/Box';
 import Text from '../../../components/Text/Text';
 import Flex from '../../../components/Flex/Flex';
 
@@ -31,10 +30,10 @@ const Purpose = () => {
             as={'h3'}
             weight={500}
             align={'center'}
-            size={{ initial: 48, md: 56 }}
+            size={{ initial: 48, sm: 56 }}
             style={{ maxWidth: '60rem' }}
           >
-            Making financing easier and more accessible
+            Making finance easier and more accessible
           </Text>
           <Text
             as={'p'}

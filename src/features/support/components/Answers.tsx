@@ -17,14 +17,14 @@ const Answers = () => {
         container={'xl'}
       >
         <Grid
-          gap={'8xl'}
           gridColumn={{ initial: 1, md: 4 }}
+          gap={{ initial: '5xl', sm: '8xl' }}
         >
           <Box>
             <Text
               as={'h2'}
-              size={25}
               weight={500}
+              size={{ initial: 21, sm: 25 }}
             >
               Find answers
             </Text>
@@ -33,7 +33,7 @@ const Answers = () => {
           {Array.from('abc').map((char) => (
             <Box
               key={char}
-              spaceY={'3xl'}
+              spaceY={{ initial: 'xl', sm: '3xl' }}
             >
               <Text
                 as={'h3'}

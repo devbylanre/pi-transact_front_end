@@ -11,6 +11,7 @@ const ASPECT_RATIO = [
   '5/4',
   '9/16',
   '14/9',
+  '16/7',
   '16/9',
   '16/10',
   'auto',
@@ -31,6 +32,7 @@ const DISPLAY = [
 const OBJECT_FITS = ['fit', 'cover', 'contain', 'scale-down'] as const;
 const POSITION = ['fixed', 'sticky', 'static', 'relative', 'absolute'] as const;
 const MOVE = [
+  0,
   '4xs',
   '3xs',
   '2xs',

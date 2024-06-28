@@ -6,6 +6,7 @@ import Box from '../../../components/Box/Box';
 import Flex from '../../../components/Flex/Flex';
 import Button from '../../../components/Button/Button';
 import Image from '../../../components/Image/Image';
+import Grid from '../../../components/Grid/Grid';
 
 const Hero = () => {
   return (
@@ -15,6 +16,7 @@ const Hero = () => {
         container={'sm'}
       >
         <Flex
+          alignItems={'center'}
           flexDirection={'column'}
           justifyContent={'center'}
           style={{ minHeight: '87vh' }}
@@ -24,18 +26,19 @@ const Hero = () => {
             as={'h1'}
             weight={500}
             align={'center'}
-            size={{ initial: 48, md: 64, lg: 96 }}
+            size={{ initial: 64, sm: 80, lg: 96 }}
           >
-            Auth for modern applications
+            App for ambitious founders
           </Text>
           <Text
             as={'h2'}
             align={'center'}
             color={'gray-20'}
             size={{ initial: 19, md: 21, lg: 25 }}
+            style={{ maxWidth: '56rem' }}
           >
-            Payment processing platform that facilitates transactions between
-            businesses and their customers using Pi network.
+            Pi-Transact allows us to to organize your finances, optimizing it
+            for our specific goals.
           </Text>
 
           <Flex
@@ -56,11 +59,11 @@ const Hero = () => {
       <Container
         mt={'8xl'}
         mx={'auto'}
-        container={'lg'}
+        container={'xl'}
       >
-        <Flex
+        <Grid
           gap={'xl'}
-          flexWrap={'yes'}
+          gridColumn={{ initial: 1, sm: 3 }}
         >
           <Flex
             p={'10xl'}
@@ -68,7 +71,7 @@ const Hero = () => {
             alignItems={'center'}
             justifyContent={'center'}
             backgroundColor={'gray-100'}
-            width={{ initial: 'full', md: '8/12' }}
+            gridColumnSpan={{ initial: 1, sm: 2 }}
           >
             <Image
               width={'full'}
@@ -84,7 +87,6 @@ const Hero = () => {
             alignItems={'center'}
             justifyContent={'center'}
             backgroundColor={'gray-100'}
-            width={{ initial: 'full', md: '4/12' }}
           >
             <Image
               width={'full'}
@@ -102,7 +104,7 @@ const Hero = () => {
               Keep track of your transactions from a single dashboard
             </Text>
           </Box>
-        </Flex>
+        </Grid>
       </Container>
     </Section>
   );

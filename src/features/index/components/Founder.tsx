@@ -19,17 +19,17 @@ const Founder = () => {
           <Text
             as={'h2'}
             align={'center'}
-            size={{ initial: 21, md: 25 }}
+            size={{ initial: 21, sm: 25 }}
           >
-            Created by founders and engineers to help your business grow, reduce
-            costs and make lifelong customers - in one place.
+            Designed by founders and engineers to foster business growth, manage
+            finances, and create lasting customer relationships.
           </Text>
         </Box>
       </Container>
 
       <Container
         mx={'auto'}
-        container={'lg'}
+        container={'xl'}
         mt={{ initial: '5xl', md: '8xl' }}
       >
         <Flex

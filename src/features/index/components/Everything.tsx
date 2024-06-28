@@ -16,15 +16,15 @@ const Everything = () => {
       <Container
         mt={'8xl'}
         mx={'auto'}
-        container={'md'}
+        container={'lg'}
       >
         <Box>
           <Text
             as={'h2'}
-            size={{ initial: 48, md: 64, lg: 80 }}
+            size={{ initial: 56, sm: 64, lg: 80 }}
             weight={500}
           >
-            Scale your business - faster
+            Go further with more features
           </Text>
         </Box>
 

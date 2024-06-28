@@ -28,9 +28,9 @@ const Spend = () => {
             as={'h2'}
             weight={500}
             align={'center'}
-            size={{ initial: 40, md: 56, lg: 64 }}
+            size={{ initial: 48, md: 56, lg: 64 }}
           >
-            Every cent you spend - all accounted for
+            The future of finance <br /> - at your tip
           </Text>
           <Text
             as={'h3'}

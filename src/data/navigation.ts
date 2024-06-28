@@ -39,14 +39,14 @@ const navigation = {
           { name: 'Blog', path: '' },
           { name: 'Roadmap', path: '' },
           { name: 'Security', path: '' },
-          { name: 'About Pi-Transact', path: '' },
+          { name: 'About Pi-Transact', path: '/about/' },
         ],
       },
       {
         name: 'Get help',
         subCategories: [
           { name: 'Twitter handle', path: '' },
-          { name: 'Support', path: '' },
+          { name: 'Support', path: '/support/' },
           { name: 'Chat with an agent', path: '' },
           { name: 'System status', path: '' },
         ],

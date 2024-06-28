@@ -28,9 +28,9 @@ const Name = () => {
             as={'h3'}
             weight={500}
             align={'center'}
-            size={{ initial: 56, md: 64, lg: 80 }}
+            size={{ initial: 56, sm: 64, lg: 80 }}
           >
-            Track, Manage, your finances with ease.
+            New Experience
           </Text>
 
           <Text
@@ -56,7 +56,7 @@ const Name = () => {
         <Flex
           p={'4xl'}
           radius={'4xl'}
-          aspectRatio={'16/7'}
+          aspectRatio={{ initial: '1/1', sm: '16/7' }}
           flexDirection={'column'}
           justifyContent={'center'}
           backgroundColor={'gray-100'}
@@ -69,13 +69,12 @@ const Name = () => {
           >
             <Text
               as={'h4'}
-              size={48}
               weight={500}
               align={'center'}
-              style={{ maxWidth: '100rem' }}
+              size={{ initial: 40, sm: 48 }}
+              style={{ maxWidth: '90rem' }}
             >
-              "We help companies of all types work better, with a simple banking
-              service that works."
+              "Experience new finance."
             </Text>
           </Flex>
           <Box>

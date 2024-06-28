@@ -25,7 +25,7 @@ const Speak = () => {
             as={'h2'}
             weight={500}
             align={'center'}
-            size={{ initial: 40, md: 48 }}
+            size={{ initial: 40, sm: 48 }}
           >
             Speak to a human
           </Text>
@@ -37,7 +37,7 @@ const Speak = () => {
             align={'center'}
             style={{ maxWidth: '80rem' }}
           >
-            The Pi-Transact team is mostly based in Australia. If you’re in a
+            The Pi-Transact team is mostly based in England. If you’re in a
             different timezone, it might take a few hours to get back to you. We
             do our best to stay up late and get up early.
           </Text>
@@ -49,19 +49,21 @@ const Speak = () => {
           gridColumn={{ initial: 1, md: 3 }}
         >
           {Array.from('abc').map((char) => (
-            <Box spaceY={'3xl'}>
+            <Box spaceY={{ initial: 'xl', sm: '3xl' }}>
               <Text
                 as={'h3'}
-                size={{ initial: 21, md: 25 }}
                 weight={500}
+                size={{ initial: 21, sm: 25 }}
               >
-                Email
+                Live chat
               </Text>
               <Text
                 as={'p'}
                 size={16}
               >
-                Shoot an email to support@pitransact.com with any questions
+                Reach out to a human via the in-product help widget (paid plans
+                only), and we’ll get back to as soon as we can. Average response
+                time is 3 hours.
               </Text>
             </Box>
           ))}
