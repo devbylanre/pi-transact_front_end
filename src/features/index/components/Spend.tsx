@@ -10,7 +10,10 @@ const Spend = () => {
   const { ref, inView } = useInView({ rootMargin: '-15% 0% -15% 0%' });
 
   return (
-    <Section mt={'max'}>
+    <Section
+      px={'lg'}
+      mt={'max'}
+    >
       <Container
         mx={'auto'}
         container={'xs'}

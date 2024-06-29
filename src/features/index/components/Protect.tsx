@@ -12,7 +12,7 @@ const Protect = () => {
 
   return (
     <Section
-      px={'md'}
+      px={'lg'}
       mt={'max'}
     >
       <Container
