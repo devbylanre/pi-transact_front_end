@@ -4,12 +4,13 @@ import Container from '../../../components/Container/Container';
 import Text from '../../../components/Text/Text';
 import Box from '../../../components/Box/Box';
 import Flex from '../../../components/Flex/Flex';
+import Image from '../../../components/Image/Image';
 
 const Founder = () => {
   return (
     <Section
+      px={'lg'}
       mt={'max'}
-      px={'md'}
     >
       <Container
         mx={'auto'}
@@ -33,13 +34,19 @@ const Founder = () => {
         mt={{ initial: '5xl', md: '8xl' }}
       >
         <Flex
-          p={'8xl'}
+          p={'5xl'}
           radius={'2xl'}
-          alignItems={'center'}
-          justifyContent={'end'}
           backgroundColor={'gray-100'}
-          style={{ minHeight: '80vh' }}
-        ></Flex>
+        >
+          <Image
+            size={'full'}
+            radius={'md'}
+            objectFit={'cover'}
+            alt={'pi-transact web app'}
+            aspectRatio={{ initial: '9/16', lg: '16/9' }}
+            src={'/assets/images/team-writing-on-glass-horizontal.jpg'}
+          />
+        </Flex>
       </Container>
     </Section>
   );
