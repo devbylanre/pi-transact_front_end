@@ -18,7 +18,7 @@ const Footer = () => {
       backgroundColor={'gray-100'}
     >
       <Container
-        px={'sm'}
+        px={'lg'}
         mx={'auto'}
         container={'lg'}
       >

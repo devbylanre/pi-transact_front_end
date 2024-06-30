@@ -6,6 +6,7 @@ import Text from '../../../components/Text/Text';
 import Box from '../../../components/Box/Box';
 import Button from '../../../components/Button/Button';
 import MegaMenu from './MegaMenu';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -18,7 +19,7 @@ const Header = () => {
     >
       <Container
         py={'xl'}
-        px={'sm'}
+        px={'lg'}
         mx={'auto'}
         container={'xl'}
       >
@@ -26,14 +27,17 @@ const Header = () => {
           alignItems={'center'}
           justifyContent={'between'}
         >
-          <Box>
+          <Link
+            to={'/'}
+            style={{ textDecoration: 'none' }}
+          >
             <Text
               size={19}
               weight={500}
             >
               Pi-Transact
             </Text>
-          </Box>
+          </Link>
 
           <Box display={{ initial: 'hidden', md: 'block' }}>
             <MegaMenu />
