@@ -63,7 +63,7 @@ const Save = () => {
           radius={'2xl'}
           justifyContent={'center'}
           backgroundColor={'gray-100'}
-          p={{ initial: 'md', sm: '5xl' }}
+          p={{ initial: 'xl', sm: '5xl' }}
           aspectRatio={{ initial: '9/16', sm: '16/9' }}
           style={{ overflow: 'hidden' }}
         >
