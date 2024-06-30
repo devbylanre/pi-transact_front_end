@@ -3622,13 +3622,19 @@ body.portal {
 .text-64, .hover\:text-64:hover, .focus\:text-64:focus, .active\:text-64:active {
   font-size: 6.4rem;
   line-height: 1.1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.0175m;
+}
+
+.text-72, .hover\:text-72:hover, .focus\:text-72:focus, .active\:text-72:active {
+  font-size: 7.2rem;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
 }
 
 .text-80, .hover\:text-80:hover, .focus\:text-80:focus, .active\:text-80:active {
   font-size: 8rem;
   line-height: 1.05;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.015em;
 }
 
 .text-96, .hover\:text-96:hover, .focus\:text-96:focus, .active\:text-96:active {
@@ -3712,12 +3718,17 @@ body.portal {
   .sm\:text-64, .sm\:hover\:text-64:hover, .sm\:focus\:text-64:focus, .sm\:active\:text-64:active {
     font-size: 6.4rem;
     line-height: 1.1;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.0175m;
+  }
+  .sm\:text-72, .sm\:hover\:text-72:hover, .sm\:focus\:text-72:focus, .sm\:active\:text-72:active {
+    font-size: 7.2rem;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
   }
   .sm\:text-80, .sm\:hover\:text-80:hover, .sm\:focus\:text-80:focus, .sm\:active\:text-80:active {
     font-size: 8rem;
     line-height: 1.05;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.015em;
   }
   .sm\:text-96, .sm\:hover\:text-96:hover, .sm\:focus\:text-96:focus, .sm\:active\:text-96:active {
     font-size: 9.6rem;
@@ -3799,12 +3810,17 @@ body.portal {
   .md\:text-64, .md\:hover\:text-64:hover, .md\:focus\:text-64:focus, .md\:active\:text-64:active {
     font-size: 6.4rem;
     line-height: 1.1;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.0175m;
+  }
+  .md\:text-72, .md\:hover\:text-72:hover, .md\:focus\:text-72:focus, .md\:active\:text-72:active {
+    font-size: 7.2rem;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
   }
   .md\:text-80, .md\:hover\:text-80:hover, .md\:focus\:text-80:focus, .md\:active\:text-80:active {
     font-size: 8rem;
     line-height: 1.05;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.015em;
   }
   .md\:text-96, .md\:hover\:text-96:hover, .md\:focus\:text-96:focus, .md\:active\:text-96:active {
     font-size: 9.6rem;
@@ -3886,12 +3902,17 @@ body.portal {
   .lg\:text-64, .lg\:hover\:text-64:hover, .lg\:focus\:text-64:focus, .lg\:active\:text-64:active {
     font-size: 6.4rem;
     line-height: 1.1;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.0175m;
+  }
+  .lg\:text-72, .lg\:hover\:text-72:hover, .lg\:focus\:text-72:focus, .lg\:active\:text-72:active {
+    font-size: 7.2rem;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
   }
   .lg\:text-80, .lg\:hover\:text-80:hover, .lg\:focus\:text-80:focus, .lg\:active\:text-80:active {
     font-size: 8rem;
     line-height: 1.05;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.015em;
   }
   .lg\:text-96, .lg\:hover\:text-96:hover, .lg\:focus\:text-96:focus, .lg\:active\:text-96:active {
     font-size: 9.6rem;
@@ -3973,12 +3994,17 @@ body.portal {
   .xl\:text-64, .xl\:hover\:text-64:hover, .xl\:focus\:text-64:focus, .xl\:active\:text-64:active {
     font-size: 6.4rem;
     line-height: 1.1;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.0175m;
+  }
+  .xl\:text-72, .xl\:hover\:text-72:hover, .xl\:focus\:text-72:focus, .xl\:active\:text-72:active {
+    font-size: 7.2rem;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
   }
   .xl\:text-80, .xl\:hover\:text-80:hover, .xl\:focus\:text-80:focus, .xl\:active\:text-80:active {
     font-size: 8rem;
     line-height: 1.05;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.015em;
   }
   .xl\:text-96, .xl\:hover\:text-96:hover, .xl\:focus\:text-96:focus, .xl\:active\:text-96:active {
     font-size: 9.6rem;
@@ -4765,6 +4791,78 @@ body.portal {
   }
   .xl\:display-inline-block, .xl\:hover\:display-inline-block:hover, .xl\:focus\:display-inline-block:focus, .xl\:active\:display-inline-block:active {
     display: inline-block;
+  }
+}
+.object-fit-fit, .hover\:object-fit-fit:hover, .focus\:object-fit-fit:focus, .active\:object-fit-fit:active {
+  object-fit: fit;
+}
+
+.object-fit-cover, .hover\:object-fit-cover:hover, .focus\:object-fit-cover:focus, .active\:object-fit-cover:active {
+  object-fit: cover;
+}
+
+.object-fit-contain, .hover\:object-fit-contain:hover, .focus\:object-fit-contain:focus, .active\:object-fit-contain:active {
+  object-fit: contain;
+}
+
+.object-fit-scale-down, .hover\:object-fit-scale-down:hover, .focus\:object-fit-scale-down:focus, .active\:object-fit-scale-down:active {
+  object-fit: scale-down;
+}
+
+@media (min-width: 48rem) {
+  .sm\:object-fit-fit, .sm\:hover\:object-fit-fit:hover, .sm\:focus\:object-fit-fit:focus, .sm\:active\:object-fit-fit:active {
+    object-fit: fit;
+  }
+  .sm\:object-fit-cover, .sm\:hover\:object-fit-cover:hover, .sm\:focus\:object-fit-cover:focus, .sm\:active\:object-fit-cover:active {
+    object-fit: cover;
+  }
+  .sm\:object-fit-contain, .sm\:hover\:object-fit-contain:hover, .sm\:focus\:object-fit-contain:focus, .sm\:active\:object-fit-contain:active {
+    object-fit: contain;
+  }
+  .sm\:object-fit-scale-down, .sm\:hover\:object-fit-scale-down:hover, .sm\:focus\:object-fit-scale-down:focus, .sm\:active\:object-fit-scale-down:active {
+    object-fit: scale-down;
+  }
+}
+@media (min-width: 77.5rem) {
+  .md\:object-fit-fit, .md\:hover\:object-fit-fit:hover, .md\:focus\:object-fit-fit:focus, .md\:active\:object-fit-fit:active {
+    object-fit: fit;
+  }
+  .md\:object-fit-cover, .md\:hover\:object-fit-cover:hover, .md\:focus\:object-fit-cover:focus, .md\:active\:object-fit-cover:active {
+    object-fit: cover;
+  }
+  .md\:object-fit-contain, .md\:hover\:object-fit-contain:hover, .md\:focus\:object-fit-contain:focus, .md\:active\:object-fit-contain:active {
+    object-fit: contain;
+  }
+  .md\:object-fit-scale-down, .md\:hover\:object-fit-scale-down:hover, .md\:focus\:object-fit-scale-down:focus, .md\:active\:object-fit-scale-down:active {
+    object-fit: scale-down;
+  }
+}
+@media (min-width: 90rem) {
+  .lg\:object-fit-fit, .lg\:hover\:object-fit-fit:hover, .lg\:focus\:object-fit-fit:focus, .lg\:active\:object-fit-fit:active {
+    object-fit: fit;
+  }
+  .lg\:object-fit-cover, .lg\:hover\:object-fit-cover:hover, .lg\:focus\:object-fit-cover:focus, .lg\:active\:object-fit-cover:active {
+    object-fit: cover;
+  }
+  .lg\:object-fit-contain, .lg\:hover\:object-fit-contain:hover, .lg\:focus\:object-fit-contain:focus, .lg\:active\:object-fit-contain:active {
+    object-fit: contain;
+  }
+  .lg\:object-fit-scale-down, .lg\:hover\:object-fit-scale-down:hover, .lg\:focus\:object-fit-scale-down:focus, .lg\:active\:object-fit-scale-down:active {
+    object-fit: scale-down;
+  }
+}
+@media (min-width: 120rem) {
+  .xl\:object-fit-fit, .xl\:hover\:object-fit-fit:hover, .xl\:focus\:object-fit-fit:focus, .xl\:active\:object-fit-fit:active {
+    object-fit: fit;
+  }
+  .xl\:object-fit-cover, .xl\:hover\:object-fit-cover:hover, .xl\:focus\:object-fit-cover:focus, .xl\:active\:object-fit-cover:active {
+    object-fit: cover;
+  }
+  .xl\:object-fit-contain, .xl\:hover\:object-fit-contain:hover, .xl\:focus\:object-fit-contain:focus, .xl\:active\:object-fit-contain:active {
+    object-fit: contain;
+  }
+  .xl\:object-fit-scale-down, .xl\:hover\:object-fit-scale-down:hover, .xl\:focus\:object-fit-scale-down:focus, .xl\:active\:object-fit-scale-down:active {
+    object-fit: scale-down;
   }
 }
 .position-fixed, .hover\:position-fixed:hover, .focus\:position-fixed:focus, .active\:position-fixed:active {
@@ -22753,8 +22851,20 @@ body.portal {
   transform: scale(0.75);
 }
 
+.scale-80, .hover\:scale-80:hover, .focus\:scale-80:focus, .active\:scale-80:active {
+  transform: scaleX(0.8);
+}
+
+.scale-90, .hover\:scale-90:hover, .focus\:scale-90:focus, .active\:scale-90:active {
+  transform: scaleX(0.9);
+}
+
+.scale-95, .hover\:scale-95:hover, .focus\:scale-95:focus, .active\:scale-95:active {
+  transform: scaleX(0.95);
+}
+
 .scale-100, .hover\:scale-100:hover, .focus\:scale-100:focus, .active\:scale-100:active {
-  transform: scale(0.1);
+  transform: scale(1);
 }
 
 .scale-125, .hover\:scale-125:hover, .focus\:scale-125:focus, .active\:scale-125:active {
@@ -22778,8 +22888,17 @@ body.portal {
   .sm\:scale-75, .sm\:hover\:scale-75:hover, .sm\:focus\:scale-75:focus, .sm\:active\:scale-75:active {
     transform: scale(0.75);
   }
+  .sm\:scale-80, .sm\:hover\:scale-80:hover, .sm\:focus\:scale-80:focus, .sm\:active\:scale-80:active {
+    transform: scaleX(0.8);
+  }
+  .sm\:scale-90, .sm\:hover\:scale-90:hover, .sm\:focus\:scale-90:focus, .sm\:active\:scale-90:active {
+    transform: scaleX(0.9);
+  }
+  .sm\:scale-95, .sm\:hover\:scale-95:hover, .sm\:focus\:scale-95:focus, .sm\:active\:scale-95:active {
+    transform: scaleX(0.95);
+  }
   .sm\:scale-100, .sm\:hover\:scale-100:hover, .sm\:focus\:scale-100:focus, .sm\:active\:scale-100:active {
-    transform: scale(0.1);
+    transform: scale(1);
   }
   .sm\:scale-125, .sm\:hover\:scale-125:hover, .sm\:focus\:scale-125:focus, .sm\:active\:scale-125:active {
     transform: scale(1.25);
@@ -22801,8 +22920,17 @@ body.portal {
   .md\:scale-75, .md\:hover\:scale-75:hover, .md\:focus\:scale-75:focus, .md\:active\:scale-75:active {
     transform: scale(0.75);
   }
+  .md\:scale-80, .md\:hover\:scale-80:hover, .md\:focus\:scale-80:focus, .md\:active\:scale-80:active {
+    transform: scaleX(0.8);
+  }
+  .md\:scale-90, .md\:hover\:scale-90:hover, .md\:focus\:scale-90:focus, .md\:active\:scale-90:active {
+    transform: scaleX(0.9);
+  }
+  .md\:scale-95, .md\:hover\:scale-95:hover, .md\:focus\:scale-95:focus, .md\:active\:scale-95:active {
+    transform: scaleX(0.95);
+  }
   .md\:scale-100, .md\:hover\:scale-100:hover, .md\:focus\:scale-100:focus, .md\:active\:scale-100:active {
-    transform: scale(0.1);
+    transform: scale(1);
   }
   .md\:scale-125, .md\:hover\:scale-125:hover, .md\:focus\:scale-125:focus, .md\:active\:scale-125:active {
     transform: scale(1.25);
@@ -22824,8 +22952,17 @@ body.portal {
   .lg\:scale-75, .lg\:hover\:scale-75:hover, .lg\:focus\:scale-75:focus, .lg\:active\:scale-75:active {
     transform: scale(0.75);
   }
+  .lg\:scale-80, .lg\:hover\:scale-80:hover, .lg\:focus\:scale-80:focus, .lg\:active\:scale-80:active {
+    transform: scaleX(0.8);
+  }
+  .lg\:scale-90, .lg\:hover\:scale-90:hover, .lg\:focus\:scale-90:focus, .lg\:active\:scale-90:active {
+    transform: scaleX(0.9);
+  }
+  .lg\:scale-95, .lg\:hover\:scale-95:hover, .lg\:focus\:scale-95:focus, .lg\:active\:scale-95:active {
+    transform: scaleX(0.95);
+  }
   .lg\:scale-100, .lg\:hover\:scale-100:hover, .lg\:focus\:scale-100:focus, .lg\:active\:scale-100:active {
-    transform: scale(0.1);
+    transform: scale(1);
   }
   .lg\:scale-125, .lg\:hover\:scale-125:hover, .lg\:focus\:scale-125:focus, .lg\:active\:scale-125:active {
     transform: scale(1.25);
@@ -22847,8 +22984,17 @@ body.portal {
   .xl\:scale-75, .xl\:hover\:scale-75:hover, .xl\:focus\:scale-75:focus, .xl\:active\:scale-75:active {
     transform: scale(0.75);
   }
+  .xl\:scale-80, .xl\:hover\:scale-80:hover, .xl\:focus\:scale-80:focus, .xl\:active\:scale-80:active {
+    transform: scaleX(0.8);
+  }
+  .xl\:scale-90, .xl\:hover\:scale-90:hover, .xl\:focus\:scale-90:focus, .xl\:active\:scale-90:active {
+    transform: scaleX(0.9);
+  }
+  .xl\:scale-95, .xl\:hover\:scale-95:hover, .xl\:focus\:scale-95:focus, .xl\:active\:scale-95:active {
+    transform: scaleX(0.95);
+  }
   .xl\:scale-100, .xl\:hover\:scale-100:hover, .xl\:focus\:scale-100:focus, .xl\:active\:scale-100:active {
-    transform: scale(0.1);
+    transform: scale(1);
   }
   .xl\:scale-125, .xl\:hover\:scale-125:hover, .xl\:focus\:scale-125:focus, .xl\:active\:scale-125:active {
     transform: scale(1.25);
@@ -22873,8 +23019,20 @@ body.portal {
   transform: scaleX(0.75);
 }
 
+.scale-x-80, .hover\:scale-x-80:hover, .focus\:scale-x-80:focus, .active\:scale-x-80:active {
+  transform: scaleX(0.8);
+}
+
+.scale-x-90, .hover\:scale-x-90:hover, .focus\:scale-x-90:focus, .active\:scale-x-90:active {
+  transform: scaleX(0.9);
+}
+
+.scale-x-95, .hover\:scale-x-95:hover, .focus\:scale-x-95:focus, .active\:scale-x-95:active {
+  transform: scaleX(0.95);
+}
+
 .scale-x-100, .hover\:scale-x-100:hover, .focus\:scale-x-100:focus, .active\:scale-x-100:active {
-  transform: scaleX(0.1);
+  transform: scaleX(1);
 }
 
 .scale-x-125, .hover\:scale-x-125:hover, .focus\:scale-x-125:focus, .active\:scale-x-125:active {
@@ -22898,8 +23056,17 @@ body.portal {
   .sm\:scale-x-75, .sm\:hover\:scale-x-75:hover, .sm\:focus\:scale-x-75:focus, .sm\:active\:scale-x-75:active {
     transform: scaleX(0.75);
   }
+  .sm\:scale-x-80, .sm\:hover\:scale-x-80:hover, .sm\:focus\:scale-x-80:focus, .sm\:active\:scale-x-80:active {
+    transform: scaleX(0.8);
+  }
+  .sm\:scale-x-90, .sm\:hover\:scale-x-90:hover, .sm\:focus\:scale-x-90:focus, .sm\:active\:scale-x-90:active {
+    transform: scaleX(0.9);
+  }
+  .sm\:scale-x-95, .sm\:hover\:scale-x-95:hover, .sm\:focus\:scale-x-95:focus, .sm\:active\:scale-x-95:active {
+    transform: scaleX(0.95);
+  }
   .sm\:scale-x-100, .sm\:hover\:scale-x-100:hover, .sm\:focus\:scale-x-100:focus, .sm\:active\:scale-x-100:active {
-    transform: scaleX(0.1);
+    transform: scaleX(1);
   }
   .sm\:scale-x-125, .sm\:hover\:scale-x-125:hover, .sm\:focus\:scale-x-125:focus, .sm\:active\:scale-x-125:active {
     transform: scaleX(1.25);
@@ -22921,8 +23088,17 @@ body.portal {
   .md\:scale-x-75, .md\:hover\:scale-x-75:hover, .md\:focus\:scale-x-75:focus, .md\:active\:scale-x-75:active {
     transform: scaleX(0.75);
   }
+  .md\:scale-x-80, .md\:hover\:scale-x-80:hover, .md\:focus\:scale-x-80:focus, .md\:active\:scale-x-80:active {
+    transform: scaleX(0.8);
+  }
+  .md\:scale-x-90, .md\:hover\:scale-x-90:hover, .md\:focus\:scale-x-90:focus, .md\:active\:scale-x-90:active {
+    transform: scaleX(0.9);
+  }
+  .md\:scale-x-95, .md\:hover\:scale-x-95:hover, .md\:focus\:scale-x-95:focus, .md\:active\:scale-x-95:active {
+    transform: scaleX(0.95);
+  }
   .md\:scale-x-100, .md\:hover\:scale-x-100:hover, .md\:focus\:scale-x-100:focus, .md\:active\:scale-x-100:active {
-    transform: scaleX(0.1);
+    transform: scaleX(1);
   }
   .md\:scale-x-125, .md\:hover\:scale-x-125:hover, .md\:focus\:scale-x-125:focus, .md\:active\:scale-x-125:active {
     transform: scaleX(1.25);
@@ -22944,8 +23120,17 @@ body.portal {
   .lg\:scale-x-75, .lg\:hover\:scale-x-75:hover, .lg\:focus\:scale-x-75:focus, .lg\:active\:scale-x-75:active {
     transform: scaleX(0.75);
   }
+  .lg\:scale-x-80, .lg\:hover\:scale-x-80:hover, .lg\:focus\:scale-x-80:focus, .lg\:active\:scale-x-80:active {
+    transform: scaleX(0.8);
+  }
+  .lg\:scale-x-90, .lg\:hover\:scale-x-90:hover, .lg\:focus\:scale-x-90:focus, .lg\:active\:scale-x-90:active {
+    transform: scaleX(0.9);
+  }
+  .lg\:scale-x-95, .lg\:hover\:scale-x-95:hover, .lg\:focus\:scale-x-95:focus, .lg\:active\:scale-x-95:active {
+    transform: scaleX(0.95);
+  }
   .lg\:scale-x-100, .lg\:hover\:scale-x-100:hover, .lg\:focus\:scale-x-100:focus, .lg\:active\:scale-x-100:active {
-    transform: scaleX(0.1);
+    transform: scaleX(1);
   }
   .lg\:scale-x-125, .lg\:hover\:scale-x-125:hover, .lg\:focus\:scale-x-125:focus, .lg\:active\:scale-x-125:active {
     transform: scaleX(1.25);
@@ -22967,8 +23152,17 @@ body.portal {
   .xl\:scale-x-75, .xl\:hover\:scale-x-75:hover, .xl\:focus\:scale-x-75:focus, .xl\:active\:scale-x-75:active {
     transform: scaleX(0.75);
   }
+  .xl\:scale-x-80, .xl\:hover\:scale-x-80:hover, .xl\:focus\:scale-x-80:focus, .xl\:active\:scale-x-80:active {
+    transform: scaleX(0.8);
+  }
+  .xl\:scale-x-90, .xl\:hover\:scale-x-90:hover, .xl\:focus\:scale-x-90:focus, .xl\:active\:scale-x-90:active {
+    transform: scaleX(0.9);
+  }
+  .xl\:scale-x-95, .xl\:hover\:scale-x-95:hover, .xl\:focus\:scale-x-95:focus, .xl\:active\:scale-x-95:active {
+    transform: scaleX(0.95);
+  }
   .xl\:scale-x-100, .xl\:hover\:scale-x-100:hover, .xl\:focus\:scale-x-100:focus, .xl\:active\:scale-x-100:active {
-    transform: scaleX(0.1);
+    transform: scaleX(1);
   }
   .xl\:scale-x-125, .xl\:hover\:scale-x-125:hover, .xl\:focus\:scale-x-125:focus, .xl\:active\:scale-x-125:active {
     transform: scaleX(1.25);
@@ -22993,8 +23187,20 @@ body.portal {
   transform: scaleY(0.75);
 }
 
+.scale-y-80, .hover\:scale-y-80:hover, .focus\:scale-y-80:focus, .active\:scale-y-80:active {
+  transform: scaleX(0.8);
+}
+
+.scale-y-90, .hover\:scale-y-90:hover, .focus\:scale-y-90:focus, .active\:scale-y-90:active {
+  transform: scaleX(0.9);
+}
+
+.scale-y-95, .hover\:scale-y-95:hover, .focus\:scale-y-95:focus, .active\:scale-y-95:active {
+  transform: scaleX(0.95);
+}
+
 .scale-y-100, .hover\:scale-y-100:hover, .focus\:scale-y-100:focus, .active\:scale-y-100:active {
-  transform: scaleY(0.1);
+  transform: scaleY(1);
 }
 
 .scale-y-125, .hover\:scale-y-125:hover, .focus\:scale-y-125:focus, .active\:scale-y-125:active {
@@ -23018,8 +23224,17 @@ body.portal {
   .sm\:scale-y-75, .sm\:hover\:scale-y-75:hover, .sm\:focus\:scale-y-75:focus, .sm\:active\:scale-y-75:active {
     transform: scaleY(0.75);
   }
+  .sm\:scale-y-80, .sm\:hover\:scale-y-80:hover, .sm\:focus\:scale-y-80:focus, .sm\:active\:scale-y-80:active {
+    transform: scaleX(0.8);
+  }
+  .sm\:scale-y-90, .sm\:hover\:scale-y-90:hover, .sm\:focus\:scale-y-90:focus, .sm\:active\:scale-y-90:active {
+    transform: scaleX(0.9);
+  }
+  .sm\:scale-y-95, .sm\:hover\:scale-y-95:hover, .sm\:focus\:scale-y-95:focus, .sm\:active\:scale-y-95:active {
+    transform: scaleX(0.95);
+  }
   .sm\:scale-y-100, .sm\:hover\:scale-y-100:hover, .sm\:focus\:scale-y-100:focus, .sm\:active\:scale-y-100:active {
-    transform: scaleY(0.1);
+    transform: scaleY(1);
   }
   .sm\:scale-y-125, .sm\:hover\:scale-y-125:hover, .sm\:focus\:scale-y-125:focus, .sm\:active\:scale-y-125:active {
     transform: scaleY(1.25);
@@ -23041,8 +23256,17 @@ body.portal {
   .md\:scale-y-75, .md\:hover\:scale-y-75:hover, .md\:focus\:scale-y-75:focus, .md\:active\:scale-y-75:active {
     transform: scaleY(0.75);
   }
+  .md\:scale-y-80, .md\:hover\:scale-y-80:hover, .md\:focus\:scale-y-80:focus, .md\:active\:scale-y-80:active {
+    transform: scaleX(0.8);
+  }
+  .md\:scale-y-90, .md\:hover\:scale-y-90:hover, .md\:focus\:scale-y-90:focus, .md\:active\:scale-y-90:active {
+    transform: scaleX(0.9);
+  }
+  .md\:scale-y-95, .md\:hover\:scale-y-95:hover, .md\:focus\:scale-y-95:focus, .md\:active\:scale-y-95:active {
+    transform: scaleX(0.95);
+  }
   .md\:scale-y-100, .md\:hover\:scale-y-100:hover, .md\:focus\:scale-y-100:focus, .md\:active\:scale-y-100:active {
-    transform: scaleY(0.1);
+    transform: scaleY(1);
   }
   .md\:scale-y-125, .md\:hover\:scale-y-125:hover, .md\:focus\:scale-y-125:focus, .md\:active\:scale-y-125:active {
     transform: scaleY(1.25);
@@ -23064,8 +23288,17 @@ body.portal {
   .lg\:scale-y-75, .lg\:hover\:scale-y-75:hover, .lg\:focus\:scale-y-75:focus, .lg\:active\:scale-y-75:active {
     transform: scaleY(0.75);
   }
+  .lg\:scale-y-80, .lg\:hover\:scale-y-80:hover, .lg\:focus\:scale-y-80:focus, .lg\:active\:scale-y-80:active {
+    transform: scaleX(0.8);
+  }
+  .lg\:scale-y-90, .lg\:hover\:scale-y-90:hover, .lg\:focus\:scale-y-90:focus, .lg\:active\:scale-y-90:active {
+    transform: scaleX(0.9);
+  }
+  .lg\:scale-y-95, .lg\:hover\:scale-y-95:hover, .lg\:focus\:scale-y-95:focus, .lg\:active\:scale-y-95:active {
+    transform: scaleX(0.95);
+  }
   .lg\:scale-y-100, .lg\:hover\:scale-y-100:hover, .lg\:focus\:scale-y-100:focus, .lg\:active\:scale-y-100:active {
-    transform: scaleY(0.1);
+    transform: scaleY(1);
   }
   .lg\:scale-y-125, .lg\:hover\:scale-y-125:hover, .lg\:focus\:scale-y-125:focus, .lg\:active\:scale-y-125:active {
     transform: scaleY(1.25);
@@ -23087,8 +23320,17 @@ body.portal {
   .xl\:scale-y-75, .xl\:hover\:scale-y-75:hover, .xl\:focus\:scale-y-75:focus, .xl\:active\:scale-y-75:active {
     transform: scaleY(0.75);
   }
+  .xl\:scale-y-80, .xl\:hover\:scale-y-80:hover, .xl\:focus\:scale-y-80:focus, .xl\:active\:scale-y-80:active {
+    transform: scaleX(0.8);
+  }
+  .xl\:scale-y-90, .xl\:hover\:scale-y-90:hover, .xl\:focus\:scale-y-90:focus, .xl\:active\:scale-y-90:active {
+    transform: scaleX(0.9);
+  }
+  .xl\:scale-y-95, .xl\:hover\:scale-y-95:hover, .xl\:focus\:scale-y-95:focus, .xl\:active\:scale-y-95:active {
+    transform: scaleX(0.95);
+  }
   .xl\:scale-y-100, .xl\:hover\:scale-y-100:hover, .xl\:focus\:scale-y-100:focus, .xl\:active\:scale-y-100:active {
-    transform: scaleY(0.1);
+    transform: scaleY(1);
   }
   .xl\:scale-y-125, .xl\:hover\:scale-y-125:hover, .xl\:focus\:scale-y-125:focus, .xl\:active\:scale-y-125:active {
     transform: scaleY(1.25);
@@ -23321,6 +23563,10 @@ body.portal {
   transform: translateX(2rem);
 }
 
+.translate-x-max, .hover\:translate-x-max:hover, .focus\:translate-x-max:focus, .active\:translate-x-max:active {
+  transform: translateX(3rem);
+}
+
 @media (min-width: 48rem) {
   .sm\:translate-x-min, .sm\:hover\:translate-x-min:hover, .sm\:focus\:translate-x-min:focus, .sm\:active\:translate-x-min:active {
     transform: translateX(0);
@@ -23351,6 +23597,9 @@ body.portal {
   }
   .sm\:translate-x-5xl, .sm\:hover\:translate-x-5xl:hover, .sm\:focus\:translate-x-5xl:focus, .sm\:active\:translate-x-5xl:active {
     transform: translateX(2rem);
+  }
+  .sm\:translate-x-max, .sm\:hover\:translate-x-max:hover, .sm\:focus\:translate-x-max:focus, .sm\:active\:translate-x-max:active {
+    transform: translateX(3rem);
   }
 }
 @media (min-width: 77.5rem) {
@@ -23384,6 +23633,9 @@ body.portal {
   .md\:translate-x-5xl, .md\:hover\:translate-x-5xl:hover, .md\:focus\:translate-x-5xl:focus, .md\:active\:translate-x-5xl:active {
     transform: translateX(2rem);
   }
+  .md\:translate-x-max, .md\:hover\:translate-x-max:hover, .md\:focus\:translate-x-max:focus, .md\:active\:translate-x-max:active {
+    transform: translateX(3rem);
+  }
 }
 @media (min-width: 90rem) {
   .lg\:translate-x-min, .lg\:hover\:translate-x-min:hover, .lg\:focus\:translate-x-min:focus, .lg\:active\:translate-x-min:active {
@@ -23416,6 +23668,9 @@ body.portal {
   .lg\:translate-x-5xl, .lg\:hover\:translate-x-5xl:hover, .lg\:focus\:translate-x-5xl:focus, .lg\:active\:translate-x-5xl:active {
     transform: translateX(2rem);
   }
+  .lg\:translate-x-max, .lg\:hover\:translate-x-max:hover, .lg\:focus\:translate-x-max:focus, .lg\:active\:translate-x-max:active {
+    transform: translateX(3rem);
+  }
 }
 @media (min-width: 120rem) {
   .xl\:translate-x-min, .xl\:hover\:translate-x-min:hover, .xl\:focus\:translate-x-min:focus, .xl\:active\:translate-x-min:active {
@@ -23447,6 +23702,9 @@ body.portal {
   }
   .xl\:translate-x-5xl, .xl\:hover\:translate-x-5xl:hover, .xl\:focus\:translate-x-5xl:focus, .xl\:active\:translate-x-5xl:active {
     transform: translateX(2rem);
+  }
+  .xl\:translate-x-max, .xl\:hover\:translate-x-max:hover, .xl\:focus\:translate-x-max:focus, .xl\:active\:translate-x-max:active {
+    transform: translateX(3rem);
   }
 }
 .translate-y-min, .hover\:translate-y-min:hover, .focus\:translate-y-min:focus, .active\:translate-y-min:active {
@@ -23489,6 +23747,10 @@ body.portal {
   transform: translateY(2rem);
 }
 
+.translate-y-max, .hover\:translate-y-max:hover, .focus\:translate-y-max:focus, .active\:translate-y-max:active {
+  transform: translateY(3rem);
+}
+
 @media (min-width: 48rem) {
   .sm\:translate-y-min, .sm\:hover\:translate-y-min:hover, .sm\:focus\:translate-y-min:focus, .sm\:active\:translate-y-min:active {
     transform: translateY(0);
@@ -23519,6 +23781,9 @@ body.portal {
   }
   .sm\:translate-y-5xl, .sm\:hover\:translate-y-5xl:hover, .sm\:focus\:translate-y-5xl:focus, .sm\:active\:translate-y-5xl:active {
     transform: translateY(2rem);
+  }
+  .sm\:translate-y-max, .sm\:hover\:translate-y-max:hover, .sm\:focus\:translate-y-max:focus, .sm\:active\:translate-y-max:active {
+    transform: translateY(3rem);
   }
 }
 @media (min-width: 77.5rem) {
@@ -23552,6 +23817,9 @@ body.portal {
   .md\:translate-y-5xl, .md\:hover\:translate-y-5xl:hover, .md\:focus\:translate-y-5xl:focus, .md\:active\:translate-y-5xl:active {
     transform: translateY(2rem);
   }
+  .md\:translate-y-max, .md\:hover\:translate-y-max:hover, .md\:focus\:translate-y-max:focus, .md\:active\:translate-y-max:active {
+    transform: translateY(3rem);
+  }
 }
 @media (min-width: 90rem) {
   .lg\:translate-y-min, .lg\:hover\:translate-y-min:hover, .lg\:focus\:translate-y-min:focus, .lg\:active\:translate-y-min:active {
@@ -23584,6 +23852,9 @@ body.portal {
   .lg\:translate-y-5xl, .lg\:hover\:translate-y-5xl:hover, .lg\:focus\:translate-y-5xl:focus, .lg\:active\:translate-y-5xl:active {
     transform: translateY(2rem);
   }
+  .lg\:translate-y-max, .lg\:hover\:translate-y-max:hover, .lg\:focus\:translate-y-max:focus, .lg\:active\:translate-y-max:active {
+    transform: translateY(3rem);
+  }
 }
 @media (min-width: 120rem) {
   .xl\:translate-y-min, .xl\:hover\:translate-y-min:hover, .xl\:focus\:translate-y-min:focus, .xl\:active\:translate-y-min:active {
@@ -23615,6 +23886,9 @@ body.portal {
   }
   .xl\:translate-y-5xl, .xl\:hover\:translate-y-5xl:hover, .xl\:focus\:translate-y-5xl:focus, .xl\:active\:translate-y-5xl:active {
     transform: translateY(2rem);
+  }
+  .xl\:translate-y-max, .xl\:hover\:translate-y-max:hover, .xl\:focus\:translate-y-max:focus, .xl\:active\:translate-y-max:active {
+    transform: translateY(3rem);
   }
 }
 .origin-top, .hover\:origin-top:hover, .focus\:origin-top:focus, .active\:origin-top:active {
