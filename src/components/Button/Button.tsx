@@ -21,7 +21,7 @@ const Button = React.forwardRef(
       ps,
       pt,
       pb,
-      px = 'md',
+      px = 'lg',
       py,
       m,
       me,
