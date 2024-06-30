@@ -15,6 +15,7 @@ const SIZES = [
   48,
   56,
   64,
+  72,
   80,
   96,
   'inherit',

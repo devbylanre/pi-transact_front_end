@@ -55,7 +55,7 @@ const MOVE = [
 const layout = {
   container: { prefix: 'container', values: CONTAINERS, responsive: true },
   display: { prefix: 'display', values: DISPLAY, responsive: true },
-  objectFit: { prefix: 'objectFit', values: OBJECT_FITS, responsive: true },
+  objectFit: { prefix: 'object-fit', values: OBJECT_FITS, responsive: true },
   position: { prefix: 'position', values: POSITION, responsive: true },
   top: { prefix: 'top', values: MOVE, responsive: true },
   right: { prefix: 'right', values: MOVE, responsive: true },
