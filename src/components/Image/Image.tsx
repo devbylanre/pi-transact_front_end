@@ -53,7 +53,7 @@ const Image = React.forwardRef(
       translateX,
       translateY,
       transition = 'all',
-      transitionDelay,
+      transitionDelay = 200,
       transitionDuration = 300,
       transitionTimingFunction = 'ease-in-out',
       pseudos,
