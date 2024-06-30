@@ -1,20 +1,20 @@
 import React from 'react';
 import Hero from './components/Hero';
 import Founder from './components/Founder';
-import Everything from './components/Everything';
-import Customer from './components/Customer';
-import Protect from './components/Protect';
-import Spend from './components/Spend';
+import Features from './components/Features';
+import Save from './components/Save';
+import Secure from './components/Secure';
+import Future from './components/Future';
 
 const IndexFeature = () => {
   return (
     <React.Fragment>
       <Hero />
       <Founder />
-      <Everything />
-      <Customer />
-      <Spend />
-      <Protect />
+      <Features />
+      <Save />
+      <Future />
+      <Secure />
     </React.Fragment>
   );
 };

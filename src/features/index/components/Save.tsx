@@ -6,6 +6,7 @@ import Text from '../../../components/Text/Text';
 import Grid from '../../../components/Grid/Grid';
 import Image from '../../../components/Image/Image';
 import Flex from '../../../components/Flex/Flex';
+import { InView } from 'react-intersection-observer';
 
 const features = [
   {
@@ -22,7 +23,7 @@ const features = [
   },
 ];
 
-const Customer = () => {
+const Save = () => {
   return (
     <Section
       px={'lg'}
@@ -63,14 +64,21 @@ const Customer = () => {
           radius={'2xl'}
           justifyContent={'center'}
           backgroundColor={'gray-100'}
-          style={{ overflow: 'hidden' }}
           aspectRatio={{ initial: '9/16', sm: '16/9' }}
+          style={{ overflow: 'hidden' }}
         >
-          <Image
-            radius={'lg'}
-            alt={'handyman-commission'}
-            src={'/assets/svgs/handyman.svg'}
-          />
+          <InView>
+            {({ inView, ref }) => (
+              <Image
+                ref={ref}
+                radius={'lg'}
+                opacity={inView ? 1 : 0}
+                alt={'handyman-commission'}
+                src={'/assets/svgs/handyman.svg'}
+                translateY={inView ? 'min' : 'max'}
+              />
+            )}
+          </InView>
         </Flex>
 
         <Grid
@@ -104,4 +112,4 @@ const Customer = () => {
   );
 };
 
-export default Customer;
+export default Save;

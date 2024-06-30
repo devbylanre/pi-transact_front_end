@@ -3,7 +3,7 @@ import Section from '../../../components/Section/Section';
 import Container from '../../../components/Container/Container';
 import Text from '../../../components/Text/Text';
 import Flex from '../../../components/Flex/Flex';
-import { useInView } from 'react-intersection-observer';
+import { InView, useInView } from 'react-intersection-observer';
 import Image from '../../../components/Image/Image';
 import Box from '../../../components/Box/Box';
 
@@ -59,11 +59,18 @@ const Future = () => {
           backgroundColor={'gray-100'}
           aspectRatio={{ initial: '9/16', sm: '16/9' }}
         >
-          <Image
-            radius={'lg'}
-            alt={'review'}
-            src={'/assets/svgs/review.svg'}
-          />
+          <InView>
+            {({ inView, ref }) => (
+              <Image
+                ref={ref}
+                radius={'lg'}
+                alt={'review'}
+                opacity={inView ? 1 : 0}
+                scale={inView ? 100 : 75}
+                src={'/assets/svgs/review.svg'}
+              />
+            )}
+          </InView>
         </Flex>
       </Container>
     </Section>

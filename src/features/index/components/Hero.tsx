@@ -6,6 +6,7 @@ import Flex from '../../../components/Flex/Flex';
 import Button from '../../../components/Button/Button';
 import Image from '../../../components/Image/Image';
 import { Link } from 'react-router-dom';
+import { InView } from 'react-intersection-observer';
 
 const Hero = () => {
   return (
@@ -67,11 +68,18 @@ const Hero = () => {
           backgroundColor={'gray-100'}
           aspectRatio={{ initial: '9/16', sm: '16/9' }}
         >
-          <Image
-            radius={'lg'}
-            alt={'user registration'}
-            src={'/assets/svgs/register-page-one.svg'}
-          />
+          <InView>
+            {({ inView, ref }) => (
+              <Image
+                ref={ref}
+                radius={'lg'}
+                alt={'user registration'}
+                scale={inView ? 100 : 75}
+                opacity={inView ? 100 : 0}
+                src={'/assets/svgs/register-page-one.svg'}
+              />
+            )}
+          </InView>
         </Flex>
 
         <Text

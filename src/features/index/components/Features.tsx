@@ -8,6 +8,7 @@ import Button from '../../../components/Button/Button';
 import Grid from '../../../components/Grid/Grid';
 import { Link } from 'react-router-dom';
 import Image from '../../../components/Image/Image';
+import { InView } from 'react-intersection-observer';
 
 const features = [
   {
@@ -32,7 +33,7 @@ const features = [
   },
 ];
 
-const Everything = () => {
+const Features = () => {
   return (
     <Section
       px={'lg'}
@@ -66,20 +67,29 @@ const Everything = () => {
               flexDirection={'column'}
             >
               <Box
-                p={'3xl'}
+                p={'xl'}
                 mb={'2xl'}
                 width={'full'}
                 radius={'2xl'}
                 backgroundColor={'gray-100'}
+                style={{ overflow: 'hidden' }}
               >
-                <Image
-                  size={'full'}
-                  radius={'lg'}
-                  aspectRatio={'1/1'}
-                  objectFit={'cover'}
-                  src={feature.image.src}
-                  alt={feature.image.alt}
-                />
+                <InView>
+                  {({ inView, ref }) => (
+                    <Image
+                      ref={ref}
+                      size={'full'}
+                      radius={'lg'}
+                      aspectRatio={'1/1'}
+                      objectFit={'cover'}
+                      src={feature.image.src}
+                      alt={feature.image.alt}
+                      opacity={inView ? 1 : 0}
+                      translateY={inView ? 'min' : 'max'}
+                      transitionDelay={index === 1 ? 300 : 'min'}
+                    />
+                  )}
+                </InView>
               </Box>
 
               <Text
@@ -127,4 +137,4 @@ const Everything = () => {
   );
 };
 
-export default Everything;
+export default Features;

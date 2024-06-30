@@ -5,6 +5,7 @@ import Text from '../../../components/Text/Text';
 import Box from '../../../components/Box/Box';
 import Flex from '../../../components/Flex/Flex';
 import Image from '../../../components/Image/Image';
+import { InView } from 'react-intersection-observer';
 
 const Founder = () => {
   return (
@@ -14,9 +15,12 @@ const Founder = () => {
     >
       <Container
         mx={'auto'}
-        container={'sm'}
+        container={'xl'}
       >
-        <Box>
+        <Box
+          mx={'auto'}
+          style={{ maxWidth: '72rem' }}
+        >
           <Text
             as={'h2'}
             align={'center'}
@@ -26,25 +30,28 @@ const Founder = () => {
             finances, and create lasting customer relationships.
           </Text>
         </Box>
-      </Container>
 
-      <Container
-        mx={'auto'}
-        container={'xl'}
-        mt={{ initial: '5xl', md: '8xl' }}
-      >
         <Flex
           p={'5xl'}
+          mt={'5xl'}
           radius={'2xl'}
           justifyContent={'center'}
           backgroundColor={'gray-100'}
           aspectRatio={{ initial: '9/16', lg: '16/9' }}
+          style={{ overflow: 'hidden' }}
         >
-          <Image
-            radius={'lg'}
-            alt={'managing user notifications'}
-            src={'/assets/svgs/managing-notifications.svg'}
-          />
+          <InView>
+            {({ inView, ref }) => (
+              <Image
+                ref={ref}
+                radius={'lg'}
+                opacity={inView ? 1 : 0}
+                translateY={inView ? 'min' : 'max'}
+                alt={'managing user notifications'}
+                src={'/assets/svgs/managing-notifications.svg'}
+              />
+            )}
+          </InView>
         </Flex>
       </Container>
     </Section>
