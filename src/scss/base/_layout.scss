@@ -23,7 +23,12 @@ $display: (
 
 @include generate_css('display', $display, display);
 
-$object-fits: (fit, cover, contain, scale-down);
+$object-fits: (
+  fit: fit,
+  cover: cover,
+  contain: contain,
+  scale-down: scale-down,
+);
 
 @include generate_css('object-fit', $object-fits, object-fit);
 

@@ -3,7 +3,10 @@ $scale: (
   25: scale(0.25),
   50: scale(0.5),
   75: scale(0.75),
-  100: scale(0.1),
+  80: scaleX(0.8),
+  90: scaleX(0.9),
+  95: scaleX(0.95),
+  100: scale(1),
   125: scale(1.25),
   150: scale(1.5),
 );
@@ -13,7 +16,10 @@ $scaleX: (
   25: scaleX(0.25),
   50: scaleX(0.5),
   75: scaleX(0.75),
-  100: scaleX(0.1),
+  80: scaleX(0.8),
+  90: scaleX(0.9),
+  95: scaleX(0.95),
+  100: scaleX(1),
   125: scaleX(1.25),
   150: scaleX(1.5),
 );
@@ -23,7 +29,10 @@ $scaleY: (
   25: scaleY(0.25),
   50: scaleY(0.5),
   75: scaleY(0.75),
-  100: scaleY(0.1),
+  80: scaleX(0.8),
+  90: scaleX(0.9),
+  95: scaleX(0.95),
+  100: scaleY(1),
   125: scaleY(1.25),
   150: scaleY(1.5),
 );
@@ -59,6 +68,7 @@ $translateX: (
   3xl: translateX(1.5rem),
   4xl: translateX(1.75rem),
   5xl: translateX(2rem),
+  max: translateX(3rem),
 );
 
 $translateY: (
@@ -72,6 +82,7 @@ $translateY: (
   3xl: translateY(1.5rem),
   4xl: translateY(1.75rem),
   5xl: translateY(2rem),
+  max: translateY(3rem),
 );
 
 @include generate_css('translate-x', $translateX, 'transform');
