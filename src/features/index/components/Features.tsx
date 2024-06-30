@@ -67,12 +67,12 @@ const Features = () => {
               flexDirection={'column'}
             >
               <Box
-                p={'xl'}
                 mb={'2xl'}
                 width={'full'}
                 radius={'2xl'}
                 backgroundColor={'gray-100'}
                 style={{ overflow: 'hidden' }}
+                p={{ initial: 'md', sm: 'xl' }}
               >
                 <InView>
                   {({ inView, ref }) => (
