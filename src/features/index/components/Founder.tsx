@@ -36,15 +36,14 @@ const Founder = () => {
         <Flex
           p={'5xl'}
           radius={'2xl'}
+          justifyContent={'center'}
           backgroundColor={'gray-100'}
+          aspectRatio={{ initial: '9/16', lg: '16/9' }}
         >
           <Image
-            size={'full'}
-            radius={'md'}
-            objectFit={'cover'}
-            alt={'pi-transact web app'}
-            aspectRatio={{ initial: '9/16', lg: '16/9' }}
-            src={'/assets/images/team-writing-on-glass-horizontal.jpg'}
+            radius={'lg'}
+            alt={'managing user notifications'}
+            src={'/assets/svgs/managing-notifications.svg'}
           />
         </Flex>
       </Container>

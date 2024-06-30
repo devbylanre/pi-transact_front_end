@@ -4,6 +4,23 @@ import Container from '../../../components/Container/Container';
 import Box from '../../../components/Box/Box';
 import Text from '../../../components/Text/Text';
 import Grid from '../../../components/Grid/Grid';
+import Image from '../../../components/Image/Image';
+import Flex from '../../../components/Flex/Flex';
+
+const features = [
+  {
+    title: 'Get an address',
+    body: 'Join Pi-Transact today and receive your very own Pi Network wallet address, giving you a secure and efficient platform to handle all your Pi transactions. Pi-Transact provides a comprehensive suite of tools and features that ensure your cryptocurrency dealings are smooth and secure.',
+  },
+  {
+    title: 'Founders tools',
+    body: "Leverage the unique business tools we've put in place for your customers. These tools are designed to help you manage recurring payments seamlessly and handle enhance customer satisfaction.",
+  },
+  {
+    title: 'Free for founders',
+    body: 'Get free access forever, with absolutely no hidden costs. We promise a transparent experience with no surprise charges or fees.',
+  },
+];
 
 const Customer = () => {
   return (
@@ -41,36 +58,43 @@ const Customer = () => {
         mx={'auto'}
         container={'lg'}
       >
-        <Box
+        <Flex
+          p={'5xl'}
           radius={'2xl'}
+          justifyContent={'center'}
           backgroundColor={'gray-100'}
-          aspectRatio={{ initial: '1/1', lg: '2/1' }}
-        ></Box>
+          style={{ overflow: 'hidden' }}
+          aspectRatio={{ initial: '9/16', sm: '16/9' }}
+        >
+          <Image
+            radius={'lg'}
+            alt={'handyman-commission'}
+            src={'/assets/svgs/handyman.svg'}
+          />
+        </Flex>
 
         <Grid
-          mt={'5xl'}
+          mt={'8xl'}
           gridColumn={{ initial: 1, sm: 3 }}
           gap={{ initial: '6xl', md: '8xl' }}
         >
-          {Array.from('abc').map((char) => (
+          {features.map((feature, index) => (
             <Box
-              key={char}
+              key={index}
               spaceY={'lg'}
             >
               <Text
                 as={'h3'}
                 weight={500}
-                size={19}
+                size={{ initial: 21, sm: 25 }}
               >
-                Send money to your contacts
+                {feature.title}
               </Text>
               <Text
                 as={'p'}
                 size={16}
               >
-                A lot of businesses still need to use traditional passwords for
-                access. Roll out passwords with ease and when they're ready to
-                make the move you can convert with the flick of a switch.
+                {feature.body}
               </Text>
             </Box>
           ))}

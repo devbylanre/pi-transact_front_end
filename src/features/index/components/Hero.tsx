@@ -2,11 +2,9 @@ import React from 'react';
 import Section from '../../../components/Section/Section';
 import Container from '../../../components/Container/Container';
 import Text from '../../../components/Text/Text';
-import Box from '../../../components/Box/Box';
 import Flex from '../../../components/Flex/Flex';
 import Button from '../../../components/Button/Button';
 import Image from '../../../components/Image/Image';
-import Grid from '../../../components/Grid/Grid';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
@@ -14,14 +12,15 @@ const Hero = () => {
     <Section px={'lg'}>
       <Container
         mx={'auto'}
-        container={'sm'}
+        container={'xl'}
       >
         <Flex
+          mx={'auto'}
+          gapY={'5xl'}
           alignItems={'center'}
           flexDirection={'column'}
           justifyContent={'center'}
-          style={{ minHeight: '87vh' }}
-          gapY={{ initial: 'lg', lg: '5xl' }}
+          style={{ minHeight: '87vh', maxWidth: '72rem' }}
         >
           <Text
             as={'h1'}
@@ -59,43 +58,28 @@ const Hero = () => {
             </Link>
           </Flex>
         </Flex>
-      </Container>
 
-      <Container
-        mt={'8xl'}
-        mx={'auto'}
-        container={'xl'}
-      >
-        <Grid
-          gap={'xl'}
-          gridColumn={{ initial: 1 }}
+        <Flex
+          p={'5xl'}
+          mb={'2xl'}
+          radius={'2xl'}
+          justifyContent={'center'}
+          backgroundColor={'gray-100'}
+          aspectRatio={{ initial: '9/16', sm: '16/9' }}
         >
-          <Flex
-            p={'5xl'}
-            radius={'2xl'}
-            alignItems={'center'}
-            justifyContent={'center'}
-            backgroundColor={'gray-100'}
-            gridColumnSpan={{ initial: 1, sm: 2 }}
-          >
-            <Image
-              size={'full'}
-              objectFit={'contain'}
-              alt={'user data table'}
-              aspectRatio={{ initial: '9/16', sm: '16/9' }}
-              src={'./assets/images/user-data-table.png'}
-            />
-          </Flex>
+          <Image
+            radius={'lg'}
+            alt={'user registration'}
+            src={'/assets/svgs/register-page-one.svg'}
+          />
+        </Flex>
 
-          <Box width={'full'}>
-            <Text
-              size={14}
-              color={'gray-40'}
-            >
-              Keep track of your transactions from a single dashboard
-            </Text>
-          </Box>
-        </Grid>
+        <Text
+          size={14}
+          color={'gray-40'}
+        >
+          Keep track of your transactions from a single dashboard
+        </Text>
       </Container>
     </Section>
   );

@@ -2,11 +2,12 @@ import React from 'react';
 import Section from '../../../components/Section/Section';
 import Container from '../../../components/Container/Container';
 import Text from '../../../components/Text/Text';
-import Box from '../../../components/Box/Box';
 import Flex from '../../../components/Flex/Flex';
 import { useInView } from 'react-intersection-observer';
+import Image from '../../../components/Image/Image';
+import Box from '../../../components/Box/Box';
 
-const Spend = () => {
+const Future = () => {
   const { ref, inView } = useInView({ rootMargin: '-15% 0% -15% 0%' });
 
   return (
@@ -16,16 +17,18 @@ const Spend = () => {
     >
       <Container
         mx={'auto'}
-        container={'xs'}
+        container={'lg'}
       >
         <Box
           ref={ref}
+          mx={'auto'}
           spaceY={'4xl'}
           transition={'all'}
           transitionDuration={500}
           opacity={inView ? 100 : 0}
           translateY={inView ? 'min' : '3xl'}
           transitionTimingFunction={'ease-in-out'}
+          style={{ maxWidth: '68rem' }}
         >
           <Text
             as={'h2'}
@@ -33,7 +36,7 @@ const Spend = () => {
             align={'center'}
             size={{ initial: 48, md: 56, lg: 64 }}
           >
-            The future of finance <br /> - at your tip
+            The future of finance
           </Text>
           <Text
             as={'h3'}
@@ -47,21 +50,24 @@ const Spend = () => {
             and unit costs come down as you use more. Fair and simple.
           </Text>
         </Box>
-      </Container>
 
-      <Container
-        mt={'8xl'}
-        mx={'auto'}
-        container={'lg'}
-      >
         <Flex
+          p={'5xl'}
+          mt={'8xl'}
           radius={'2xl'}
-          style={{ aspectRatio: '4/2' }}
+          justifyContent={'center'}
           backgroundColor={'gray-100'}
-        ></Flex>
+          aspectRatio={{ initial: '9/16', sm: '16/9' }}
+        >
+          <Image
+            radius={'lg'}
+            alt={'review'}
+            src={'/assets/svgs/review.svg'}
+          />
+        </Flex>
       </Container>
     </Section>
   );
 };
 
-export default Spend;
+export default Future;

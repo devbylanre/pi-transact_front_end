@@ -7,7 +7,7 @@ import Flex from '../../../components/Flex/Flex';
 import Button from '../../../components/Button/Button';
 import { useInView } from 'react-intersection-observer';
 
-const Protect = () => {
+const Secure = () => {
   const { ref, inView } = useInView({ rootMargin: '-30% 0% -30% 0%' });
 
   return (
@@ -58,8 +58,8 @@ const Protect = () => {
               size={16}
               align={'center'}
             >
-              We’ll keep you and your customers safe. Pi-Transact is built using
-              best in class security protocols.
+              We prioritize the safety of you and your customers. Pi-Transact is
+              designed with top-tier security measures.
             </Text>
           </Box>
 
@@ -81,4 +81,4 @@ const Protect = () => {
   );
 };
 
-export default Protect;
+export default Secure;
