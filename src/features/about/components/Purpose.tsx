@@ -7,8 +7,8 @@ import Flex from '../../../components/Flex/Flex';
 const Purpose = () => {
   return (
     <Section
+      px={'lg'}
       mt={'10xl'}
-      px={'md'}
     >
       <Container
         mx={'auto'}
@@ -40,10 +40,10 @@ const Purpose = () => {
             size={16}
             align={'center'}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            fugiat unde ipsa maxime autem dolores ratione ullam ex, et nostrum
-            aperiam ducimus dolorem! Iure, nobis error. Culpa cum quibusdam
-            dolorem.
+            Unlocking the full power of decentralized finance (DeFi) with our
+            next-generation tools, comprehensive support, and a wide range of
+            exciting opportunities, enabling users to maximize their potential
+            and achieve their financial goals.
           </Text>
         </Flex>
       </Container>

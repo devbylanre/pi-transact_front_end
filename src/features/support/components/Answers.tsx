@@ -5,11 +5,30 @@ import Grid from '../../../components/Grid/Grid';
 import Box from '../../../components/Box/Box';
 import Text from '../../../components/Text/Text';
 import Button from '../../../components/Button/Button';
+import { Link } from 'react-router-dom';
+
+const helps = [
+  {
+    title: 'Tips',
+    body: "Take a look through the <strong>Tips</strong> to find out if we've addressed what you need.",
+    button: { label: 'All tips', url: '' },
+  },
+  {
+    title: 'Support agents',
+    body: 'Give us or call, send a mail, to have any of our support agent attend to you.',
+    button: { label: 'Support', url: '/support/' },
+  },
+  {
+    title: 'Guides',
+    body: 'Explore our detailed guides designed to assist you in building, expanding, and generating revenue.',
+    button: { label: 'Browse our guides', url: '' },
+  },
+];
 
 const Answers = () => {
   return (
     <Section
-      px={'md'}
+      px={'lg'}
       mt={'10xl'}
     >
       <Container
@@ -17,8 +36,8 @@ const Answers = () => {
         container={'xl'}
       >
         <Grid
-          gridColumn={{ initial: 1, md: 4 }}
-          gap={{ initial: '5xl', sm: '8xl' }}
+          gridColumn={{ initial: 1, sm: 4 }}
+          gap={'5xl'}
         >
           <Box>
             <Text
@@ -30,35 +49,35 @@ const Answers = () => {
             </Text>
           </Box>
 
-          {Array.from('abc').map((char) => (
+          {helps.map((help, index) => (
             <Box
-              key={char}
-              spaceY={{ initial: 'xl', sm: '3xl' }}
+              key={index}
+              spaceY={{ initial: '2xl', sm: '3xl' }}
             >
               <Text
                 as={'h3'}
                 size={19}
                 weight={500}
               >
-                Docs
+                {help.title}
               </Text>
               <Text
                 as={'p'}
                 size={16}
-              >
-                Browse or search the docs to see if we’ve covered what you’re
-                looking for.
-              </Text>
+                dangerouslySetInnerHTML={{ __html: help.body }}
+              />
 
-              <Button
-                px={'min'}
-                height={'fit'}
-                radius={'min'}
-                backgroundColor={'inherit'}
-                pseudos={{ hover: { translateX: 'md' } }}
-              >
-                Read docs
-              </Button>
+              <Link to={help.button.url}>
+                <Button
+                  px={'min'}
+                  height={'fit'}
+                  radius={'min'}
+                  backgroundColor={'inherit'}
+                  pseudos={{ hover: { translateX: 'md' } }}
+                >
+                  {help.button.label}
+                </Button>
+              </Link>
             </Box>
           ))}
         </Grid>

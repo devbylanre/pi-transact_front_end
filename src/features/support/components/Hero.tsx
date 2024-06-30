@@ -6,17 +6,17 @@ import Text from '../../../components/Text/Text';
 
 const Hero = () => {
   return (
-    <Section px={'md'}>
+    <Section px={'lg'}>
       <Container
         mx={'auto'}
         container={'lg'}
       >
         <Flex
-          gapY={'5xl'}
+          gapY={'4xl'}
           alignItems={'center'}
           flexDirection={'column'}
           justifyContent={'center'}
-          style={{ minHeight: '85vh' }}
+          style={{ minHeight: '60vh' }}
         >
           <Text
             as={'h1'}
@@ -30,7 +30,7 @@ const Hero = () => {
             as={'h2'}
             weight={500}
             align={'center'}
-            size={{ initial: 64, sm: 80, lg: 96 }}
+            size={{ initial: 56, sm: 80, lg: 96 }}
             style={{ maxWidth: '80rem' }}
           >
             Smart support for smart businesses
@@ -43,8 +43,9 @@ const Hero = () => {
             align={'center'}
             style={{ maxWidth: '70rem' }}
           >
-            Get started with the trusted support your business needs. Reach our
-            support team or check out our FAQs.
+            Creating a strong business culture can be challenging. Whether
+            you're just beginning or already managing a thriving business, our
+            team is here to support you in maintaining your course.
           </Text>
         </Flex>
       </Container>

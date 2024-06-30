@@ -8,14 +8,18 @@ import Flex from '../../../components/Flex/Flex';
 const Name = () => {
   return (
     <Section
-      px={'md'}
+      px={'lg'}
       mt={'max'}
     >
       <Container
         mx={'auto'}
-        container={'sm'}
+        container={'xl'}
       >
-        <Box spaceY={'4xl'}>
+        <Box
+          mx={'auto'}
+          spaceY={'4xl'}
+          style={{ maxWidth: '72rem' }}
+        >
           <Text
             as={'h2'}
             weight={500}
@@ -38,28 +42,22 @@ const Name = () => {
             size={16}
             align={'center'}
           >
-            We’re called Pi-Transact because we aim to create more abundance in
-            the world. We spend a lot of time thinking about how to create a
-            world with more founders — because founders are the people who
-            change the world and make all of humanity better. Better for the
-            people and organizations who use their tools, better for their
-            customers, and better for humanity.
+            We named ourselves Pi-Transact because our goal is to foster greater
+            prosperity globally. We dedicate considerable effort to envisioning
+            a future where more innovators thrive. Innovators are pivotal in
+            transforming our world for the better, enhancing the lives of their
+            users and customers, and ultimately benefiting humanity as a whole.
           </Text>
         </Box>
-      </Container>
 
-      <Container
-        mt={'6xl'}
-        mx={'auto'}
-        container={'xl'}
-      >
         <Flex
-          p={'4xl'}
+          mt={'5xl'}
           radius={'4xl'}
-          aspectRatio={{ initial: '1/1', sm: '16/7' }}
           flexDirection={'column'}
           justifyContent={'center'}
           backgroundColor={'gray-100'}
+          p={{ initial: 'xl', sm: '4xl' }}
+          aspectRatio={{ initial: '1/1', sm: '16/7' }}
         >
           <Flex
             flex={'full'}
@@ -71,10 +69,10 @@ const Name = () => {
               as={'h4'}
               weight={500}
               align={'center'}
-              size={{ initial: 40, sm: 48 }}
+              size={{ initial: 32, sm: 48 }}
               style={{ maxWidth: '90rem' }}
             >
-              "Experience new finance."
+              "Experience new De-Fi."
             </Text>
           </Flex>
           <Box>

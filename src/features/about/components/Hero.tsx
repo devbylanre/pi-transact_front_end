@@ -6,13 +6,13 @@ import Text from '../../../components/Text/Text';
 
 const Hero = () => {
   return (
-    <Section px={'md'}>
+    <Section px={'lg'}>
       <Container
         mx={'auto'}
         container={'xs'}
       >
         <Flex
-          gapY={'6xl'}
+          gapY={'5xl'}
           flexDirection={'column'}
           justifyContent={'center'}
           style={{ minHeight: '80vh' }}
@@ -21,6 +21,7 @@ const Hero = () => {
             as={'h1'}
             weight={500}
             align={'center'}
+            color={'primary-40'}
             size={{ initial: 64, sm: 80, lg: 96 }}
           >
             Here for you.
