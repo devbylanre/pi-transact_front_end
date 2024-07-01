@@ -7,13 +7,39 @@
 @font-face {
   font-display: swap;
   font-style: normal;
-  font-weight: 400 600;
+  font-weight: 400;
   font-family: Inter;
-  src: url('../assets/fonts/Inter.woff2') format('woff2');
+  src: url('../assets/fonts/Inter-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+  font-family: Inter;
+  src: url('../assets/fonts/Inter-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+  font-family: Inter;
+  src: url('../assets/fonts/Inter-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+  font-family: Inter;
+  src: url('../assets/fonts/Inter-Bold.woff2') format('woff2');
 }
 
 html,
-button {
+button,
+input,
+textarea {
   font-size: 62.5%;
   font-kerning: normal;
   font-smooth: always;

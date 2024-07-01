@@ -7,7 +7,7 @@ import Button from '../../../components/Button/Button';
 
 const Hero = () => {
   return (
-    <Section px={'md'}>
+    <Section px={'lg'}>
       <Container
         mx={'auto'}
         container={'xs'}
@@ -23,7 +23,7 @@ const Hero = () => {
             as={'h1'}
             weight={500}
             align={'center'}
-            size={{ initial: 40, sm: 56, md: 72 }}
+            size={{ initial: 56, sm: 64, md: 72 }}
           >
             Start for free. Pay as you grow
           </Text>

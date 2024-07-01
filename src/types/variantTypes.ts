@@ -1,5 +1,5 @@
 export type Breakpoints = 'initial' | 'sm' | 'md' | 'lg' | 'xl';
-export type Pseudos = 'active' | 'hover' | 'focus';
+export type Pseudos = 'active' | 'hover' | 'focus' | 'placeholder';
 
 type VariantConfig = {
   prefix: string;

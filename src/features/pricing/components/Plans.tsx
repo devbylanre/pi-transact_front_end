@@ -12,7 +12,7 @@ import { TbCheck } from 'react-icons/tb';
 const Plans = () => {
   return (
     <Section
-      px={'md'}
+      px={'lg'}
       mt={'5xl'}
     >
       <Container
@@ -28,7 +28,7 @@ const Plans = () => {
         </Text>
 
         <Grid
-          mt={'6xl'}
+          mt={{ initial: 'xl', sm: '5xl' }}
           gridColumn={{ initial: 1, sm: 3 }}
           gap={{ initial: '2xl', sm: '5xl', md: '10xl' }}
         >
@@ -152,25 +152,24 @@ const Plans = () => {
         </Text>
 
         <Grid
-          mt={'6xl'}
           gap={'4xl'}
+          mt={{ initial: 'xl', sm: '5xl' }}
           gridColumn={{ initial: 1, sm: 2 }}
         >
           {plans.map((plan, index) => (
             <React.Fragment key={index}>
               {index < 2 ? (
                 <Box
-                  py={'8xl'}
-                  px={'4xl'}
                   radius={'2xl'}
                   backgroundColor={'gray-100'}
+                  p={{ initial: '2xl', sm: '5xl' }}
                 >
                   <Box spaceY={'3xl'}>
                     <Text
                       as={'h3'}
                       weight={500}
                       transform={'capitalize'}
-                      size={{ initial: 56, sm: 64, md: 72 }}
+                      size={{ initial: 32, sm: 56, md: 72 }}
                     >
                       {plan.name}
                     </Text>

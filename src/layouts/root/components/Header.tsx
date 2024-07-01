@@ -7,6 +7,7 @@ import Box from '../../../components/Box/Box';
 import Button from '../../../components/Button/Button';
 import MegaMenu from './MegaMenu';
 import { Link } from 'react-router-dom';
+import navigation from '../../../data/navigation';
 
 const Header = () => {
   return (
@@ -47,13 +48,17 @@ const Header = () => {
             gapX={'md'}
             display={{ initial: 'hidden', md: 'flex' }}
           >
-            <Button
-              backgroundColor={'white'}
-              pseudos={{ hover: { backgroundColor: 'gray-100' } }}
-            >
-              Sign In
-            </Button>
-            <Button>Start for Free</Button>
+            <Link to={navigation.login}>
+              <Button
+                backgroundColor={'white'}
+                pseudos={{ hover: { backgroundColor: 'gray-100' } }}
+              >
+                Sign In
+              </Button>
+            </Link>
+            <Link to={navigation.register}>
+              <Button>Start for Free</Button>
+            </Link>
           </Flex>
         </Flex>
       </Container>

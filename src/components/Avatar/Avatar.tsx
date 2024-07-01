@@ -1,39 +1,40 @@
 import React from 'react';
-import Flex, { FlexProps } from '../Flex/Flex';
+import Flex from '../Flex/Flex';
 import { PolymorphicRef } from '../../types/polymorphicTypes';
 import Image, { ImageProps } from '../Image/Image';
-import Text, { TextProps } from '../Text/Text';
+import Text from '../Text/Text';
 import AvatarProvider from '../../contexts/AvatarContext';
 import useAvatar from '../../hooks/useAvatar';
 
-type AvatarProps = FlexProps & { hasError?: boolean };
+namespace Avatar {
+  export type Props = Flex.Props & { hasError?: boolean };
+  export type Ref = Flex.Ref;
+}
 
 type AvatarComponent = React.ForwardRefExoticComponent<
-  Omit<AvatarProps, 'ref'> & React.RefAttributes<HTMLDivElement>
+  Omit<Avatar.Props, 'ref'> & React.RefAttributes<HTMLDivElement>
 > & {
   Image: React.ForwardRefExoticComponent<
     Omit<ImageProps, 'ref'> & React.RefAttributes<HTMLImageElement>
   >;
   Fallback: React.ForwardRefExoticComponent<
-    Omit<TextProps, 'ref'> & React.RefAttributes<HTMLSpanElement>
+    Omit<Text.Props, 'ref'> & React.RefAttributes<HTMLSpanElement>
   >;
 };
 
-const Avatar = React.forwardRef(
-  (props: AvatarProps, ref: PolymorphicRef<'div'>) => {
-    const { position = 'relative', hasError, ...rest } = props;
+const Avatar = React.forwardRef((props: Avatar.Props, ref: Avatar.Ref) => {
+  const { position = 'relative', hasError, ...rest } = props;
 
-    return (
-      <AvatarProvider hasError={hasError}>
-        <Flex
-          ref={ref}
-          position={position}
-          {...rest}
-        />
-      </AvatarProvider>
-    );
-  }
-) as AvatarComponent;
+  return (
+    <AvatarProvider hasError={hasError}>
+      <Flex
+        ref={ref}
+        position={position}
+        {...rest}
+      />
+    </AvatarProvider>
+  );
+}) as AvatarComponent;
 
 const ImageComponent = React.forwardRef(
   (props: ImageProps, ref: PolymorphicRef<'img'>) => {
@@ -62,7 +63,7 @@ const ImageComponent = React.forwardRef(
 );
 
 const FallbackComponent = React.forwardRef(
-  (props: TextProps, ref: PolymorphicRef<'span'>) => {
+  (props: Text.Props, ref: Text.Ref) => {
     const { size = 14, weight = 500, ...rest } = props;
     const { isError } = useAvatar();
 

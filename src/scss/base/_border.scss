@@ -1,4 +1,11 @@
-$style: (solid, dashed, dotted, double, none, hidden);
+$style: (
+  solid: solid,
+  dashed: dashed,
+  dotted: dotted,
+  double: double,
+  none: none,
+  hidden: hidden,
+);
 
 @include generate_css('border', $style, border-style);
 
