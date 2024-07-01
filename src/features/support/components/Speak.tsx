@@ -13,7 +13,7 @@ const options = [
   },
   {
     title: 'Phone',
-    body: 'Give us a call on Pi-Transact <a style="text-decoration: none" href="phone:+12346786554567" class="text-blue-50 weight-500">support line</a> with any questions',
+    body: 'Give us a call on Pi-Transact <a style="text-decoration: none" href="tel:+1 254 678 655 4567" class="text-blue-50 weight-500">support line</a> with any questions',
   },
   {
     title: 'Live chat',
