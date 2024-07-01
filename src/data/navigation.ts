@@ -55,6 +55,8 @@ const navigation = {
   },
   customers: '',
   pricing: '',
+  register: '/auth/new/',
+  login: '/auth/me/',
 };
 
 export default navigation;
