@@ -5,6 +5,8 @@ import Box from '../../../components/Box/Box';
 import Text from '../../../components/Text/Text';
 import { Link } from 'react-router-dom';
 import useModal from '../../../hooks/useModal';
+import Flex from '../../../components/Flex/Flex';
+import Image from '../../../components/Image/Image';
 
 const ResourcesMenu = () => {
   const { setIsOpen } = useModal();
@@ -67,11 +69,20 @@ const ResourcesMenu = () => {
         spaceY={'xl'}
         gridColumnSpan={{ initial: 1, md: 2 }}
       >
-        <Box
+        <Flex
+          p={{ initial: 'xl', sm: '2xl' }}
           radius={'2xl'}
           aspectRatio={'16/9'}
+          justifyContent={'center'}
           backgroundColor={'gray-100'}
-        ></Box>
+          display={{ initial: 'hidden', md: 'block' }}
+        >
+          <Image
+            size={'full'}
+            alt={'user-membership'}
+            src={'/assets/svgs/membership.svg'}
+          />
+        </Flex>
         <Box spaceY={'xs'}>
           <Text
             as={'h3'}
