@@ -101,7 +101,7 @@ const Overlay = React.forwardRef((props: Box.Props, ref: Box.Ref) => {
 });
 
 const Content = React.forwardRef((props: Section.Props, ref: Section.Ref) => {
-  const { style, children, ...rest } = props;
+  const { style, ...rest } = props;
 
   const defaultStyle: React.CSSProperties = {
     zIndex: 1,
@@ -112,9 +112,7 @@ const Content = React.forwardRef((props: Section.Props, ref: Section.Ref) => {
       ref={ref}
       style={{ ...defaultStyle, ...style }}
       {...rest}
-    >
-      {children}
-    </Section>
+    />
   );
 });
 

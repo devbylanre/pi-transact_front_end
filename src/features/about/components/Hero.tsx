@@ -29,8 +29,8 @@ const Hero = () => {
 
           <Text
             as={'p'}
-            size={16}
             align={'center'}
+            size={{ initial: 19, sm: 21 }}
           >
             Pi-Transact is a web-3 business, aiding businesses and individuals
             making finance more accessible leveraging the Pi-Network.

@@ -10,7 +10,7 @@ const Header = () => {
         size={32}
         weight={500}
       >
-        Let's get you set up.
+        Let's get you started.
         <br /> What's your name?
       </Text>
     </Box>

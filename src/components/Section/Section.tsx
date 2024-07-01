@@ -18,6 +18,7 @@ namespace Section {
 const Section = React.forwardRef((props: Section.Props, ref: Section.Ref) => {
   const {
     as,
+    className,
     m,
     mb,
     mt,
@@ -121,6 +122,7 @@ const Section = React.forwardRef((props: Section.Props, ref: Section.Ref) => {
         borderColor,
         backgroundColor,
         pseudos,
+        className,
       })}
       {...rest}
     />

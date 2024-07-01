@@ -5,6 +5,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-container-height: 80px;
+}
+
+.header-height {
+  height: var(--header-container-height);
+}
+
+.header-height-top {
+  top: var(--header-container-height) !important;
+}
+
+.header-height-diff {
+  height: calc(100vh - var(--header-container-height));
+  max-height: calc(100vh - var(--header-container-height));
+}
+
 @font-face {
   font-display: swap;
   font-style: normal;

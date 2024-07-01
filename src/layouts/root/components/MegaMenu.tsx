@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { TbChevronDown } from 'react-icons/tb';
 import Modal from '../../../components/Modal/Modal';
 import Container from '../../../components/Container/Container';
 import ProductMenu from './ProductMenu';
 import ResourcesMenu from './ResourcesMenu';
 import Button from '../../../components/Button/Button';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import navigation from '../../../data/navigation';
 import Box from '../../../components/Box/Box';
 
 const MegaMenu = () => {
-  const [label, setLabel] = useState('');
+  const { hash } = useLocation();
+  const HASH = hash.split('#')[1];
 
   return (
     <Modal>
@@ -21,65 +22,61 @@ const MegaMenu = () => {
             spaceX={'sm'}
             style={{ listStyle: 'none' }}
           >
-            {Object.keys(navigation).map((key) => (
-              <Box
-                as={'li'}
-                key={key}
-                display={'inline'}
-                onClick={() => {
-                  setLabel(key);
-                  if (label === key) {
-                    setIsOpen(!isOpen);
-                  } else {
-                    setLabel(key);
-                    setIsOpen(true);
-                  }
-                }}
-              >
-                <Link
-                  to={
-                    navigation[key as 'products']?.categories
-                      ? `#${key}`
-                      : `/${key}/`
-                  }
-                >
-                  <Button
-                    gapX={'xs'}
-                    height={48}
-                    transform={'capitalize'}
-                    pseudos={{ hover: { backgroundColor: 'gray-100' } }}
-                    backgroundColor={
-                      label === key && isOpen ? 'gray-100' : 'inherit'
-                    }
+            {Object.keys(navigation).map((key, index) => (
+              <React.Fragment key={index}>
+                {index <= 3 ? (
+                  <Box
+                    as={'li'}
+                    display={'inline'}
+                    onClick={() => {
+                      if (navigation[key as 'products']?.categories) {
+                        setIsOpen(!isOpen);
+                      }
+                    }}
                   >
-                    {key}
-                    {navigation[key as 'products']?.categories ? (
-                      <TbChevronDown size={16} />
-                    ) : null}
-                  </Button>
-                </Link>
-              </Box>
+                    <Link
+                      to={
+                        navigation[key as 'products']?.categories
+                          ? `#${key}`
+                          : `/${key}/`
+                      }
+                    >
+                      <Button
+                        gapX={'xs'}
+                        height={48}
+                        transform={'capitalize'}
+                        pseudos={{ hover: { backgroundColor: 'gray-100' } }}
+                        backgroundColor={
+                          HASH === key && isOpen ? 'gray-100' : 'inherit'
+                        }
+                      >
+                        {key}
+                        {navigation[key as 'products']?.categories ? (
+                          <TbChevronDown size={16} />
+                        ) : null}
+                      </Button>
+                    </Link>
+                  </Box>
+                ) : null}
+              </React.Fragment>
             ))}
           </Modal.Trigger>
-          <Modal.Body top={isOpen ? '8xl' : '6xl'}>
-            <Modal.Overlay top={'8xl'} />
+          <Modal.Body className={'header-height-top'}>
+            <Modal.Overlay className={'header-height-top'} />
             <Modal.Content
               px={'md'}
               transition={'all'}
               transitionDuration={300}
               backgroundColor={'white'}
               transitionTimingFunction={'ease-in-out'}
-              style={{
-                minHeight: '20vh',
-                overflowY: 'scroll',
-                maxHeight: isOpen ? '90vh' : '0px',
-              }}
+              className={isOpen ? 'header-height-diff' : 'h-min'}
+              style={{ overflowY: 'scroll' }}
             >
               <Container
                 mx={'auto'}
                 container={'lg'}
               >
-                {label === 'products' ? <ProductMenu /> : <ResourcesMenu />}
+                {HASH === 'products' ? <ProductMenu /> : <ResourcesMenu />}
               </Container>
             </Modal.Content>
           </Modal.Body>

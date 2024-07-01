@@ -7,10 +7,10 @@ const Header = () => {
     <Box>
       <Text
         as={'h1'}
+        size={32}
         weight={500}
-        size={{ initial: 25, sm: 32 }}
       >
-        Sign in
+        Good to have you back. Sign in to your account
       </Text>
     </Box>
   );

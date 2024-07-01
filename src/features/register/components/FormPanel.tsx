@@ -20,7 +20,6 @@ const FormPanel = () => {
             <Form.Bag>
               <TextField placeholder='Enter your firstname' />
             </Form.Bag>
-            <Form.Helper>Tell us your first name</Form.Helper>
           </Form.Field>
           <Form.Field name={'lastName'}>
             <Form.Label>Last name</Form.Label>

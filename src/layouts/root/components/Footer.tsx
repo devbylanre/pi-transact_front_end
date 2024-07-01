@@ -30,7 +30,10 @@ const Footer = () => {
             <React.Fragment key={key}>
               {navigation[key as 'products'].categories
                 ? navigation[key as 'products'].categories.map((category) => (
-                    <Box spaceY={'xl'}>
+                    <Box
+                      key={category.name}
+                      spaceY={'xl'}
+                    >
                       <Text
                         as={'h3'}
                         size={14}
@@ -40,8 +43,8 @@ const Footer = () => {
                         {category.name}
                       </Text>
                       <Box spaceY={'md'}>
-                        {category.subCategories.map((subCategory) => (
-                          <Box>
+                        {category.subCategories.map((subCategory, index) => (
+                          <Box key={index}>
                             <Link
                               to={subCategory.path}
                               style={{

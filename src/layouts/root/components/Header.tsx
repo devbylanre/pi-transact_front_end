@@ -8,23 +8,25 @@ import Button from '../../../components/Button/Button';
 import MegaMenu from './MegaMenu';
 import { Link } from 'react-router-dom';
 import navigation from '../../../data/navigation';
+import MobileMenu from './MobileMenu';
 
 const Header = () => {
   return (
     <Section
       top={0}
+      px={'lg'}
       as={'header'}
       position={'sticky'}
-      backgroundColor={'white'}
       style={{ zIndex: 1 }}
+      backgroundColor={'white'}
     >
       <Container
-        py={'xl'}
-        px={'lg'}
         mx={'auto'}
         container={'xl'}
+        className='header-height'
       >
         <Flex
+          height={'full'}
           alignItems={'center'}
           justifyContent={'between'}
         >
@@ -40,25 +42,30 @@ const Header = () => {
             </Text>
           </Link>
 
-          <Box display={{ initial: 'hidden', md: 'block' }}>
+          <Box display={{ initial: 'hidden', sm: 'block' }}>
             <MegaMenu />
           </Box>
 
-          <Flex
-            gapX={'md'}
-            display={{ initial: 'hidden', md: 'flex' }}
-          >
-            <Link to={navigation.login}>
-              <Button
-                backgroundColor={'white'}
-                pseudos={{ hover: { backgroundColor: 'gray-100' } }}
-              >
-                Sign In
-              </Button>
-            </Link>
-            <Link to={navigation.register}>
-              <Button>Start for Free</Button>
-            </Link>
+          <Flex>
+            <Box display={{ initial: 'block', sm: 'hidden' }}>
+              <MobileMenu />
+            </Box>
+            <Box
+              spaceX={'md'}
+              display={{ initial: 'hidden', sm: 'inline' }}
+            >
+              <Link to={navigation.login}>
+                <Button
+                  backgroundColor={'white'}
+                  pseudos={{ hover: { backgroundColor: 'gray-100' } }}
+                >
+                  Sign In
+                </Button>
+              </Link>
+              <Link to={navigation.register}>
+                <Button>Start for Free</Button>
+              </Link>
+            </Box>
           </Flex>
         </Flex>
       </Container>

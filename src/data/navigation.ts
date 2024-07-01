@@ -54,7 +54,7 @@ const navigation = {
     ],
   },
   customers: '',
-  pricing: '',
+  pricing: '/pricing/',
   register: '/auth/new/',
   login: '/auth/me/',
 };

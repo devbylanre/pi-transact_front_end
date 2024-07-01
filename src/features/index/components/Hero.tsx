@@ -21,7 +21,7 @@ const Hero = () => {
           alignItems={'center'}
           flexDirection={'column'}
           justifyContent={'center'}
-          style={{ minHeight: '87vh', maxWidth: '72rem' }}
+          style={{ minHeight: '87vh', maxWidth: '80rem' }}
         >
           <Text
             as={'h1'}
@@ -35,7 +35,7 @@ const Hero = () => {
             as={'h2'}
             align={'center'}
             color={'gray-20'}
-            size={{ initial: 19, md: 21, lg: 25 }}
+            size={{ initial: 21, sm: 25 }}
             style={{ maxWidth: '56rem' }}
           >
             Manage and grow your finances leveraging Pi network. Start your Pi

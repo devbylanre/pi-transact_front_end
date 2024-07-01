@@ -8,7 +8,7 @@ import Text from '../../../components/Text/Text';
 const values = [
   {
     title: 'Grow your business',
-    body: 'We are fostering an environment that motivates people to achieve their best work. The impact of our work extends beyond today, influencing the future. This is why we focus on long-term goals. We value and reward those who contribute meaningful work and make a significant impact. We prefer taking action and strive to act whenever we can.',
+    body: 'We are fostering an environment that motivates people to achieve their best work. The impact of our work extends beyond today, influencing the future. This is why we focus on long-term goals. We value and reward those who contribute meaningful work and make a significant impact.',
   },
   {
     title: 'Bound to build the business of our customers',
@@ -16,7 +16,7 @@ const values = [
   },
   {
     title: 'Simple interface, fast responses',
-    body: 'At our core, we believe that simplicity and speed are crucial for an exceptional user experience. Our interface is designed with a focus on intuitive navigation, ensuring that even first-time users can easily find what they need without any hassle. The clean, straightforward layout eliminates unnecessary complexity, allowing you to accomplish tasks efficiently.',
+    body: 'At our core, we believe that simplicity and speed are crucial for an exceptional user experience. Our interface is designed with a focus on intuitive navigation, ensuring that even first-time users can easily find what they need without any hassle.',
   },
   {
     title: 'A space for giants',
@@ -24,11 +24,11 @@ const values = [
   },
   {
     title: 'Create a bigger pie',
-    body: 'We believe in expanding opportunities, fostering innovation, and ensuring that everyone can benefit from collective growth. Instead of competing for a limited share, we focus on creating new possibilities and increasing value for all. Our approach is collaborative and inclusive. By working together, sharing knowledge, and pooling resources, we can achieve more than we ever could alone. ',
+    body: 'We believe in expanding opportunities, fostering innovation, and ensuring that everyone can benefit from collective growth. We focus on creating new possibilities and increasing value for all. Our approach is collaborative and inclusive. By working together, sharing knowledge, and pooling resources, we can achieve more than we ever could alone. ',
   },
   {
     title: 'Act foolish',
-    body: "Pi-Transact is an invitation to embrace curiosity, creativity, and the courage to explore the unknown. It's about daring to dream big, taking risks, and stepping outside the comfort zone. In a world that often values caution and conformity. At our core, we believe that the greatest breakthroughs come from those who are willing to challenge the status quo. We remain open-minded, to question assumptions, and to pursue ideas that might seem unconventional or even impossible.",
+    body: "Pi-Transact is an invitation to embrace curiosity, creativity, and the courage to explore the unknown. It's about daring to dream big, taking risks, and stepping outside the comfort zone. In a world that often values caution and conformity. We remain open-minded, to question assumptions, and to pursue ideas that might seem unconventional or even impossible.",
   },
 ];
 
@@ -54,7 +54,7 @@ const Values = () => {
         </Box>
         <Grid
           mt={'6xl'}
-          gap={{ initial: '6xl', sm: '8xl' }}
+          gap={{ initial: '4xl', sm: '6xl' }}
           gridColumn={{ initial: 1, sm: 2, md: 3 }}
         >
           {values.map((value, index) => (
@@ -71,7 +71,7 @@ const Values = () => {
               </Text>
               <Text
                 as={'p'}
-                size={14}
+                size={16}
               >
                 {value.body}
               </Text>
