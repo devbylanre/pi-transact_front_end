@@ -17,7 +17,16 @@ const ASPECT_RATIO = [
   'auto',
 ] as const;
 const OPACITY = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
-const CONTAINERS = ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'full'] as const;
+const CONTAINERS = [
+  'min',
+  'xxs',
+  'xs',
+  'sm',
+  'md',
+  'lg',
+  'xl',
+  'full',
+] as const;
 const DISPLAY = [
   'grid',
   'flex',

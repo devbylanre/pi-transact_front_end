@@ -36,8 +36,7 @@ const Footer = () => {
                     >
                       <Text
                         as={'h3'}
-                        size={14}
-                        weight={500}
+                        size={16}
                         transform={'capitalize'}
                       >
                         {category.name}
@@ -52,7 +51,7 @@ const Footer = () => {
                                 textDecoration: 'none',
                               }}
                             >
-                              <Text size={12}>{subCategory.name}</Text>
+                              <Text size={13}>{subCategory.name}</Text>
                             </Link>
                           </Box>
                         ))}

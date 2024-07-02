@@ -7,8 +7,22 @@
 
 :root {
   --header-container-height: 80px;
+  --app-sidebar-width: 30rem;
 }
 
+.app-sidebar-width {
+  width: var(--app-sidebar-width);
+}
+
+.app-sidebar-left {
+  margin-left: 0rem;
+}
+
+@media (min-width: 77.5rem) {
+  .app-sidebar-left {
+    margin-left: var(--app-sidebar-width);
+  }
+}
 .header-height {
   height: var(--header-container-height);
 }
@@ -4577,6 +4591,10 @@ body.portal {
     text-decoration: currentColor;
   }
 }
+.container-min, .hover\:container-min:hover, .focus\:container-min:focus, .active\:container-min:active, .placeholder\:container-min::placeholder {
+  max-width: 30rem;
+}
+
 .container-xxs, .hover\:container-xxs:hover, .focus\:container-xxs:focus, .active\:container-xxs:active, .placeholder\:container-xxs::placeholder {
   max-width: 40rem;
 }
@@ -4606,6 +4624,9 @@ body.portal {
 }
 
 @media (min-width: 48rem) {
+  .sm\:container-min, .sm\:hover\:container-min:hover, .sm\:focus\:container-min:focus, .sm\:active\:container-min:active, .sm\:placeholder\:container-min::placeholder {
+    max-width: 30rem;
+  }
   .sm\:container-xxs, .sm\:hover\:container-xxs:hover, .sm\:focus\:container-xxs:focus, .sm\:active\:container-xxs:active, .sm\:placeholder\:container-xxs::placeholder {
     max-width: 40rem;
   }
@@ -4629,6 +4650,9 @@ body.portal {
   }
 }
 @media (min-width: 77.5rem) {
+  .md\:container-min, .md\:hover\:container-min:hover, .md\:focus\:container-min:focus, .md\:active\:container-min:active, .md\:placeholder\:container-min::placeholder {
+    max-width: 30rem;
+  }
   .md\:container-xxs, .md\:hover\:container-xxs:hover, .md\:focus\:container-xxs:focus, .md\:active\:container-xxs:active, .md\:placeholder\:container-xxs::placeholder {
     max-width: 40rem;
   }
@@ -4652,6 +4676,9 @@ body.portal {
   }
 }
 @media (min-width: 90rem) {
+  .lg\:container-min, .lg\:hover\:container-min:hover, .lg\:focus\:container-min:focus, .lg\:active\:container-min:active, .lg\:placeholder\:container-min::placeholder {
+    max-width: 30rem;
+  }
   .lg\:container-xxs, .lg\:hover\:container-xxs:hover, .lg\:focus\:container-xxs:focus, .lg\:active\:container-xxs:active, .lg\:placeholder\:container-xxs::placeholder {
     max-width: 40rem;
   }
@@ -4675,6 +4702,9 @@ body.portal {
   }
 }
 @media (min-width: 120rem) {
+  .xl\:container-min, .xl\:hover\:container-min:hover, .xl\:focus\:container-min:focus, .xl\:active\:container-min:active, .xl\:placeholder\:container-min::placeholder {
+    max-width: 30rem;
+  }
   .xl\:container-xxs, .xl\:hover\:container-xxs:hover, .xl\:focus\:container-xxs:focus, .xl\:active\:container-xxs:active, .xl\:placeholder\:container-xxs::placeholder {
     max-width: 40rem;
   }
@@ -5010,7 +5040,7 @@ body.portal {
   }
 }
 .top-0, .hover\:top-0:hover, .focus\:top-0:focus, .active\:top-0:active, .placeholder\:top-0::placeholder {
-  top: 0px;
+  top: 0rem;
 }
 
 .top-4xs, .hover\:top-4xs:hover, .focus\:top-4xs:focus, .active\:top-4xs:active, .placeholder\:top-4xs::placeholder {
@@ -5083,7 +5113,7 @@ body.portal {
 
 @media (min-width: 48rem) {
   .sm\:top-0, .sm\:hover\:top-0:hover, .sm\:focus\:top-0:focus, .sm\:active\:top-0:active, .sm\:placeholder\:top-0::placeholder {
-    top: 0px;
+    top: 0rem;
   }
   .sm\:top-4xs, .sm\:hover\:top-4xs:hover, .sm\:focus\:top-4xs:focus, .sm\:active\:top-4xs:active, .sm\:placeholder\:top-4xs::placeholder {
     top: 0.1rem;
@@ -5139,7 +5169,7 @@ body.portal {
 }
 @media (min-width: 77.5rem) {
   .md\:top-0, .md\:hover\:top-0:hover, .md\:focus\:top-0:focus, .md\:active\:top-0:active, .md\:placeholder\:top-0::placeholder {
-    top: 0px;
+    top: 0rem;
   }
   .md\:top-4xs, .md\:hover\:top-4xs:hover, .md\:focus\:top-4xs:focus, .md\:active\:top-4xs:active, .md\:placeholder\:top-4xs::placeholder {
     top: 0.1rem;
@@ -5195,7 +5225,7 @@ body.portal {
 }
 @media (min-width: 90rem) {
   .lg\:top-0, .lg\:hover\:top-0:hover, .lg\:focus\:top-0:focus, .lg\:active\:top-0:active, .lg\:placeholder\:top-0::placeholder {
-    top: 0px;
+    top: 0rem;
   }
   .lg\:top-4xs, .lg\:hover\:top-4xs:hover, .lg\:focus\:top-4xs:focus, .lg\:active\:top-4xs:active, .lg\:placeholder\:top-4xs::placeholder {
     top: 0.1rem;
@@ -5251,7 +5281,7 @@ body.portal {
 }
 @media (min-width: 120rem) {
   .xl\:top-0, .xl\:hover\:top-0:hover, .xl\:focus\:top-0:focus, .xl\:active\:top-0:active, .xl\:placeholder\:top-0::placeholder {
-    top: 0px;
+    top: 0rem;
   }
   .xl\:top-4xs, .xl\:hover\:top-4xs:hover, .xl\:focus\:top-4xs:focus, .xl\:active\:top-4xs:active, .xl\:placeholder\:top-4xs::placeholder {
     top: 0.1rem;
@@ -5306,7 +5336,7 @@ body.portal {
   }
 }
 .left-0, .hover\:left-0:hover, .focus\:left-0:focus, .active\:left-0:active, .placeholder\:left-0::placeholder {
-  left: 0px;
+  left: 0rem;
 }
 
 .left-4xs, .hover\:left-4xs:hover, .focus\:left-4xs:focus, .active\:left-4xs:active, .placeholder\:left-4xs::placeholder {
@@ -5379,7 +5409,7 @@ body.portal {
 
 @media (min-width: 48rem) {
   .sm\:left-0, .sm\:hover\:left-0:hover, .sm\:focus\:left-0:focus, .sm\:active\:left-0:active, .sm\:placeholder\:left-0::placeholder {
-    left: 0px;
+    left: 0rem;
   }
   .sm\:left-4xs, .sm\:hover\:left-4xs:hover, .sm\:focus\:left-4xs:focus, .sm\:active\:left-4xs:active, .sm\:placeholder\:left-4xs::placeholder {
     left: 0.1rem;
@@ -5435,7 +5465,7 @@ body.portal {
 }
 @media (min-width: 77.5rem) {
   .md\:left-0, .md\:hover\:left-0:hover, .md\:focus\:left-0:focus, .md\:active\:left-0:active, .md\:placeholder\:left-0::placeholder {
-    left: 0px;
+    left: 0rem;
   }
   .md\:left-4xs, .md\:hover\:left-4xs:hover, .md\:focus\:left-4xs:focus, .md\:active\:left-4xs:active, .md\:placeholder\:left-4xs::placeholder {
     left: 0.1rem;
@@ -5491,7 +5521,7 @@ body.portal {
 }
 @media (min-width: 90rem) {
   .lg\:left-0, .lg\:hover\:left-0:hover, .lg\:focus\:left-0:focus, .lg\:active\:left-0:active, .lg\:placeholder\:left-0::placeholder {
-    left: 0px;
+    left: 0rem;
   }
   .lg\:left-4xs, .lg\:hover\:left-4xs:hover, .lg\:focus\:left-4xs:focus, .lg\:active\:left-4xs:active, .lg\:placeholder\:left-4xs::placeholder {
     left: 0.1rem;
@@ -5547,7 +5577,7 @@ body.portal {
 }
 @media (min-width: 120rem) {
   .xl\:left-0, .xl\:hover\:left-0:hover, .xl\:focus\:left-0:focus, .xl\:active\:left-0:active, .xl\:placeholder\:left-0::placeholder {
-    left: 0px;
+    left: 0rem;
   }
   .xl\:left-4xs, .xl\:hover\:left-4xs:hover, .xl\:focus\:left-4xs:focus, .xl\:active\:left-4xs:active, .xl\:placeholder\:left-4xs::placeholder {
     left: 0.1rem;
@@ -5602,7 +5632,7 @@ body.portal {
   }
 }
 .right-0, .hover\:right-0:hover, .focus\:right-0:focus, .active\:right-0:active, .placeholder\:right-0::placeholder {
-  right: 0px;
+  right: 0rem;
 }
 
 .right-4xs, .hover\:right-4xs:hover, .focus\:right-4xs:focus, .active\:right-4xs:active, .placeholder\:right-4xs::placeholder {
@@ -5675,7 +5705,7 @@ body.portal {
 
 @media (min-width: 48rem) {
   .sm\:right-0, .sm\:hover\:right-0:hover, .sm\:focus\:right-0:focus, .sm\:active\:right-0:active, .sm\:placeholder\:right-0::placeholder {
-    right: 0px;
+    right: 0rem;
   }
   .sm\:right-4xs, .sm\:hover\:right-4xs:hover, .sm\:focus\:right-4xs:focus, .sm\:active\:right-4xs:active, .sm\:placeholder\:right-4xs::placeholder {
     right: 0.1rem;
@@ -5731,7 +5761,7 @@ body.portal {
 }
 @media (min-width: 77.5rem) {
   .md\:right-0, .md\:hover\:right-0:hover, .md\:focus\:right-0:focus, .md\:active\:right-0:active, .md\:placeholder\:right-0::placeholder {
-    right: 0px;
+    right: 0rem;
   }
   .md\:right-4xs, .md\:hover\:right-4xs:hover, .md\:focus\:right-4xs:focus, .md\:active\:right-4xs:active, .md\:placeholder\:right-4xs::placeholder {
     right: 0.1rem;
@@ -5787,7 +5817,7 @@ body.portal {
 }
 @media (min-width: 90rem) {
   .lg\:right-0, .lg\:hover\:right-0:hover, .lg\:focus\:right-0:focus, .lg\:active\:right-0:active, .lg\:placeholder\:right-0::placeholder {
-    right: 0px;
+    right: 0rem;
   }
   .lg\:right-4xs, .lg\:hover\:right-4xs:hover, .lg\:focus\:right-4xs:focus, .lg\:active\:right-4xs:active, .lg\:placeholder\:right-4xs::placeholder {
     right: 0.1rem;
@@ -5843,7 +5873,7 @@ body.portal {
 }
 @media (min-width: 120rem) {
   .xl\:right-0, .xl\:hover\:right-0:hover, .xl\:focus\:right-0:focus, .xl\:active\:right-0:active, .xl\:placeholder\:right-0::placeholder {
-    right: 0px;
+    right: 0rem;
   }
   .xl\:right-4xs, .xl\:hover\:right-4xs:hover, .xl\:focus\:right-4xs:focus, .xl\:active\:right-4xs:active, .xl\:placeholder\:right-4xs::placeholder {
     right: 0.1rem;
@@ -5897,299 +5927,299 @@ body.portal {
     right: 12rem;
   }
 }
-.bottoms-0, .hover\:bottoms-0:hover, .focus\:bottoms-0:focus, .active\:bottoms-0:active, .placeholder\:bottoms-0::placeholder {
-  bottom: 0px;
+.bottom-0, .hover\:bottom-0:hover, .focus\:bottom-0:focus, .active\:bottom-0:active, .placeholder\:bottom-0::placeholder {
+  bottom: 0rem;
 }
 
-.bottoms-4xs, .hover\:bottoms-4xs:hover, .focus\:bottoms-4xs:focus, .active\:bottoms-4xs:active, .placeholder\:bottoms-4xs::placeholder {
+.bottom-4xs, .hover\:bottom-4xs:hover, .focus\:bottom-4xs:focus, .active\:bottom-4xs:active, .placeholder\:bottom-4xs::placeholder {
   bottom: 0.1rem;
 }
 
-.bottoms-3xs, .hover\:bottoms-3xs:hover, .focus\:bottoms-3xs:focus, .active\:bottoms-3xs:active, .placeholder\:bottoms-3xs::placeholder {
+.bottom-3xs, .hover\:bottom-3xs:hover, .focus\:bottom-3xs:focus, .active\:bottom-3xs:active, .placeholder\:bottom-3xs::placeholder {
   bottom: 0.2rem;
 }
 
-.bottoms-2xs, .hover\:bottoms-2xs:hover, .focus\:bottoms-2xs:focus, .active\:bottoms-2xs:active, .placeholder\:bottoms-2xs::placeholder {
+.bottom-2xs, .hover\:bottom-2xs:hover, .focus\:bottom-2xs:focus, .active\:bottom-2xs:active, .placeholder\:bottom-2xs::placeholder {
   bottom: 0.4rem;
 }
 
-.bottoms-xs, .hover\:bottoms-xs:hover, .focus\:bottoms-xs:focus, .active\:bottoms-xs:active, .placeholder\:bottoms-xs::placeholder {
+.bottom-xs, .hover\:bottom-xs:hover, .focus\:bottom-xs:focus, .active\:bottom-xs:active, .placeholder\:bottom-xs::placeholder {
   bottom: 0.6rem;
 }
 
-.bottoms-sm, .hover\:bottoms-sm:hover, .focus\:bottoms-sm:focus, .active\:bottoms-sm:active, .placeholder\:bottoms-sm::placeholder {
+.bottom-sm, .hover\:bottom-sm:hover, .focus\:bottom-sm:focus, .active\:bottom-sm:active, .placeholder\:bottom-sm::placeholder {
   bottom: 0.8rem;
 }
 
-.bottoms-md, .hover\:bottoms-md:hover, .focus\:bottoms-md:focus, .active\:bottoms-md:active, .placeholder\:bottoms-md::placeholder {
+.bottom-md, .hover\:bottom-md:hover, .focus\:bottom-md:focus, .active\:bottom-md:active, .placeholder\:bottom-md::placeholder {
   bottom: 1.2rem;
 }
 
-.bottoms-lg, .hover\:bottoms-lg:hover, .focus\:bottoms-lg:focus, .active\:bottoms-lg:active, .placeholder\:bottoms-lg::placeholder {
+.bottom-lg, .hover\:bottom-lg:hover, .focus\:bottom-lg:focus, .active\:bottom-lg:active, .placeholder\:bottom-lg::placeholder {
   bottom: 1.6rem;
 }
 
-.bottoms-xl, .hover\:bottoms-xl:hover, .focus\:bottoms-xl:focus, .active\:bottoms-xl:active, .placeholder\:bottoms-xl::placeholder {
+.bottom-xl, .hover\:bottom-xl:hover, .focus\:bottom-xl:focus, .active\:bottom-xl:active, .placeholder\:bottom-xl::placeholder {
   bottom: 2rem;
 }
 
-.bottoms-2xl, .hover\:bottoms-2xl:hover, .focus\:bottoms-2xl:focus, .active\:bottoms-2xl:active, .placeholder\:bottoms-2xl::placeholder {
+.bottom-2xl, .hover\:bottom-2xl:hover, .focus\:bottom-2xl:focus, .active\:bottom-2xl:active, .placeholder\:bottom-2xl::placeholder {
   bottom: 2.4rem;
 }
 
-.bottoms-3xl, .hover\:bottoms-3xl:hover, .focus\:bottoms-3xl:focus, .active\:bottoms-3xl:active, .placeholder\:bottoms-3xl::placeholder {
+.bottom-3xl, .hover\:bottom-3xl:hover, .focus\:bottom-3xl:focus, .active\:bottom-3xl:active, .placeholder\:bottom-3xl::placeholder {
   bottom: 3.2rem;
 }
 
-.bottoms-4xl, .hover\:bottoms-4xl:hover, .focus\:bottoms-4xl:focus, .active\:bottoms-4xl:active, .placeholder\:bottoms-4xl::placeholder {
+.bottom-4xl, .hover\:bottom-4xl:hover, .focus\:bottom-4xl:focus, .active\:bottom-4xl:active, .placeholder\:bottom-4xl::placeholder {
   bottom: 4rem;
 }
 
-.bottoms-5xl, .hover\:bottoms-5xl:hover, .focus\:bottoms-5xl:focus, .active\:bottoms-5xl:active, .placeholder\:bottoms-5xl::placeholder {
+.bottom-5xl, .hover\:bottom-5xl:hover, .focus\:bottom-5xl:focus, .active\:bottom-5xl:active, .placeholder\:bottom-5xl::placeholder {
   bottom: 4.8rem;
 }
 
-.bottoms-6xl, .hover\:bottoms-6xl:hover, .focus\:bottoms-6xl:focus, .active\:bottoms-6xl:active, .placeholder\:bottoms-6xl::placeholder {
+.bottom-6xl, .hover\:bottom-6xl:hover, .focus\:bottom-6xl:focus, .active\:bottom-6xl:active, .placeholder\:bottom-6xl::placeholder {
   bottom: 5.6rem;
 }
 
-.bottoms-7xl, .hover\:bottoms-7xl:hover, .focus\:bottoms-7xl:focus, .active\:bottoms-7xl:active, .placeholder\:bottoms-7xl::placeholder {
+.bottom-7xl, .hover\:bottom-7xl:hover, .focus\:bottom-7xl:focus, .active\:bottom-7xl:active, .placeholder\:bottom-7xl::placeholder {
   bottom: 6.4rem;
 }
 
-.bottoms-8xl, .hover\:bottoms-8xl:hover, .focus\:bottoms-8xl:focus, .active\:bottoms-8xl:active, .placeholder\:bottoms-8xl::placeholder {
+.bottom-8xl, .hover\:bottom-8xl:hover, .focus\:bottom-8xl:focus, .active\:bottom-8xl:active, .placeholder\:bottom-8xl::placeholder {
   bottom: 8rem;
 }
 
-.bottoms-9xl, .hover\:bottoms-9xl:hover, .focus\:bottoms-9xl:focus, .active\:bottoms-9xl:active, .placeholder\:bottoms-9xl::placeholder {
+.bottom-9xl, .hover\:bottom-9xl:hover, .focus\:bottom-9xl:focus, .active\:bottom-9xl:active, .placeholder\:bottom-9xl::placeholder {
   bottom: 9.6rem;
 }
 
-.bottoms-10xl, .hover\:bottoms-10xl:hover, .focus\:bottoms-10xl:focus, .active\:bottoms-10xl:active, .placeholder\:bottoms-10xl::placeholder {
+.bottom-10xl, .hover\:bottom-10xl:hover, .focus\:bottom-10xl:focus, .active\:bottom-10xl:active, .placeholder\:bottom-10xl::placeholder {
   bottom: 12rem;
 }
 
 @media (min-width: 48rem) {
-  .sm\:bottoms-0, .sm\:hover\:bottoms-0:hover, .sm\:focus\:bottoms-0:focus, .sm\:active\:bottoms-0:active, .sm\:placeholder\:bottoms-0::placeholder {
-    bottom: 0px;
+  .sm\:bottom-0, .sm\:hover\:bottom-0:hover, .sm\:focus\:bottom-0:focus, .sm\:active\:bottom-0:active, .sm\:placeholder\:bottom-0::placeholder {
+    bottom: 0rem;
   }
-  .sm\:bottoms-4xs, .sm\:hover\:bottoms-4xs:hover, .sm\:focus\:bottoms-4xs:focus, .sm\:active\:bottoms-4xs:active, .sm\:placeholder\:bottoms-4xs::placeholder {
+  .sm\:bottom-4xs, .sm\:hover\:bottom-4xs:hover, .sm\:focus\:bottom-4xs:focus, .sm\:active\:bottom-4xs:active, .sm\:placeholder\:bottom-4xs::placeholder {
     bottom: 0.1rem;
   }
-  .sm\:bottoms-3xs, .sm\:hover\:bottoms-3xs:hover, .sm\:focus\:bottoms-3xs:focus, .sm\:active\:bottoms-3xs:active, .sm\:placeholder\:bottoms-3xs::placeholder {
+  .sm\:bottom-3xs, .sm\:hover\:bottom-3xs:hover, .sm\:focus\:bottom-3xs:focus, .sm\:active\:bottom-3xs:active, .sm\:placeholder\:bottom-3xs::placeholder {
     bottom: 0.2rem;
   }
-  .sm\:bottoms-2xs, .sm\:hover\:bottoms-2xs:hover, .sm\:focus\:bottoms-2xs:focus, .sm\:active\:bottoms-2xs:active, .sm\:placeholder\:bottoms-2xs::placeholder {
+  .sm\:bottom-2xs, .sm\:hover\:bottom-2xs:hover, .sm\:focus\:bottom-2xs:focus, .sm\:active\:bottom-2xs:active, .sm\:placeholder\:bottom-2xs::placeholder {
     bottom: 0.4rem;
   }
-  .sm\:bottoms-xs, .sm\:hover\:bottoms-xs:hover, .sm\:focus\:bottoms-xs:focus, .sm\:active\:bottoms-xs:active, .sm\:placeholder\:bottoms-xs::placeholder {
+  .sm\:bottom-xs, .sm\:hover\:bottom-xs:hover, .sm\:focus\:bottom-xs:focus, .sm\:active\:bottom-xs:active, .sm\:placeholder\:bottom-xs::placeholder {
     bottom: 0.6rem;
   }
-  .sm\:bottoms-sm, .sm\:hover\:bottoms-sm:hover, .sm\:focus\:bottoms-sm:focus, .sm\:active\:bottoms-sm:active, .sm\:placeholder\:bottoms-sm::placeholder {
+  .sm\:bottom-sm, .sm\:hover\:bottom-sm:hover, .sm\:focus\:bottom-sm:focus, .sm\:active\:bottom-sm:active, .sm\:placeholder\:bottom-sm::placeholder {
     bottom: 0.8rem;
   }
-  .sm\:bottoms-md, .sm\:hover\:bottoms-md:hover, .sm\:focus\:bottoms-md:focus, .sm\:active\:bottoms-md:active, .sm\:placeholder\:bottoms-md::placeholder {
+  .sm\:bottom-md, .sm\:hover\:bottom-md:hover, .sm\:focus\:bottom-md:focus, .sm\:active\:bottom-md:active, .sm\:placeholder\:bottom-md::placeholder {
     bottom: 1.2rem;
   }
-  .sm\:bottoms-lg, .sm\:hover\:bottoms-lg:hover, .sm\:focus\:bottoms-lg:focus, .sm\:active\:bottoms-lg:active, .sm\:placeholder\:bottoms-lg::placeholder {
+  .sm\:bottom-lg, .sm\:hover\:bottom-lg:hover, .sm\:focus\:bottom-lg:focus, .sm\:active\:bottom-lg:active, .sm\:placeholder\:bottom-lg::placeholder {
     bottom: 1.6rem;
   }
-  .sm\:bottoms-xl, .sm\:hover\:bottoms-xl:hover, .sm\:focus\:bottoms-xl:focus, .sm\:active\:bottoms-xl:active, .sm\:placeholder\:bottoms-xl::placeholder {
+  .sm\:bottom-xl, .sm\:hover\:bottom-xl:hover, .sm\:focus\:bottom-xl:focus, .sm\:active\:bottom-xl:active, .sm\:placeholder\:bottom-xl::placeholder {
     bottom: 2rem;
   }
-  .sm\:bottoms-2xl, .sm\:hover\:bottoms-2xl:hover, .sm\:focus\:bottoms-2xl:focus, .sm\:active\:bottoms-2xl:active, .sm\:placeholder\:bottoms-2xl::placeholder {
+  .sm\:bottom-2xl, .sm\:hover\:bottom-2xl:hover, .sm\:focus\:bottom-2xl:focus, .sm\:active\:bottom-2xl:active, .sm\:placeholder\:bottom-2xl::placeholder {
     bottom: 2.4rem;
   }
-  .sm\:bottoms-3xl, .sm\:hover\:bottoms-3xl:hover, .sm\:focus\:bottoms-3xl:focus, .sm\:active\:bottoms-3xl:active, .sm\:placeholder\:bottoms-3xl::placeholder {
+  .sm\:bottom-3xl, .sm\:hover\:bottom-3xl:hover, .sm\:focus\:bottom-3xl:focus, .sm\:active\:bottom-3xl:active, .sm\:placeholder\:bottom-3xl::placeholder {
     bottom: 3.2rem;
   }
-  .sm\:bottoms-4xl, .sm\:hover\:bottoms-4xl:hover, .sm\:focus\:bottoms-4xl:focus, .sm\:active\:bottoms-4xl:active, .sm\:placeholder\:bottoms-4xl::placeholder {
+  .sm\:bottom-4xl, .sm\:hover\:bottom-4xl:hover, .sm\:focus\:bottom-4xl:focus, .sm\:active\:bottom-4xl:active, .sm\:placeholder\:bottom-4xl::placeholder {
     bottom: 4rem;
   }
-  .sm\:bottoms-5xl, .sm\:hover\:bottoms-5xl:hover, .sm\:focus\:bottoms-5xl:focus, .sm\:active\:bottoms-5xl:active, .sm\:placeholder\:bottoms-5xl::placeholder {
+  .sm\:bottom-5xl, .sm\:hover\:bottom-5xl:hover, .sm\:focus\:bottom-5xl:focus, .sm\:active\:bottom-5xl:active, .sm\:placeholder\:bottom-5xl::placeholder {
     bottom: 4.8rem;
   }
-  .sm\:bottoms-6xl, .sm\:hover\:bottoms-6xl:hover, .sm\:focus\:bottoms-6xl:focus, .sm\:active\:bottoms-6xl:active, .sm\:placeholder\:bottoms-6xl::placeholder {
+  .sm\:bottom-6xl, .sm\:hover\:bottom-6xl:hover, .sm\:focus\:bottom-6xl:focus, .sm\:active\:bottom-6xl:active, .sm\:placeholder\:bottom-6xl::placeholder {
     bottom: 5.6rem;
   }
-  .sm\:bottoms-7xl, .sm\:hover\:bottoms-7xl:hover, .sm\:focus\:bottoms-7xl:focus, .sm\:active\:bottoms-7xl:active, .sm\:placeholder\:bottoms-7xl::placeholder {
+  .sm\:bottom-7xl, .sm\:hover\:bottom-7xl:hover, .sm\:focus\:bottom-7xl:focus, .sm\:active\:bottom-7xl:active, .sm\:placeholder\:bottom-7xl::placeholder {
     bottom: 6.4rem;
   }
-  .sm\:bottoms-8xl, .sm\:hover\:bottoms-8xl:hover, .sm\:focus\:bottoms-8xl:focus, .sm\:active\:bottoms-8xl:active, .sm\:placeholder\:bottoms-8xl::placeholder {
+  .sm\:bottom-8xl, .sm\:hover\:bottom-8xl:hover, .sm\:focus\:bottom-8xl:focus, .sm\:active\:bottom-8xl:active, .sm\:placeholder\:bottom-8xl::placeholder {
     bottom: 8rem;
   }
-  .sm\:bottoms-9xl, .sm\:hover\:bottoms-9xl:hover, .sm\:focus\:bottoms-9xl:focus, .sm\:active\:bottoms-9xl:active, .sm\:placeholder\:bottoms-9xl::placeholder {
+  .sm\:bottom-9xl, .sm\:hover\:bottom-9xl:hover, .sm\:focus\:bottom-9xl:focus, .sm\:active\:bottom-9xl:active, .sm\:placeholder\:bottom-9xl::placeholder {
     bottom: 9.6rem;
   }
-  .sm\:bottoms-10xl, .sm\:hover\:bottoms-10xl:hover, .sm\:focus\:bottoms-10xl:focus, .sm\:active\:bottoms-10xl:active, .sm\:placeholder\:bottoms-10xl::placeholder {
+  .sm\:bottom-10xl, .sm\:hover\:bottom-10xl:hover, .sm\:focus\:bottom-10xl:focus, .sm\:active\:bottom-10xl:active, .sm\:placeholder\:bottom-10xl::placeholder {
     bottom: 12rem;
   }
 }
 @media (min-width: 77.5rem) {
-  .md\:bottoms-0, .md\:hover\:bottoms-0:hover, .md\:focus\:bottoms-0:focus, .md\:active\:bottoms-0:active, .md\:placeholder\:bottoms-0::placeholder {
-    bottom: 0px;
+  .md\:bottom-0, .md\:hover\:bottom-0:hover, .md\:focus\:bottom-0:focus, .md\:active\:bottom-0:active, .md\:placeholder\:bottom-0::placeholder {
+    bottom: 0rem;
   }
-  .md\:bottoms-4xs, .md\:hover\:bottoms-4xs:hover, .md\:focus\:bottoms-4xs:focus, .md\:active\:bottoms-4xs:active, .md\:placeholder\:bottoms-4xs::placeholder {
+  .md\:bottom-4xs, .md\:hover\:bottom-4xs:hover, .md\:focus\:bottom-4xs:focus, .md\:active\:bottom-4xs:active, .md\:placeholder\:bottom-4xs::placeholder {
     bottom: 0.1rem;
   }
-  .md\:bottoms-3xs, .md\:hover\:bottoms-3xs:hover, .md\:focus\:bottoms-3xs:focus, .md\:active\:bottoms-3xs:active, .md\:placeholder\:bottoms-3xs::placeholder {
+  .md\:bottom-3xs, .md\:hover\:bottom-3xs:hover, .md\:focus\:bottom-3xs:focus, .md\:active\:bottom-3xs:active, .md\:placeholder\:bottom-3xs::placeholder {
     bottom: 0.2rem;
   }
-  .md\:bottoms-2xs, .md\:hover\:bottoms-2xs:hover, .md\:focus\:bottoms-2xs:focus, .md\:active\:bottoms-2xs:active, .md\:placeholder\:bottoms-2xs::placeholder {
+  .md\:bottom-2xs, .md\:hover\:bottom-2xs:hover, .md\:focus\:bottom-2xs:focus, .md\:active\:bottom-2xs:active, .md\:placeholder\:bottom-2xs::placeholder {
     bottom: 0.4rem;
   }
-  .md\:bottoms-xs, .md\:hover\:bottoms-xs:hover, .md\:focus\:bottoms-xs:focus, .md\:active\:bottoms-xs:active, .md\:placeholder\:bottoms-xs::placeholder {
+  .md\:bottom-xs, .md\:hover\:bottom-xs:hover, .md\:focus\:bottom-xs:focus, .md\:active\:bottom-xs:active, .md\:placeholder\:bottom-xs::placeholder {
     bottom: 0.6rem;
   }
-  .md\:bottoms-sm, .md\:hover\:bottoms-sm:hover, .md\:focus\:bottoms-sm:focus, .md\:active\:bottoms-sm:active, .md\:placeholder\:bottoms-sm::placeholder {
+  .md\:bottom-sm, .md\:hover\:bottom-sm:hover, .md\:focus\:bottom-sm:focus, .md\:active\:bottom-sm:active, .md\:placeholder\:bottom-sm::placeholder {
     bottom: 0.8rem;
   }
-  .md\:bottoms-md, .md\:hover\:bottoms-md:hover, .md\:focus\:bottoms-md:focus, .md\:active\:bottoms-md:active, .md\:placeholder\:bottoms-md::placeholder {
+  .md\:bottom-md, .md\:hover\:bottom-md:hover, .md\:focus\:bottom-md:focus, .md\:active\:bottom-md:active, .md\:placeholder\:bottom-md::placeholder {
     bottom: 1.2rem;
   }
-  .md\:bottoms-lg, .md\:hover\:bottoms-lg:hover, .md\:focus\:bottoms-lg:focus, .md\:active\:bottoms-lg:active, .md\:placeholder\:bottoms-lg::placeholder {
+  .md\:bottom-lg, .md\:hover\:bottom-lg:hover, .md\:focus\:bottom-lg:focus, .md\:active\:bottom-lg:active, .md\:placeholder\:bottom-lg::placeholder {
     bottom: 1.6rem;
   }
-  .md\:bottoms-xl, .md\:hover\:bottoms-xl:hover, .md\:focus\:bottoms-xl:focus, .md\:active\:bottoms-xl:active, .md\:placeholder\:bottoms-xl::placeholder {
+  .md\:bottom-xl, .md\:hover\:bottom-xl:hover, .md\:focus\:bottom-xl:focus, .md\:active\:bottom-xl:active, .md\:placeholder\:bottom-xl::placeholder {
     bottom: 2rem;
   }
-  .md\:bottoms-2xl, .md\:hover\:bottoms-2xl:hover, .md\:focus\:bottoms-2xl:focus, .md\:active\:bottoms-2xl:active, .md\:placeholder\:bottoms-2xl::placeholder {
+  .md\:bottom-2xl, .md\:hover\:bottom-2xl:hover, .md\:focus\:bottom-2xl:focus, .md\:active\:bottom-2xl:active, .md\:placeholder\:bottom-2xl::placeholder {
     bottom: 2.4rem;
   }
-  .md\:bottoms-3xl, .md\:hover\:bottoms-3xl:hover, .md\:focus\:bottoms-3xl:focus, .md\:active\:bottoms-3xl:active, .md\:placeholder\:bottoms-3xl::placeholder {
+  .md\:bottom-3xl, .md\:hover\:bottom-3xl:hover, .md\:focus\:bottom-3xl:focus, .md\:active\:bottom-3xl:active, .md\:placeholder\:bottom-3xl::placeholder {
     bottom: 3.2rem;
   }
-  .md\:bottoms-4xl, .md\:hover\:bottoms-4xl:hover, .md\:focus\:bottoms-4xl:focus, .md\:active\:bottoms-4xl:active, .md\:placeholder\:bottoms-4xl::placeholder {
+  .md\:bottom-4xl, .md\:hover\:bottom-4xl:hover, .md\:focus\:bottom-4xl:focus, .md\:active\:bottom-4xl:active, .md\:placeholder\:bottom-4xl::placeholder {
     bottom: 4rem;
   }
-  .md\:bottoms-5xl, .md\:hover\:bottoms-5xl:hover, .md\:focus\:bottoms-5xl:focus, .md\:active\:bottoms-5xl:active, .md\:placeholder\:bottoms-5xl::placeholder {
+  .md\:bottom-5xl, .md\:hover\:bottom-5xl:hover, .md\:focus\:bottom-5xl:focus, .md\:active\:bottom-5xl:active, .md\:placeholder\:bottom-5xl::placeholder {
     bottom: 4.8rem;
   }
-  .md\:bottoms-6xl, .md\:hover\:bottoms-6xl:hover, .md\:focus\:bottoms-6xl:focus, .md\:active\:bottoms-6xl:active, .md\:placeholder\:bottoms-6xl::placeholder {
+  .md\:bottom-6xl, .md\:hover\:bottom-6xl:hover, .md\:focus\:bottom-6xl:focus, .md\:active\:bottom-6xl:active, .md\:placeholder\:bottom-6xl::placeholder {
     bottom: 5.6rem;
   }
-  .md\:bottoms-7xl, .md\:hover\:bottoms-7xl:hover, .md\:focus\:bottoms-7xl:focus, .md\:active\:bottoms-7xl:active, .md\:placeholder\:bottoms-7xl::placeholder {
+  .md\:bottom-7xl, .md\:hover\:bottom-7xl:hover, .md\:focus\:bottom-7xl:focus, .md\:active\:bottom-7xl:active, .md\:placeholder\:bottom-7xl::placeholder {
     bottom: 6.4rem;
   }
-  .md\:bottoms-8xl, .md\:hover\:bottoms-8xl:hover, .md\:focus\:bottoms-8xl:focus, .md\:active\:bottoms-8xl:active, .md\:placeholder\:bottoms-8xl::placeholder {
+  .md\:bottom-8xl, .md\:hover\:bottom-8xl:hover, .md\:focus\:bottom-8xl:focus, .md\:active\:bottom-8xl:active, .md\:placeholder\:bottom-8xl::placeholder {
     bottom: 8rem;
   }
-  .md\:bottoms-9xl, .md\:hover\:bottoms-9xl:hover, .md\:focus\:bottoms-9xl:focus, .md\:active\:bottoms-9xl:active, .md\:placeholder\:bottoms-9xl::placeholder {
+  .md\:bottom-9xl, .md\:hover\:bottom-9xl:hover, .md\:focus\:bottom-9xl:focus, .md\:active\:bottom-9xl:active, .md\:placeholder\:bottom-9xl::placeholder {
     bottom: 9.6rem;
   }
-  .md\:bottoms-10xl, .md\:hover\:bottoms-10xl:hover, .md\:focus\:bottoms-10xl:focus, .md\:active\:bottoms-10xl:active, .md\:placeholder\:bottoms-10xl::placeholder {
+  .md\:bottom-10xl, .md\:hover\:bottom-10xl:hover, .md\:focus\:bottom-10xl:focus, .md\:active\:bottom-10xl:active, .md\:placeholder\:bottom-10xl::placeholder {
     bottom: 12rem;
   }
 }
 @media (min-width: 90rem) {
-  .lg\:bottoms-0, .lg\:hover\:bottoms-0:hover, .lg\:focus\:bottoms-0:focus, .lg\:active\:bottoms-0:active, .lg\:placeholder\:bottoms-0::placeholder {
-    bottom: 0px;
+  .lg\:bottom-0, .lg\:hover\:bottom-0:hover, .lg\:focus\:bottom-0:focus, .lg\:active\:bottom-0:active, .lg\:placeholder\:bottom-0::placeholder {
+    bottom: 0rem;
   }
-  .lg\:bottoms-4xs, .lg\:hover\:bottoms-4xs:hover, .lg\:focus\:bottoms-4xs:focus, .lg\:active\:bottoms-4xs:active, .lg\:placeholder\:bottoms-4xs::placeholder {
+  .lg\:bottom-4xs, .lg\:hover\:bottom-4xs:hover, .lg\:focus\:bottom-4xs:focus, .lg\:active\:bottom-4xs:active, .lg\:placeholder\:bottom-4xs::placeholder {
     bottom: 0.1rem;
   }
-  .lg\:bottoms-3xs, .lg\:hover\:bottoms-3xs:hover, .lg\:focus\:bottoms-3xs:focus, .lg\:active\:bottoms-3xs:active, .lg\:placeholder\:bottoms-3xs::placeholder {
+  .lg\:bottom-3xs, .lg\:hover\:bottom-3xs:hover, .lg\:focus\:bottom-3xs:focus, .lg\:active\:bottom-3xs:active, .lg\:placeholder\:bottom-3xs::placeholder {
     bottom: 0.2rem;
   }
-  .lg\:bottoms-2xs, .lg\:hover\:bottoms-2xs:hover, .lg\:focus\:bottoms-2xs:focus, .lg\:active\:bottoms-2xs:active, .lg\:placeholder\:bottoms-2xs::placeholder {
+  .lg\:bottom-2xs, .lg\:hover\:bottom-2xs:hover, .lg\:focus\:bottom-2xs:focus, .lg\:active\:bottom-2xs:active, .lg\:placeholder\:bottom-2xs::placeholder {
     bottom: 0.4rem;
   }
-  .lg\:bottoms-xs, .lg\:hover\:bottoms-xs:hover, .lg\:focus\:bottoms-xs:focus, .lg\:active\:bottoms-xs:active, .lg\:placeholder\:bottoms-xs::placeholder {
+  .lg\:bottom-xs, .lg\:hover\:bottom-xs:hover, .lg\:focus\:bottom-xs:focus, .lg\:active\:bottom-xs:active, .lg\:placeholder\:bottom-xs::placeholder {
     bottom: 0.6rem;
   }
-  .lg\:bottoms-sm, .lg\:hover\:bottoms-sm:hover, .lg\:focus\:bottoms-sm:focus, .lg\:active\:bottoms-sm:active, .lg\:placeholder\:bottoms-sm::placeholder {
+  .lg\:bottom-sm, .lg\:hover\:bottom-sm:hover, .lg\:focus\:bottom-sm:focus, .lg\:active\:bottom-sm:active, .lg\:placeholder\:bottom-sm::placeholder {
     bottom: 0.8rem;
   }
-  .lg\:bottoms-md, .lg\:hover\:bottoms-md:hover, .lg\:focus\:bottoms-md:focus, .lg\:active\:bottoms-md:active, .lg\:placeholder\:bottoms-md::placeholder {
+  .lg\:bottom-md, .lg\:hover\:bottom-md:hover, .lg\:focus\:bottom-md:focus, .lg\:active\:bottom-md:active, .lg\:placeholder\:bottom-md::placeholder {
     bottom: 1.2rem;
   }
-  .lg\:bottoms-lg, .lg\:hover\:bottoms-lg:hover, .lg\:focus\:bottoms-lg:focus, .lg\:active\:bottoms-lg:active, .lg\:placeholder\:bottoms-lg::placeholder {
+  .lg\:bottom-lg, .lg\:hover\:bottom-lg:hover, .lg\:focus\:bottom-lg:focus, .lg\:active\:bottom-lg:active, .lg\:placeholder\:bottom-lg::placeholder {
     bottom: 1.6rem;
   }
-  .lg\:bottoms-xl, .lg\:hover\:bottoms-xl:hover, .lg\:focus\:bottoms-xl:focus, .lg\:active\:bottoms-xl:active, .lg\:placeholder\:bottoms-xl::placeholder {
+  .lg\:bottom-xl, .lg\:hover\:bottom-xl:hover, .lg\:focus\:bottom-xl:focus, .lg\:active\:bottom-xl:active, .lg\:placeholder\:bottom-xl::placeholder {
     bottom: 2rem;
   }
-  .lg\:bottoms-2xl, .lg\:hover\:bottoms-2xl:hover, .lg\:focus\:bottoms-2xl:focus, .lg\:active\:bottoms-2xl:active, .lg\:placeholder\:bottoms-2xl::placeholder {
+  .lg\:bottom-2xl, .lg\:hover\:bottom-2xl:hover, .lg\:focus\:bottom-2xl:focus, .lg\:active\:bottom-2xl:active, .lg\:placeholder\:bottom-2xl::placeholder {
     bottom: 2.4rem;
   }
-  .lg\:bottoms-3xl, .lg\:hover\:bottoms-3xl:hover, .lg\:focus\:bottoms-3xl:focus, .lg\:active\:bottoms-3xl:active, .lg\:placeholder\:bottoms-3xl::placeholder {
+  .lg\:bottom-3xl, .lg\:hover\:bottom-3xl:hover, .lg\:focus\:bottom-3xl:focus, .lg\:active\:bottom-3xl:active, .lg\:placeholder\:bottom-3xl::placeholder {
     bottom: 3.2rem;
   }
-  .lg\:bottoms-4xl, .lg\:hover\:bottoms-4xl:hover, .lg\:focus\:bottoms-4xl:focus, .lg\:active\:bottoms-4xl:active, .lg\:placeholder\:bottoms-4xl::placeholder {
+  .lg\:bottom-4xl, .lg\:hover\:bottom-4xl:hover, .lg\:focus\:bottom-4xl:focus, .lg\:active\:bottom-4xl:active, .lg\:placeholder\:bottom-4xl::placeholder {
     bottom: 4rem;
   }
-  .lg\:bottoms-5xl, .lg\:hover\:bottoms-5xl:hover, .lg\:focus\:bottoms-5xl:focus, .lg\:active\:bottoms-5xl:active, .lg\:placeholder\:bottoms-5xl::placeholder {
+  .lg\:bottom-5xl, .lg\:hover\:bottom-5xl:hover, .lg\:focus\:bottom-5xl:focus, .lg\:active\:bottom-5xl:active, .lg\:placeholder\:bottom-5xl::placeholder {
     bottom: 4.8rem;
   }
-  .lg\:bottoms-6xl, .lg\:hover\:bottoms-6xl:hover, .lg\:focus\:bottoms-6xl:focus, .lg\:active\:bottoms-6xl:active, .lg\:placeholder\:bottoms-6xl::placeholder {
+  .lg\:bottom-6xl, .lg\:hover\:bottom-6xl:hover, .lg\:focus\:bottom-6xl:focus, .lg\:active\:bottom-6xl:active, .lg\:placeholder\:bottom-6xl::placeholder {
     bottom: 5.6rem;
   }
-  .lg\:bottoms-7xl, .lg\:hover\:bottoms-7xl:hover, .lg\:focus\:bottoms-7xl:focus, .lg\:active\:bottoms-7xl:active, .lg\:placeholder\:bottoms-7xl::placeholder {
+  .lg\:bottom-7xl, .lg\:hover\:bottom-7xl:hover, .lg\:focus\:bottom-7xl:focus, .lg\:active\:bottom-7xl:active, .lg\:placeholder\:bottom-7xl::placeholder {
     bottom: 6.4rem;
   }
-  .lg\:bottoms-8xl, .lg\:hover\:bottoms-8xl:hover, .lg\:focus\:bottoms-8xl:focus, .lg\:active\:bottoms-8xl:active, .lg\:placeholder\:bottoms-8xl::placeholder {
+  .lg\:bottom-8xl, .lg\:hover\:bottom-8xl:hover, .lg\:focus\:bottom-8xl:focus, .lg\:active\:bottom-8xl:active, .lg\:placeholder\:bottom-8xl::placeholder {
     bottom: 8rem;
   }
-  .lg\:bottoms-9xl, .lg\:hover\:bottoms-9xl:hover, .lg\:focus\:bottoms-9xl:focus, .lg\:active\:bottoms-9xl:active, .lg\:placeholder\:bottoms-9xl::placeholder {
+  .lg\:bottom-9xl, .lg\:hover\:bottom-9xl:hover, .lg\:focus\:bottom-9xl:focus, .lg\:active\:bottom-9xl:active, .lg\:placeholder\:bottom-9xl::placeholder {
     bottom: 9.6rem;
   }
-  .lg\:bottoms-10xl, .lg\:hover\:bottoms-10xl:hover, .lg\:focus\:bottoms-10xl:focus, .lg\:active\:bottoms-10xl:active, .lg\:placeholder\:bottoms-10xl::placeholder {
+  .lg\:bottom-10xl, .lg\:hover\:bottom-10xl:hover, .lg\:focus\:bottom-10xl:focus, .lg\:active\:bottom-10xl:active, .lg\:placeholder\:bottom-10xl::placeholder {
     bottom: 12rem;
   }
 }
 @media (min-width: 120rem) {
-  .xl\:bottoms-0, .xl\:hover\:bottoms-0:hover, .xl\:focus\:bottoms-0:focus, .xl\:active\:bottoms-0:active, .xl\:placeholder\:bottoms-0::placeholder {
-    bottom: 0px;
+  .xl\:bottom-0, .xl\:hover\:bottom-0:hover, .xl\:focus\:bottom-0:focus, .xl\:active\:bottom-0:active, .xl\:placeholder\:bottom-0::placeholder {
+    bottom: 0rem;
   }
-  .xl\:bottoms-4xs, .xl\:hover\:bottoms-4xs:hover, .xl\:focus\:bottoms-4xs:focus, .xl\:active\:bottoms-4xs:active, .xl\:placeholder\:bottoms-4xs::placeholder {
+  .xl\:bottom-4xs, .xl\:hover\:bottom-4xs:hover, .xl\:focus\:bottom-4xs:focus, .xl\:active\:bottom-4xs:active, .xl\:placeholder\:bottom-4xs::placeholder {
     bottom: 0.1rem;
   }
-  .xl\:bottoms-3xs, .xl\:hover\:bottoms-3xs:hover, .xl\:focus\:bottoms-3xs:focus, .xl\:active\:bottoms-3xs:active, .xl\:placeholder\:bottoms-3xs::placeholder {
+  .xl\:bottom-3xs, .xl\:hover\:bottom-3xs:hover, .xl\:focus\:bottom-3xs:focus, .xl\:active\:bottom-3xs:active, .xl\:placeholder\:bottom-3xs::placeholder {
     bottom: 0.2rem;
   }
-  .xl\:bottoms-2xs, .xl\:hover\:bottoms-2xs:hover, .xl\:focus\:bottoms-2xs:focus, .xl\:active\:bottoms-2xs:active, .xl\:placeholder\:bottoms-2xs::placeholder {
+  .xl\:bottom-2xs, .xl\:hover\:bottom-2xs:hover, .xl\:focus\:bottom-2xs:focus, .xl\:active\:bottom-2xs:active, .xl\:placeholder\:bottom-2xs::placeholder {
     bottom: 0.4rem;
   }
-  .xl\:bottoms-xs, .xl\:hover\:bottoms-xs:hover, .xl\:focus\:bottoms-xs:focus, .xl\:active\:bottoms-xs:active, .xl\:placeholder\:bottoms-xs::placeholder {
+  .xl\:bottom-xs, .xl\:hover\:bottom-xs:hover, .xl\:focus\:bottom-xs:focus, .xl\:active\:bottom-xs:active, .xl\:placeholder\:bottom-xs::placeholder {
     bottom: 0.6rem;
   }
-  .xl\:bottoms-sm, .xl\:hover\:bottoms-sm:hover, .xl\:focus\:bottoms-sm:focus, .xl\:active\:bottoms-sm:active, .xl\:placeholder\:bottoms-sm::placeholder {
+  .xl\:bottom-sm, .xl\:hover\:bottom-sm:hover, .xl\:focus\:bottom-sm:focus, .xl\:active\:bottom-sm:active, .xl\:placeholder\:bottom-sm::placeholder {
     bottom: 0.8rem;
   }
-  .xl\:bottoms-md, .xl\:hover\:bottoms-md:hover, .xl\:focus\:bottoms-md:focus, .xl\:active\:bottoms-md:active, .xl\:placeholder\:bottoms-md::placeholder {
+  .xl\:bottom-md, .xl\:hover\:bottom-md:hover, .xl\:focus\:bottom-md:focus, .xl\:active\:bottom-md:active, .xl\:placeholder\:bottom-md::placeholder {
     bottom: 1.2rem;
   }
-  .xl\:bottoms-lg, .xl\:hover\:bottoms-lg:hover, .xl\:focus\:bottoms-lg:focus, .xl\:active\:bottoms-lg:active, .xl\:placeholder\:bottoms-lg::placeholder {
+  .xl\:bottom-lg, .xl\:hover\:bottom-lg:hover, .xl\:focus\:bottom-lg:focus, .xl\:active\:bottom-lg:active, .xl\:placeholder\:bottom-lg::placeholder {
     bottom: 1.6rem;
   }
-  .xl\:bottoms-xl, .xl\:hover\:bottoms-xl:hover, .xl\:focus\:bottoms-xl:focus, .xl\:active\:bottoms-xl:active, .xl\:placeholder\:bottoms-xl::placeholder {
+  .xl\:bottom-xl, .xl\:hover\:bottom-xl:hover, .xl\:focus\:bottom-xl:focus, .xl\:active\:bottom-xl:active, .xl\:placeholder\:bottom-xl::placeholder {
     bottom: 2rem;
   }
-  .xl\:bottoms-2xl, .xl\:hover\:bottoms-2xl:hover, .xl\:focus\:bottoms-2xl:focus, .xl\:active\:bottoms-2xl:active, .xl\:placeholder\:bottoms-2xl::placeholder {
+  .xl\:bottom-2xl, .xl\:hover\:bottom-2xl:hover, .xl\:focus\:bottom-2xl:focus, .xl\:active\:bottom-2xl:active, .xl\:placeholder\:bottom-2xl::placeholder {
     bottom: 2.4rem;
   }
-  .xl\:bottoms-3xl, .xl\:hover\:bottoms-3xl:hover, .xl\:focus\:bottoms-3xl:focus, .xl\:active\:bottoms-3xl:active, .xl\:placeholder\:bottoms-3xl::placeholder {
+  .xl\:bottom-3xl, .xl\:hover\:bottom-3xl:hover, .xl\:focus\:bottom-3xl:focus, .xl\:active\:bottom-3xl:active, .xl\:placeholder\:bottom-3xl::placeholder {
     bottom: 3.2rem;
   }
-  .xl\:bottoms-4xl, .xl\:hover\:bottoms-4xl:hover, .xl\:focus\:bottoms-4xl:focus, .xl\:active\:bottoms-4xl:active, .xl\:placeholder\:bottoms-4xl::placeholder {
+  .xl\:bottom-4xl, .xl\:hover\:bottom-4xl:hover, .xl\:focus\:bottom-4xl:focus, .xl\:active\:bottom-4xl:active, .xl\:placeholder\:bottom-4xl::placeholder {
     bottom: 4rem;
   }
-  .xl\:bottoms-5xl, .xl\:hover\:bottoms-5xl:hover, .xl\:focus\:bottoms-5xl:focus, .xl\:active\:bottoms-5xl:active, .xl\:placeholder\:bottoms-5xl::placeholder {
+  .xl\:bottom-5xl, .xl\:hover\:bottom-5xl:hover, .xl\:focus\:bottom-5xl:focus, .xl\:active\:bottom-5xl:active, .xl\:placeholder\:bottom-5xl::placeholder {
     bottom: 4.8rem;
   }
-  .xl\:bottoms-6xl, .xl\:hover\:bottoms-6xl:hover, .xl\:focus\:bottoms-6xl:focus, .xl\:active\:bottoms-6xl:active, .xl\:placeholder\:bottoms-6xl::placeholder {
+  .xl\:bottom-6xl, .xl\:hover\:bottom-6xl:hover, .xl\:focus\:bottom-6xl:focus, .xl\:active\:bottom-6xl:active, .xl\:placeholder\:bottom-6xl::placeholder {
     bottom: 5.6rem;
   }
-  .xl\:bottoms-7xl, .xl\:hover\:bottoms-7xl:hover, .xl\:focus\:bottoms-7xl:focus, .xl\:active\:bottoms-7xl:active, .xl\:placeholder\:bottoms-7xl::placeholder {
+  .xl\:bottom-7xl, .xl\:hover\:bottom-7xl:hover, .xl\:focus\:bottom-7xl:focus, .xl\:active\:bottom-7xl:active, .xl\:placeholder\:bottom-7xl::placeholder {
     bottom: 6.4rem;
   }
-  .xl\:bottoms-8xl, .xl\:hover\:bottoms-8xl:hover, .xl\:focus\:bottoms-8xl:focus, .xl\:active\:bottoms-8xl:active, .xl\:placeholder\:bottoms-8xl::placeholder {
+  .xl\:bottom-8xl, .xl\:hover\:bottom-8xl:hover, .xl\:focus\:bottom-8xl:focus, .xl\:active\:bottom-8xl:active, .xl\:placeholder\:bottom-8xl::placeholder {
     bottom: 8rem;
   }
-  .xl\:bottoms-9xl, .xl\:hover\:bottoms-9xl:hover, .xl\:focus\:bottoms-9xl:focus, .xl\:active\:bottoms-9xl:active, .xl\:placeholder\:bottoms-9xl::placeholder {
+  .xl\:bottom-9xl, .xl\:hover\:bottom-9xl:hover, .xl\:focus\:bottom-9xl:focus, .xl\:active\:bottom-9xl:active, .xl\:placeholder\:bottom-9xl::placeholder {
     bottom: 9.6rem;
   }
-  .xl\:bottoms-10xl, .xl\:hover\:bottoms-10xl:hover, .xl\:focus\:bottoms-10xl:focus, .xl\:active\:bottoms-10xl:active, .xl\:placeholder\:bottoms-10xl::placeholder {
+  .xl\:bottom-10xl, .xl\:hover\:bottom-10xl:hover, .xl\:focus\:bottom-10xl:focus, .xl\:active\:bottom-10xl:active, .xl\:placeholder\:bottom-10xl::placeholder {
     bottom: 12rem;
   }
 }
@@ -6570,235 +6600,235 @@ body.portal {
   }
 }
 .aspect-ratio-1\/1, .hover\:aspect-ratio-1\/1:hover, .focus\:aspect-ratio-1\/1:focus, .active\:aspect-ratio-1\/1:active, .placeholder\:aspect-ratio-1\/1::placeholder {
-  aspect-ratio: 1;
+  aspect-ratio: "1/1";
 }
 
 .aspect-ratio-1\/2, .hover\:aspect-ratio-1\/2:hover, .focus\:aspect-ratio-1\/2:focus, .active\:aspect-ratio-1\/2:active, .placeholder\:aspect-ratio-1\/2::placeholder {
-  aspect-ratio: 0.5;
+  aspect-ratio: "1/2";
 }
 
 .aspect-ratio-2\/1, .hover\:aspect-ratio-2\/1:hover, .focus\:aspect-ratio-2\/1:focus, .active\:aspect-ratio-2\/1:active, .placeholder\:aspect-ratio-2\/1::placeholder {
-  aspect-ratio: 2;
+  aspect-ratio: "2/1";
 }
 
 .aspect-ratio-3\/1, .hover\:aspect-ratio-3\/1:hover, .focus\:aspect-ratio-3\/1:focus, .active\:aspect-ratio-3\/1:active, .placeholder\:aspect-ratio-3\/1::placeholder {
-  aspect-ratio: 3;
+  aspect-ratio: "3/1";
 }
 
 .aspect-ratio-3\/2, .hover\:aspect-ratio-3\/2:hover, .focus\:aspect-ratio-3\/2:focus, .active\:aspect-ratio-3\/2:active, .placeholder\:aspect-ratio-3\/2::placeholder {
-  aspect-ratio: 1.5;
+  aspect-ratio: "3/2";
 }
 
 .aspect-ratio-4\/1, .hover\:aspect-ratio-4\/1:hover, .focus\:aspect-ratio-4\/1:focus, .active\:aspect-ratio-4\/1:active, .placeholder\:aspect-ratio-4\/1::placeholder {
-  aspect-ratio: 4;
+  aspect-ratio: "4/1";
 }
 
 .aspect-ratio-4\/3, .hover\:aspect-ratio-4\/3:hover, .focus\:aspect-ratio-4\/3:focus, .active\:aspect-ratio-4\/3:active, .placeholder\:aspect-ratio-4\/3::placeholder {
-  aspect-ratio: 1.3333333333;
+  aspect-ratio: "4/3";
 }
 
 .aspect-ratio-5\/4, .hover\:aspect-ratio-5\/4:hover, .focus\:aspect-ratio-5\/4:focus, .active\:aspect-ratio-5\/4:active, .placeholder\:aspect-ratio-5\/4::placeholder {
-  aspect-ratio: 1.25;
+  aspect-ratio: "5/4";
 }
 
 .aspect-ratio-9\/16, .hover\:aspect-ratio-9\/16:hover, .focus\:aspect-ratio-9\/16:focus, .active\:aspect-ratio-9\/16:active, .placeholder\:aspect-ratio-9\/16::placeholder {
-  aspect-ratio: 0.5625;
+  aspect-ratio: "9/16";
 }
 
 .aspect-ratio-14\/9, .hover\:aspect-ratio-14\/9:hover, .focus\:aspect-ratio-14\/9:focus, .active\:aspect-ratio-14\/9:active, .placeholder\:aspect-ratio-14\/9::placeholder {
-  aspect-ratio: 1.5555555556;
+  aspect-ratio: "14/9";
 }
 
 .aspect-ratio-16\/7, .hover\:aspect-ratio-16\/7:hover, .focus\:aspect-ratio-16\/7:focus, .active\:aspect-ratio-16\/7:active, .placeholder\:aspect-ratio-16\/7::placeholder {
-  aspect-ratio: 2.2857142857;
+  aspect-ratio: "16/7";
 }
 
 .aspect-ratio-16\/9, .hover\:aspect-ratio-16\/9:hover, .focus\:aspect-ratio-16\/9:focus, .active\:aspect-ratio-16\/9:active, .placeholder\:aspect-ratio-16\/9::placeholder {
-  aspect-ratio: 1.7777777778;
+  aspect-ratio: "16/9";
 }
 
 .aspect-ratio-16\/10, .hover\:aspect-ratio-16\/10:hover, .focus\:aspect-ratio-16\/10:focus, .active\:aspect-ratio-16\/10:active, .placeholder\:aspect-ratio-16\/10::placeholder {
-  aspect-ratio: 1.6;
+  aspect-ratio: "16/10";
 }
 
 .aspect-ratio-auto, .hover\:aspect-ratio-auto:hover, .focus\:aspect-ratio-auto:focus, .active\:aspect-ratio-auto:active, .placeholder\:aspect-ratio-auto::placeholder {
-  aspect-ratio: auto;
+  aspect-ratio: "auto";
 }
 
 @media (min-width: 48rem) {
   .sm\:aspect-ratio-1\/1, .sm\:hover\:aspect-ratio-1\/1:hover, .sm\:focus\:aspect-ratio-1\/1:focus, .sm\:active\:aspect-ratio-1\/1:active, .sm\:placeholder\:aspect-ratio-1\/1::placeholder {
-    aspect-ratio: 1;
+    aspect-ratio: "1/1";
   }
   .sm\:aspect-ratio-1\/2, .sm\:hover\:aspect-ratio-1\/2:hover, .sm\:focus\:aspect-ratio-1\/2:focus, .sm\:active\:aspect-ratio-1\/2:active, .sm\:placeholder\:aspect-ratio-1\/2::placeholder {
-    aspect-ratio: 0.5;
+    aspect-ratio: "1/2";
   }
   .sm\:aspect-ratio-2\/1, .sm\:hover\:aspect-ratio-2\/1:hover, .sm\:focus\:aspect-ratio-2\/1:focus, .sm\:active\:aspect-ratio-2\/1:active, .sm\:placeholder\:aspect-ratio-2\/1::placeholder {
-    aspect-ratio: 2;
+    aspect-ratio: "2/1";
   }
   .sm\:aspect-ratio-3\/1, .sm\:hover\:aspect-ratio-3\/1:hover, .sm\:focus\:aspect-ratio-3\/1:focus, .sm\:active\:aspect-ratio-3\/1:active, .sm\:placeholder\:aspect-ratio-3\/1::placeholder {
-    aspect-ratio: 3;
+    aspect-ratio: "3/1";
   }
   .sm\:aspect-ratio-3\/2, .sm\:hover\:aspect-ratio-3\/2:hover, .sm\:focus\:aspect-ratio-3\/2:focus, .sm\:active\:aspect-ratio-3\/2:active, .sm\:placeholder\:aspect-ratio-3\/2::placeholder {
-    aspect-ratio: 1.5;
+    aspect-ratio: "3/2";
   }
   .sm\:aspect-ratio-4\/1, .sm\:hover\:aspect-ratio-4\/1:hover, .sm\:focus\:aspect-ratio-4\/1:focus, .sm\:active\:aspect-ratio-4\/1:active, .sm\:placeholder\:aspect-ratio-4\/1::placeholder {
-    aspect-ratio: 4;
+    aspect-ratio: "4/1";
   }
   .sm\:aspect-ratio-4\/3, .sm\:hover\:aspect-ratio-4\/3:hover, .sm\:focus\:aspect-ratio-4\/3:focus, .sm\:active\:aspect-ratio-4\/3:active, .sm\:placeholder\:aspect-ratio-4\/3::placeholder {
-    aspect-ratio: 1.3333333333;
+    aspect-ratio: "4/3";
   }
   .sm\:aspect-ratio-5\/4, .sm\:hover\:aspect-ratio-5\/4:hover, .sm\:focus\:aspect-ratio-5\/4:focus, .sm\:active\:aspect-ratio-5\/4:active, .sm\:placeholder\:aspect-ratio-5\/4::placeholder {
-    aspect-ratio: 1.25;
+    aspect-ratio: "5/4";
   }
   .sm\:aspect-ratio-9\/16, .sm\:hover\:aspect-ratio-9\/16:hover, .sm\:focus\:aspect-ratio-9\/16:focus, .sm\:active\:aspect-ratio-9\/16:active, .sm\:placeholder\:aspect-ratio-9\/16::placeholder {
-    aspect-ratio: 0.5625;
+    aspect-ratio: "9/16";
   }
   .sm\:aspect-ratio-14\/9, .sm\:hover\:aspect-ratio-14\/9:hover, .sm\:focus\:aspect-ratio-14\/9:focus, .sm\:active\:aspect-ratio-14\/9:active, .sm\:placeholder\:aspect-ratio-14\/9::placeholder {
-    aspect-ratio: 1.5555555556;
+    aspect-ratio: "14/9";
   }
   .sm\:aspect-ratio-16\/7, .sm\:hover\:aspect-ratio-16\/7:hover, .sm\:focus\:aspect-ratio-16\/7:focus, .sm\:active\:aspect-ratio-16\/7:active, .sm\:placeholder\:aspect-ratio-16\/7::placeholder {
-    aspect-ratio: 2.2857142857;
+    aspect-ratio: "16/7";
   }
   .sm\:aspect-ratio-16\/9, .sm\:hover\:aspect-ratio-16\/9:hover, .sm\:focus\:aspect-ratio-16\/9:focus, .sm\:active\:aspect-ratio-16\/9:active, .sm\:placeholder\:aspect-ratio-16\/9::placeholder {
-    aspect-ratio: 1.7777777778;
+    aspect-ratio: "16/9";
   }
   .sm\:aspect-ratio-16\/10, .sm\:hover\:aspect-ratio-16\/10:hover, .sm\:focus\:aspect-ratio-16\/10:focus, .sm\:active\:aspect-ratio-16\/10:active, .sm\:placeholder\:aspect-ratio-16\/10::placeholder {
-    aspect-ratio: 1.6;
+    aspect-ratio: "16/10";
   }
   .sm\:aspect-ratio-auto, .sm\:hover\:aspect-ratio-auto:hover, .sm\:focus\:aspect-ratio-auto:focus, .sm\:active\:aspect-ratio-auto:active, .sm\:placeholder\:aspect-ratio-auto::placeholder {
-    aspect-ratio: auto;
+    aspect-ratio: "auto";
   }
 }
 @media (min-width: 77.5rem) {
   .md\:aspect-ratio-1\/1, .md\:hover\:aspect-ratio-1\/1:hover, .md\:focus\:aspect-ratio-1\/1:focus, .md\:active\:aspect-ratio-1\/1:active, .md\:placeholder\:aspect-ratio-1\/1::placeholder {
-    aspect-ratio: 1;
+    aspect-ratio: "1/1";
   }
   .md\:aspect-ratio-1\/2, .md\:hover\:aspect-ratio-1\/2:hover, .md\:focus\:aspect-ratio-1\/2:focus, .md\:active\:aspect-ratio-1\/2:active, .md\:placeholder\:aspect-ratio-1\/2::placeholder {
-    aspect-ratio: 0.5;
+    aspect-ratio: "1/2";
   }
   .md\:aspect-ratio-2\/1, .md\:hover\:aspect-ratio-2\/1:hover, .md\:focus\:aspect-ratio-2\/1:focus, .md\:active\:aspect-ratio-2\/1:active, .md\:placeholder\:aspect-ratio-2\/1::placeholder {
-    aspect-ratio: 2;
+    aspect-ratio: "2/1";
   }
   .md\:aspect-ratio-3\/1, .md\:hover\:aspect-ratio-3\/1:hover, .md\:focus\:aspect-ratio-3\/1:focus, .md\:active\:aspect-ratio-3\/1:active, .md\:placeholder\:aspect-ratio-3\/1::placeholder {
-    aspect-ratio: 3;
+    aspect-ratio: "3/1";
   }
   .md\:aspect-ratio-3\/2, .md\:hover\:aspect-ratio-3\/2:hover, .md\:focus\:aspect-ratio-3\/2:focus, .md\:active\:aspect-ratio-3\/2:active, .md\:placeholder\:aspect-ratio-3\/2::placeholder {
-    aspect-ratio: 1.5;
+    aspect-ratio: "3/2";
   }
   .md\:aspect-ratio-4\/1, .md\:hover\:aspect-ratio-4\/1:hover, .md\:focus\:aspect-ratio-4\/1:focus, .md\:active\:aspect-ratio-4\/1:active, .md\:placeholder\:aspect-ratio-4\/1::placeholder {
-    aspect-ratio: 4;
+    aspect-ratio: "4/1";
   }
   .md\:aspect-ratio-4\/3, .md\:hover\:aspect-ratio-4\/3:hover, .md\:focus\:aspect-ratio-4\/3:focus, .md\:active\:aspect-ratio-4\/3:active, .md\:placeholder\:aspect-ratio-4\/3::placeholder {
-    aspect-ratio: 1.3333333333;
+    aspect-ratio: "4/3";
   }
   .md\:aspect-ratio-5\/4, .md\:hover\:aspect-ratio-5\/4:hover, .md\:focus\:aspect-ratio-5\/4:focus, .md\:active\:aspect-ratio-5\/4:active, .md\:placeholder\:aspect-ratio-5\/4::placeholder {
-    aspect-ratio: 1.25;
+    aspect-ratio: "5/4";
   }
   .md\:aspect-ratio-9\/16, .md\:hover\:aspect-ratio-9\/16:hover, .md\:focus\:aspect-ratio-9\/16:focus, .md\:active\:aspect-ratio-9\/16:active, .md\:placeholder\:aspect-ratio-9\/16::placeholder {
-    aspect-ratio: 0.5625;
+    aspect-ratio: "9/16";
   }
   .md\:aspect-ratio-14\/9, .md\:hover\:aspect-ratio-14\/9:hover, .md\:focus\:aspect-ratio-14\/9:focus, .md\:active\:aspect-ratio-14\/9:active, .md\:placeholder\:aspect-ratio-14\/9::placeholder {
-    aspect-ratio: 1.5555555556;
+    aspect-ratio: "14/9";
   }
   .md\:aspect-ratio-16\/7, .md\:hover\:aspect-ratio-16\/7:hover, .md\:focus\:aspect-ratio-16\/7:focus, .md\:active\:aspect-ratio-16\/7:active, .md\:placeholder\:aspect-ratio-16\/7::placeholder {
-    aspect-ratio: 2.2857142857;
+    aspect-ratio: "16/7";
   }
   .md\:aspect-ratio-16\/9, .md\:hover\:aspect-ratio-16\/9:hover, .md\:focus\:aspect-ratio-16\/9:focus, .md\:active\:aspect-ratio-16\/9:active, .md\:placeholder\:aspect-ratio-16\/9::placeholder {
-    aspect-ratio: 1.7777777778;
+    aspect-ratio: "16/9";
   }
   .md\:aspect-ratio-16\/10, .md\:hover\:aspect-ratio-16\/10:hover, .md\:focus\:aspect-ratio-16\/10:focus, .md\:active\:aspect-ratio-16\/10:active, .md\:placeholder\:aspect-ratio-16\/10::placeholder {
-    aspect-ratio: 1.6;
+    aspect-ratio: "16/10";
   }
   .md\:aspect-ratio-auto, .md\:hover\:aspect-ratio-auto:hover, .md\:focus\:aspect-ratio-auto:focus, .md\:active\:aspect-ratio-auto:active, .md\:placeholder\:aspect-ratio-auto::placeholder {
-    aspect-ratio: auto;
+    aspect-ratio: "auto";
   }
 }
 @media (min-width: 90rem) {
   .lg\:aspect-ratio-1\/1, .lg\:hover\:aspect-ratio-1\/1:hover, .lg\:focus\:aspect-ratio-1\/1:focus, .lg\:active\:aspect-ratio-1\/1:active, .lg\:placeholder\:aspect-ratio-1\/1::placeholder {
-    aspect-ratio: 1;
+    aspect-ratio: "1/1";
   }
   .lg\:aspect-ratio-1\/2, .lg\:hover\:aspect-ratio-1\/2:hover, .lg\:focus\:aspect-ratio-1\/2:focus, .lg\:active\:aspect-ratio-1\/2:active, .lg\:placeholder\:aspect-ratio-1\/2::placeholder {
-    aspect-ratio: 0.5;
+    aspect-ratio: "1/2";
   }
   .lg\:aspect-ratio-2\/1, .lg\:hover\:aspect-ratio-2\/1:hover, .lg\:focus\:aspect-ratio-2\/1:focus, .lg\:active\:aspect-ratio-2\/1:active, .lg\:placeholder\:aspect-ratio-2\/1::placeholder {
-    aspect-ratio: 2;
+    aspect-ratio: "2/1";
   }
   .lg\:aspect-ratio-3\/1, .lg\:hover\:aspect-ratio-3\/1:hover, .lg\:focus\:aspect-ratio-3\/1:focus, .lg\:active\:aspect-ratio-3\/1:active, .lg\:placeholder\:aspect-ratio-3\/1::placeholder {
-    aspect-ratio: 3;
+    aspect-ratio: "3/1";
   }
   .lg\:aspect-ratio-3\/2, .lg\:hover\:aspect-ratio-3\/2:hover, .lg\:focus\:aspect-ratio-3\/2:focus, .lg\:active\:aspect-ratio-3\/2:active, .lg\:placeholder\:aspect-ratio-3\/2::placeholder {
-    aspect-ratio: 1.5;
+    aspect-ratio: "3/2";
   }
   .lg\:aspect-ratio-4\/1, .lg\:hover\:aspect-ratio-4\/1:hover, .lg\:focus\:aspect-ratio-4\/1:focus, .lg\:active\:aspect-ratio-4\/1:active, .lg\:placeholder\:aspect-ratio-4\/1::placeholder {
-    aspect-ratio: 4;
+    aspect-ratio: "4/1";
   }
   .lg\:aspect-ratio-4\/3, .lg\:hover\:aspect-ratio-4\/3:hover, .lg\:focus\:aspect-ratio-4\/3:focus, .lg\:active\:aspect-ratio-4\/3:active, .lg\:placeholder\:aspect-ratio-4\/3::placeholder {
-    aspect-ratio: 1.3333333333;
+    aspect-ratio: "4/3";
   }
   .lg\:aspect-ratio-5\/4, .lg\:hover\:aspect-ratio-5\/4:hover, .lg\:focus\:aspect-ratio-5\/4:focus, .lg\:active\:aspect-ratio-5\/4:active, .lg\:placeholder\:aspect-ratio-5\/4::placeholder {
-    aspect-ratio: 1.25;
+    aspect-ratio: "5/4";
   }
   .lg\:aspect-ratio-9\/16, .lg\:hover\:aspect-ratio-9\/16:hover, .lg\:focus\:aspect-ratio-9\/16:focus, .lg\:active\:aspect-ratio-9\/16:active, .lg\:placeholder\:aspect-ratio-9\/16::placeholder {
-    aspect-ratio: 0.5625;
+    aspect-ratio: "9/16";
   }
   .lg\:aspect-ratio-14\/9, .lg\:hover\:aspect-ratio-14\/9:hover, .lg\:focus\:aspect-ratio-14\/9:focus, .lg\:active\:aspect-ratio-14\/9:active, .lg\:placeholder\:aspect-ratio-14\/9::placeholder {
-    aspect-ratio: 1.5555555556;
+    aspect-ratio: "14/9";
   }
   .lg\:aspect-ratio-16\/7, .lg\:hover\:aspect-ratio-16\/7:hover, .lg\:focus\:aspect-ratio-16\/7:focus, .lg\:active\:aspect-ratio-16\/7:active, .lg\:placeholder\:aspect-ratio-16\/7::placeholder {
-    aspect-ratio: 2.2857142857;
+    aspect-ratio: "16/7";
   }
   .lg\:aspect-ratio-16\/9, .lg\:hover\:aspect-ratio-16\/9:hover, .lg\:focus\:aspect-ratio-16\/9:focus, .lg\:active\:aspect-ratio-16\/9:active, .lg\:placeholder\:aspect-ratio-16\/9::placeholder {
-    aspect-ratio: 1.7777777778;
+    aspect-ratio: "16/9";
   }
   .lg\:aspect-ratio-16\/10, .lg\:hover\:aspect-ratio-16\/10:hover, .lg\:focus\:aspect-ratio-16\/10:focus, .lg\:active\:aspect-ratio-16\/10:active, .lg\:placeholder\:aspect-ratio-16\/10::placeholder {
-    aspect-ratio: 1.6;
+    aspect-ratio: "16/10";
   }
   .lg\:aspect-ratio-auto, .lg\:hover\:aspect-ratio-auto:hover, .lg\:focus\:aspect-ratio-auto:focus, .lg\:active\:aspect-ratio-auto:active, .lg\:placeholder\:aspect-ratio-auto::placeholder {
-    aspect-ratio: auto;
+    aspect-ratio: "auto";
   }
 }
 @media (min-width: 120rem) {
   .xl\:aspect-ratio-1\/1, .xl\:hover\:aspect-ratio-1\/1:hover, .xl\:focus\:aspect-ratio-1\/1:focus, .xl\:active\:aspect-ratio-1\/1:active, .xl\:placeholder\:aspect-ratio-1\/1::placeholder {
-    aspect-ratio: 1;
+    aspect-ratio: "1/1";
   }
   .xl\:aspect-ratio-1\/2, .xl\:hover\:aspect-ratio-1\/2:hover, .xl\:focus\:aspect-ratio-1\/2:focus, .xl\:active\:aspect-ratio-1\/2:active, .xl\:placeholder\:aspect-ratio-1\/2::placeholder {
-    aspect-ratio: 0.5;
+    aspect-ratio: "1/2";
   }
   .xl\:aspect-ratio-2\/1, .xl\:hover\:aspect-ratio-2\/1:hover, .xl\:focus\:aspect-ratio-2\/1:focus, .xl\:active\:aspect-ratio-2\/1:active, .xl\:placeholder\:aspect-ratio-2\/1::placeholder {
-    aspect-ratio: 2;
+    aspect-ratio: "2/1";
   }
   .xl\:aspect-ratio-3\/1, .xl\:hover\:aspect-ratio-3\/1:hover, .xl\:focus\:aspect-ratio-3\/1:focus, .xl\:active\:aspect-ratio-3\/1:active, .xl\:placeholder\:aspect-ratio-3\/1::placeholder {
-    aspect-ratio: 3;
+    aspect-ratio: "3/1";
   }
   .xl\:aspect-ratio-3\/2, .xl\:hover\:aspect-ratio-3\/2:hover, .xl\:focus\:aspect-ratio-3\/2:focus, .xl\:active\:aspect-ratio-3\/2:active, .xl\:placeholder\:aspect-ratio-3\/2::placeholder {
-    aspect-ratio: 1.5;
+    aspect-ratio: "3/2";
   }
   .xl\:aspect-ratio-4\/1, .xl\:hover\:aspect-ratio-4\/1:hover, .xl\:focus\:aspect-ratio-4\/1:focus, .xl\:active\:aspect-ratio-4\/1:active, .xl\:placeholder\:aspect-ratio-4\/1::placeholder {
-    aspect-ratio: 4;
+    aspect-ratio: "4/1";
   }
   .xl\:aspect-ratio-4\/3, .xl\:hover\:aspect-ratio-4\/3:hover, .xl\:focus\:aspect-ratio-4\/3:focus, .xl\:active\:aspect-ratio-4\/3:active, .xl\:placeholder\:aspect-ratio-4\/3::placeholder {
-    aspect-ratio: 1.3333333333;
+    aspect-ratio: "4/3";
   }
   .xl\:aspect-ratio-5\/4, .xl\:hover\:aspect-ratio-5\/4:hover, .xl\:focus\:aspect-ratio-5\/4:focus, .xl\:active\:aspect-ratio-5\/4:active, .xl\:placeholder\:aspect-ratio-5\/4::placeholder {
-    aspect-ratio: 1.25;
+    aspect-ratio: "5/4";
   }
   .xl\:aspect-ratio-9\/16, .xl\:hover\:aspect-ratio-9\/16:hover, .xl\:focus\:aspect-ratio-9\/16:focus, .xl\:active\:aspect-ratio-9\/16:active, .xl\:placeholder\:aspect-ratio-9\/16::placeholder {
-    aspect-ratio: 0.5625;
+    aspect-ratio: "9/16";
   }
   .xl\:aspect-ratio-14\/9, .xl\:hover\:aspect-ratio-14\/9:hover, .xl\:focus\:aspect-ratio-14\/9:focus, .xl\:active\:aspect-ratio-14\/9:active, .xl\:placeholder\:aspect-ratio-14\/9::placeholder {
-    aspect-ratio: 1.5555555556;
+    aspect-ratio: "14/9";
   }
   .xl\:aspect-ratio-16\/7, .xl\:hover\:aspect-ratio-16\/7:hover, .xl\:focus\:aspect-ratio-16\/7:focus, .xl\:active\:aspect-ratio-16\/7:active, .xl\:placeholder\:aspect-ratio-16\/7::placeholder {
-    aspect-ratio: 2.2857142857;
+    aspect-ratio: "16/7";
   }
   .xl\:aspect-ratio-16\/9, .xl\:hover\:aspect-ratio-16\/9:hover, .xl\:focus\:aspect-ratio-16\/9:focus, .xl\:active\:aspect-ratio-16\/9:active, .xl\:placeholder\:aspect-ratio-16\/9::placeholder {
-    aspect-ratio: 1.7777777778;
+    aspect-ratio: "16/9";
   }
   .xl\:aspect-ratio-16\/10, .xl\:hover\:aspect-ratio-16\/10:hover, .xl\:focus\:aspect-ratio-16\/10:focus, .xl\:active\:aspect-ratio-16\/10:active, .xl\:placeholder\:aspect-ratio-16\/10::placeholder {
-    aspect-ratio: 1.6;
+    aspect-ratio: "16/10";
   }
   .xl\:aspect-ratio-auto, .xl\:hover\:aspect-ratio-auto:hover, .xl\:focus\:aspect-ratio-auto:focus, .xl\:active\:aspect-ratio-auto:active, .xl\:placeholder\:aspect-ratio-auto::placeholder {
-    aspect-ratio: auto;
+    aspect-ratio: "auto";
   }
 }
 .flex-none, .hover\:flex-none:hover, .focus\:flex-none:focus, .active\:flex-none:active, .placeholder\:flex-none::placeholder {

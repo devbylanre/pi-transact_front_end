@@ -1,7 +1,6 @@
 import React from 'react';
 import Flex from '../Flex/Flex';
-import { PolymorphicRef } from '../../types/polymorphicTypes';
-import Image, { ImageProps } from '../Image/Image';
+import Image from '../Image/Image';
 import Text from '../Text/Text';
 import AvatarProvider from '../../contexts/AvatarContext';
 import useAvatar from '../../hooks/useAvatar';
@@ -15,7 +14,7 @@ type AvatarComponent = React.ForwardRefExoticComponent<
   Omit<Avatar.Props, 'ref'> & React.RefAttributes<HTMLDivElement>
 > & {
   Image: React.ForwardRefExoticComponent<
-    Omit<ImageProps, 'ref'> & React.RefAttributes<HTMLImageElement>
+    Omit<Image.Props, 'ref'> & React.RefAttributes<HTMLImageElement>
   >;
   Fallback: React.ForwardRefExoticComponent<
     Omit<Text.Props, 'ref'> & React.RefAttributes<HTMLSpanElement>
@@ -23,13 +22,27 @@ type AvatarComponent = React.ForwardRefExoticComponent<
 };
 
 const Avatar = React.forwardRef((props: Avatar.Props, ref: Avatar.Ref) => {
-  const { position = 'relative', hasError, ...rest } = props;
+  const {
+    size = 32,
+    radius = 'max',
+    position = 'relative',
+    alignItems = 'center',
+    justifyContent = 'center',
+    backgroundColor = 'primary-95',
+    hasError,
+    ...rest
+  } = props;
 
   return (
     <AvatarProvider hasError={hasError}>
       <Flex
         ref={ref}
+        size={size}
+        radius={radius}
         position={position}
+        alignItems={alignItems}
+        justifyContent={justifyContent}
+        backgroundColor={backgroundColor}
         {...rest}
       />
     </AvatarProvider>
@@ -37,8 +50,8 @@ const Avatar = React.forwardRef((props: Avatar.Props, ref: Avatar.Ref) => {
 }) as AvatarComponent;
 
 const ImageComponent = React.forwardRef(
-  (props: ImageProps, ref: PolymorphicRef<'img'>) => {
-    const { size = 4, radius = 'max', onError, ...rest } = props;
+  (props: Image.Props, ref: Image.Ref) => {
+    const { size = 'full', radius = 'max', onError, ...rest } = props;
     const { isError, setIsError } = useAvatar();
 
     if (isError) {
@@ -64,7 +77,7 @@ const ImageComponent = React.forwardRef(
 
 const FallbackComponent = React.forwardRef(
   (props: Text.Props, ref: Text.Ref) => {
-    const { size = 14, weight = 500, ...rest } = props;
+    const { size = 14, weight = 500, color = 'primary-40', ...rest } = props;
     const { isError } = useAvatar();
 
     if (!isError) {
@@ -76,6 +89,7 @@ const FallbackComponent = React.forwardRef(
         ref={ref}
         size={size}
         weight={weight}
+        color={color}
         {...rest}
       />
     );

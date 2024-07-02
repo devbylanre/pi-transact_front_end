@@ -6,6 +6,21 @@
 
 :root {
   --header-container-height: 80px;
+  --app-sidebar-width: 30rem;
+}
+
+.app-sidebar-width {
+  width: var(--app-sidebar-width);
+}
+
+.app-sidebar-left {
+  margin-left: 0rem;
+}
+
+@media (min-width: 77.5rem) {
+  .app-sidebar-left {
+    margin-left: var(--app-sidebar-width);
+  }
 }
 
 .header-height {
