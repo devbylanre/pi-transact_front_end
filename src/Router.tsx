@@ -8,6 +8,9 @@ import PricingPage from './pages/PricingPage';
 import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
 import AuthLayout from './layouts/auth/Layout';
+import AppLayout from './layouts/app/Layout';
+import PrivacyPage from './pages/PrivacyPage';
+import TermsPage from './pages/TermsPage';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +21,8 @@ const router = createBrowserRouter([
       { path: 'about', element: <AboutPage /> },
       { path: 'support', element: <SupportPage /> },
       { path: 'pricing', element: <PricingPage /> },
+      { path: 'privacy-policy', element: <PrivacyPage /> },
+      { path: 'terms-of-use', element: <TermsPage /> },
     ],
   },
   {
@@ -27,6 +32,11 @@ const router = createBrowserRouter([
       { path: 'new', element: <RegisterPage /> },
       { path: 'me', element: <LoginPage /> },
     ],
+  },
+  {
+    path: 'app',
+    element: <AppLayout />,
+    children: [{ index: true, element: '' }],
   },
 ]);
 
