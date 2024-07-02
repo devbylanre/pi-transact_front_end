@@ -6600,235 +6600,235 @@ body.portal {
   }
 }
 .aspect-ratio-1\/1, .hover\:aspect-ratio-1\/1:hover, .focus\:aspect-ratio-1\/1:focus, .active\:aspect-ratio-1\/1:active, .placeholder\:aspect-ratio-1\/1::placeholder {
-  aspect-ratio: "1/1";
+  aspect-ratio: 1;
 }
 
 .aspect-ratio-1\/2, .hover\:aspect-ratio-1\/2:hover, .focus\:aspect-ratio-1\/2:focus, .active\:aspect-ratio-1\/2:active, .placeholder\:aspect-ratio-1\/2::placeholder {
-  aspect-ratio: "1/2";
+  aspect-ratio: 0.5;
 }
 
 .aspect-ratio-2\/1, .hover\:aspect-ratio-2\/1:hover, .focus\:aspect-ratio-2\/1:focus, .active\:aspect-ratio-2\/1:active, .placeholder\:aspect-ratio-2\/1::placeholder {
-  aspect-ratio: "2/1";
+  aspect-ratio: 2;
 }
 
 .aspect-ratio-3\/1, .hover\:aspect-ratio-3\/1:hover, .focus\:aspect-ratio-3\/1:focus, .active\:aspect-ratio-3\/1:active, .placeholder\:aspect-ratio-3\/1::placeholder {
-  aspect-ratio: "3/1";
+  aspect-ratio: 3;
 }
 
 .aspect-ratio-3\/2, .hover\:aspect-ratio-3\/2:hover, .focus\:aspect-ratio-3\/2:focus, .active\:aspect-ratio-3\/2:active, .placeholder\:aspect-ratio-3\/2::placeholder {
-  aspect-ratio: "3/2";
+  aspect-ratio: 1.5;
 }
 
 .aspect-ratio-4\/1, .hover\:aspect-ratio-4\/1:hover, .focus\:aspect-ratio-4\/1:focus, .active\:aspect-ratio-4\/1:active, .placeholder\:aspect-ratio-4\/1::placeholder {
-  aspect-ratio: "4/1";
+  aspect-ratio: 4;
 }
 
 .aspect-ratio-4\/3, .hover\:aspect-ratio-4\/3:hover, .focus\:aspect-ratio-4\/3:focus, .active\:aspect-ratio-4\/3:active, .placeholder\:aspect-ratio-4\/3::placeholder {
-  aspect-ratio: "4/3";
+  aspect-ratio: 1.3333333333;
 }
 
 .aspect-ratio-5\/4, .hover\:aspect-ratio-5\/4:hover, .focus\:aspect-ratio-5\/4:focus, .active\:aspect-ratio-5\/4:active, .placeholder\:aspect-ratio-5\/4::placeholder {
-  aspect-ratio: "5/4";
+  aspect-ratio: 1.25;
 }
 
 .aspect-ratio-9\/16, .hover\:aspect-ratio-9\/16:hover, .focus\:aspect-ratio-9\/16:focus, .active\:aspect-ratio-9\/16:active, .placeholder\:aspect-ratio-9\/16::placeholder {
-  aspect-ratio: "9/16";
+  aspect-ratio: 0.5625;
 }
 
 .aspect-ratio-14\/9, .hover\:aspect-ratio-14\/9:hover, .focus\:aspect-ratio-14\/9:focus, .active\:aspect-ratio-14\/9:active, .placeholder\:aspect-ratio-14\/9::placeholder {
-  aspect-ratio: "14/9";
+  aspect-ratio: 1.5555555556;
 }
 
 .aspect-ratio-16\/7, .hover\:aspect-ratio-16\/7:hover, .focus\:aspect-ratio-16\/7:focus, .active\:aspect-ratio-16\/7:active, .placeholder\:aspect-ratio-16\/7::placeholder {
-  aspect-ratio: "16/7";
+  aspect-ratio: 2.2857142857;
 }
 
 .aspect-ratio-16\/9, .hover\:aspect-ratio-16\/9:hover, .focus\:aspect-ratio-16\/9:focus, .active\:aspect-ratio-16\/9:active, .placeholder\:aspect-ratio-16\/9::placeholder {
-  aspect-ratio: "16/9";
+  aspect-ratio: 1.7777777778;
 }
 
 .aspect-ratio-16\/10, .hover\:aspect-ratio-16\/10:hover, .focus\:aspect-ratio-16\/10:focus, .active\:aspect-ratio-16\/10:active, .placeholder\:aspect-ratio-16\/10::placeholder {
-  aspect-ratio: "16/10";
+  aspect-ratio: 1.6;
 }
 
 .aspect-ratio-auto, .hover\:aspect-ratio-auto:hover, .focus\:aspect-ratio-auto:focus, .active\:aspect-ratio-auto:active, .placeholder\:aspect-ratio-auto::placeholder {
-  aspect-ratio: "auto";
+  aspect-ratio: auto;
 }
 
 @media (min-width: 48rem) {
   .sm\:aspect-ratio-1\/1, .sm\:hover\:aspect-ratio-1\/1:hover, .sm\:focus\:aspect-ratio-1\/1:focus, .sm\:active\:aspect-ratio-1\/1:active, .sm\:placeholder\:aspect-ratio-1\/1::placeholder {
-    aspect-ratio: "1/1";
+    aspect-ratio: 1;
   }
   .sm\:aspect-ratio-1\/2, .sm\:hover\:aspect-ratio-1\/2:hover, .sm\:focus\:aspect-ratio-1\/2:focus, .sm\:active\:aspect-ratio-1\/2:active, .sm\:placeholder\:aspect-ratio-1\/2::placeholder {
-    aspect-ratio: "1/2";
+    aspect-ratio: 0.5;
   }
   .sm\:aspect-ratio-2\/1, .sm\:hover\:aspect-ratio-2\/1:hover, .sm\:focus\:aspect-ratio-2\/1:focus, .sm\:active\:aspect-ratio-2\/1:active, .sm\:placeholder\:aspect-ratio-2\/1::placeholder {
-    aspect-ratio: "2/1";
+    aspect-ratio: 2;
   }
   .sm\:aspect-ratio-3\/1, .sm\:hover\:aspect-ratio-3\/1:hover, .sm\:focus\:aspect-ratio-3\/1:focus, .sm\:active\:aspect-ratio-3\/1:active, .sm\:placeholder\:aspect-ratio-3\/1::placeholder {
-    aspect-ratio: "3/1";
+    aspect-ratio: 3;
   }
   .sm\:aspect-ratio-3\/2, .sm\:hover\:aspect-ratio-3\/2:hover, .sm\:focus\:aspect-ratio-3\/2:focus, .sm\:active\:aspect-ratio-3\/2:active, .sm\:placeholder\:aspect-ratio-3\/2::placeholder {
-    aspect-ratio: "3/2";
+    aspect-ratio: 1.5;
   }
   .sm\:aspect-ratio-4\/1, .sm\:hover\:aspect-ratio-4\/1:hover, .sm\:focus\:aspect-ratio-4\/1:focus, .sm\:active\:aspect-ratio-4\/1:active, .sm\:placeholder\:aspect-ratio-4\/1::placeholder {
-    aspect-ratio: "4/1";
+    aspect-ratio: 4;
   }
   .sm\:aspect-ratio-4\/3, .sm\:hover\:aspect-ratio-4\/3:hover, .sm\:focus\:aspect-ratio-4\/3:focus, .sm\:active\:aspect-ratio-4\/3:active, .sm\:placeholder\:aspect-ratio-4\/3::placeholder {
-    aspect-ratio: "4/3";
+    aspect-ratio: 1.3333333333;
   }
   .sm\:aspect-ratio-5\/4, .sm\:hover\:aspect-ratio-5\/4:hover, .sm\:focus\:aspect-ratio-5\/4:focus, .sm\:active\:aspect-ratio-5\/4:active, .sm\:placeholder\:aspect-ratio-5\/4::placeholder {
-    aspect-ratio: "5/4";
+    aspect-ratio: 1.25;
   }
   .sm\:aspect-ratio-9\/16, .sm\:hover\:aspect-ratio-9\/16:hover, .sm\:focus\:aspect-ratio-9\/16:focus, .sm\:active\:aspect-ratio-9\/16:active, .sm\:placeholder\:aspect-ratio-9\/16::placeholder {
-    aspect-ratio: "9/16";
+    aspect-ratio: 0.5625;
   }
   .sm\:aspect-ratio-14\/9, .sm\:hover\:aspect-ratio-14\/9:hover, .sm\:focus\:aspect-ratio-14\/9:focus, .sm\:active\:aspect-ratio-14\/9:active, .sm\:placeholder\:aspect-ratio-14\/9::placeholder {
-    aspect-ratio: "14/9";
+    aspect-ratio: 1.5555555556;
   }
   .sm\:aspect-ratio-16\/7, .sm\:hover\:aspect-ratio-16\/7:hover, .sm\:focus\:aspect-ratio-16\/7:focus, .sm\:active\:aspect-ratio-16\/7:active, .sm\:placeholder\:aspect-ratio-16\/7::placeholder {
-    aspect-ratio: "16/7";
+    aspect-ratio: 2.2857142857;
   }
   .sm\:aspect-ratio-16\/9, .sm\:hover\:aspect-ratio-16\/9:hover, .sm\:focus\:aspect-ratio-16\/9:focus, .sm\:active\:aspect-ratio-16\/9:active, .sm\:placeholder\:aspect-ratio-16\/9::placeholder {
-    aspect-ratio: "16/9";
+    aspect-ratio: 1.7777777778;
   }
   .sm\:aspect-ratio-16\/10, .sm\:hover\:aspect-ratio-16\/10:hover, .sm\:focus\:aspect-ratio-16\/10:focus, .sm\:active\:aspect-ratio-16\/10:active, .sm\:placeholder\:aspect-ratio-16\/10::placeholder {
-    aspect-ratio: "16/10";
+    aspect-ratio: 1.6;
   }
   .sm\:aspect-ratio-auto, .sm\:hover\:aspect-ratio-auto:hover, .sm\:focus\:aspect-ratio-auto:focus, .sm\:active\:aspect-ratio-auto:active, .sm\:placeholder\:aspect-ratio-auto::placeholder {
-    aspect-ratio: "auto";
+    aspect-ratio: auto;
   }
 }
 @media (min-width: 77.5rem) {
   .md\:aspect-ratio-1\/1, .md\:hover\:aspect-ratio-1\/1:hover, .md\:focus\:aspect-ratio-1\/1:focus, .md\:active\:aspect-ratio-1\/1:active, .md\:placeholder\:aspect-ratio-1\/1::placeholder {
-    aspect-ratio: "1/1";
+    aspect-ratio: 1;
   }
   .md\:aspect-ratio-1\/2, .md\:hover\:aspect-ratio-1\/2:hover, .md\:focus\:aspect-ratio-1\/2:focus, .md\:active\:aspect-ratio-1\/2:active, .md\:placeholder\:aspect-ratio-1\/2::placeholder {
-    aspect-ratio: "1/2";
+    aspect-ratio: 0.5;
   }
   .md\:aspect-ratio-2\/1, .md\:hover\:aspect-ratio-2\/1:hover, .md\:focus\:aspect-ratio-2\/1:focus, .md\:active\:aspect-ratio-2\/1:active, .md\:placeholder\:aspect-ratio-2\/1::placeholder {
-    aspect-ratio: "2/1";
+    aspect-ratio: 2;
   }
   .md\:aspect-ratio-3\/1, .md\:hover\:aspect-ratio-3\/1:hover, .md\:focus\:aspect-ratio-3\/1:focus, .md\:active\:aspect-ratio-3\/1:active, .md\:placeholder\:aspect-ratio-3\/1::placeholder {
-    aspect-ratio: "3/1";
+    aspect-ratio: 3;
   }
   .md\:aspect-ratio-3\/2, .md\:hover\:aspect-ratio-3\/2:hover, .md\:focus\:aspect-ratio-3\/2:focus, .md\:active\:aspect-ratio-3\/2:active, .md\:placeholder\:aspect-ratio-3\/2::placeholder {
-    aspect-ratio: "3/2";
+    aspect-ratio: 1.5;
   }
   .md\:aspect-ratio-4\/1, .md\:hover\:aspect-ratio-4\/1:hover, .md\:focus\:aspect-ratio-4\/1:focus, .md\:active\:aspect-ratio-4\/1:active, .md\:placeholder\:aspect-ratio-4\/1::placeholder {
-    aspect-ratio: "4/1";
+    aspect-ratio: 4;
   }
   .md\:aspect-ratio-4\/3, .md\:hover\:aspect-ratio-4\/3:hover, .md\:focus\:aspect-ratio-4\/3:focus, .md\:active\:aspect-ratio-4\/3:active, .md\:placeholder\:aspect-ratio-4\/3::placeholder {
-    aspect-ratio: "4/3";
+    aspect-ratio: 1.3333333333;
   }
   .md\:aspect-ratio-5\/4, .md\:hover\:aspect-ratio-5\/4:hover, .md\:focus\:aspect-ratio-5\/4:focus, .md\:active\:aspect-ratio-5\/4:active, .md\:placeholder\:aspect-ratio-5\/4::placeholder {
-    aspect-ratio: "5/4";
+    aspect-ratio: 1.25;
   }
   .md\:aspect-ratio-9\/16, .md\:hover\:aspect-ratio-9\/16:hover, .md\:focus\:aspect-ratio-9\/16:focus, .md\:active\:aspect-ratio-9\/16:active, .md\:placeholder\:aspect-ratio-9\/16::placeholder {
-    aspect-ratio: "9/16";
+    aspect-ratio: 0.5625;
   }
   .md\:aspect-ratio-14\/9, .md\:hover\:aspect-ratio-14\/9:hover, .md\:focus\:aspect-ratio-14\/9:focus, .md\:active\:aspect-ratio-14\/9:active, .md\:placeholder\:aspect-ratio-14\/9::placeholder {
-    aspect-ratio: "14/9";
+    aspect-ratio: 1.5555555556;
   }
   .md\:aspect-ratio-16\/7, .md\:hover\:aspect-ratio-16\/7:hover, .md\:focus\:aspect-ratio-16\/7:focus, .md\:active\:aspect-ratio-16\/7:active, .md\:placeholder\:aspect-ratio-16\/7::placeholder {
-    aspect-ratio: "16/7";
+    aspect-ratio: 2.2857142857;
   }
   .md\:aspect-ratio-16\/9, .md\:hover\:aspect-ratio-16\/9:hover, .md\:focus\:aspect-ratio-16\/9:focus, .md\:active\:aspect-ratio-16\/9:active, .md\:placeholder\:aspect-ratio-16\/9::placeholder {
-    aspect-ratio: "16/9";
+    aspect-ratio: 1.7777777778;
   }
   .md\:aspect-ratio-16\/10, .md\:hover\:aspect-ratio-16\/10:hover, .md\:focus\:aspect-ratio-16\/10:focus, .md\:active\:aspect-ratio-16\/10:active, .md\:placeholder\:aspect-ratio-16\/10::placeholder {
-    aspect-ratio: "16/10";
+    aspect-ratio: 1.6;
   }
   .md\:aspect-ratio-auto, .md\:hover\:aspect-ratio-auto:hover, .md\:focus\:aspect-ratio-auto:focus, .md\:active\:aspect-ratio-auto:active, .md\:placeholder\:aspect-ratio-auto::placeholder {
-    aspect-ratio: "auto";
+    aspect-ratio: auto;
   }
 }
 @media (min-width: 90rem) {
   .lg\:aspect-ratio-1\/1, .lg\:hover\:aspect-ratio-1\/1:hover, .lg\:focus\:aspect-ratio-1\/1:focus, .lg\:active\:aspect-ratio-1\/1:active, .lg\:placeholder\:aspect-ratio-1\/1::placeholder {
-    aspect-ratio: "1/1";
+    aspect-ratio: 1;
   }
   .lg\:aspect-ratio-1\/2, .lg\:hover\:aspect-ratio-1\/2:hover, .lg\:focus\:aspect-ratio-1\/2:focus, .lg\:active\:aspect-ratio-1\/2:active, .lg\:placeholder\:aspect-ratio-1\/2::placeholder {
-    aspect-ratio: "1/2";
+    aspect-ratio: 0.5;
   }
   .lg\:aspect-ratio-2\/1, .lg\:hover\:aspect-ratio-2\/1:hover, .lg\:focus\:aspect-ratio-2\/1:focus, .lg\:active\:aspect-ratio-2\/1:active, .lg\:placeholder\:aspect-ratio-2\/1::placeholder {
-    aspect-ratio: "2/1";
+    aspect-ratio: 2;
   }
   .lg\:aspect-ratio-3\/1, .lg\:hover\:aspect-ratio-3\/1:hover, .lg\:focus\:aspect-ratio-3\/1:focus, .lg\:active\:aspect-ratio-3\/1:active, .lg\:placeholder\:aspect-ratio-3\/1::placeholder {
-    aspect-ratio: "3/1";
+    aspect-ratio: 3;
   }
   .lg\:aspect-ratio-3\/2, .lg\:hover\:aspect-ratio-3\/2:hover, .lg\:focus\:aspect-ratio-3\/2:focus, .lg\:active\:aspect-ratio-3\/2:active, .lg\:placeholder\:aspect-ratio-3\/2::placeholder {
-    aspect-ratio: "3/2";
+    aspect-ratio: 1.5;
   }
   .lg\:aspect-ratio-4\/1, .lg\:hover\:aspect-ratio-4\/1:hover, .lg\:focus\:aspect-ratio-4\/1:focus, .lg\:active\:aspect-ratio-4\/1:active, .lg\:placeholder\:aspect-ratio-4\/1::placeholder {
-    aspect-ratio: "4/1";
+    aspect-ratio: 4;
   }
   .lg\:aspect-ratio-4\/3, .lg\:hover\:aspect-ratio-4\/3:hover, .lg\:focus\:aspect-ratio-4\/3:focus, .lg\:active\:aspect-ratio-4\/3:active, .lg\:placeholder\:aspect-ratio-4\/3::placeholder {
-    aspect-ratio: "4/3";
+    aspect-ratio: 1.3333333333;
   }
   .lg\:aspect-ratio-5\/4, .lg\:hover\:aspect-ratio-5\/4:hover, .lg\:focus\:aspect-ratio-5\/4:focus, .lg\:active\:aspect-ratio-5\/4:active, .lg\:placeholder\:aspect-ratio-5\/4::placeholder {
-    aspect-ratio: "5/4";
+    aspect-ratio: 1.25;
   }
   .lg\:aspect-ratio-9\/16, .lg\:hover\:aspect-ratio-9\/16:hover, .lg\:focus\:aspect-ratio-9\/16:focus, .lg\:active\:aspect-ratio-9\/16:active, .lg\:placeholder\:aspect-ratio-9\/16::placeholder {
-    aspect-ratio: "9/16";
+    aspect-ratio: 0.5625;
   }
   .lg\:aspect-ratio-14\/9, .lg\:hover\:aspect-ratio-14\/9:hover, .lg\:focus\:aspect-ratio-14\/9:focus, .lg\:active\:aspect-ratio-14\/9:active, .lg\:placeholder\:aspect-ratio-14\/9::placeholder {
-    aspect-ratio: "14/9";
+    aspect-ratio: 1.5555555556;
   }
   .lg\:aspect-ratio-16\/7, .lg\:hover\:aspect-ratio-16\/7:hover, .lg\:focus\:aspect-ratio-16\/7:focus, .lg\:active\:aspect-ratio-16\/7:active, .lg\:placeholder\:aspect-ratio-16\/7::placeholder {
-    aspect-ratio: "16/7";
+    aspect-ratio: 2.2857142857;
   }
   .lg\:aspect-ratio-16\/9, .lg\:hover\:aspect-ratio-16\/9:hover, .lg\:focus\:aspect-ratio-16\/9:focus, .lg\:active\:aspect-ratio-16\/9:active, .lg\:placeholder\:aspect-ratio-16\/9::placeholder {
-    aspect-ratio: "16/9";
+    aspect-ratio: 1.7777777778;
   }
   .lg\:aspect-ratio-16\/10, .lg\:hover\:aspect-ratio-16\/10:hover, .lg\:focus\:aspect-ratio-16\/10:focus, .lg\:active\:aspect-ratio-16\/10:active, .lg\:placeholder\:aspect-ratio-16\/10::placeholder {
-    aspect-ratio: "16/10";
+    aspect-ratio: 1.6;
   }
   .lg\:aspect-ratio-auto, .lg\:hover\:aspect-ratio-auto:hover, .lg\:focus\:aspect-ratio-auto:focus, .lg\:active\:aspect-ratio-auto:active, .lg\:placeholder\:aspect-ratio-auto::placeholder {
-    aspect-ratio: "auto";
+    aspect-ratio: auto;
   }
 }
 @media (min-width: 120rem) {
   .xl\:aspect-ratio-1\/1, .xl\:hover\:aspect-ratio-1\/1:hover, .xl\:focus\:aspect-ratio-1\/1:focus, .xl\:active\:aspect-ratio-1\/1:active, .xl\:placeholder\:aspect-ratio-1\/1::placeholder {
-    aspect-ratio: "1/1";
+    aspect-ratio: 1;
   }
   .xl\:aspect-ratio-1\/2, .xl\:hover\:aspect-ratio-1\/2:hover, .xl\:focus\:aspect-ratio-1\/2:focus, .xl\:active\:aspect-ratio-1\/2:active, .xl\:placeholder\:aspect-ratio-1\/2::placeholder {
-    aspect-ratio: "1/2";
+    aspect-ratio: 0.5;
   }
   .xl\:aspect-ratio-2\/1, .xl\:hover\:aspect-ratio-2\/1:hover, .xl\:focus\:aspect-ratio-2\/1:focus, .xl\:active\:aspect-ratio-2\/1:active, .xl\:placeholder\:aspect-ratio-2\/1::placeholder {
-    aspect-ratio: "2/1";
+    aspect-ratio: 2;
   }
   .xl\:aspect-ratio-3\/1, .xl\:hover\:aspect-ratio-3\/1:hover, .xl\:focus\:aspect-ratio-3\/1:focus, .xl\:active\:aspect-ratio-3\/1:active, .xl\:placeholder\:aspect-ratio-3\/1::placeholder {
-    aspect-ratio: "3/1";
+    aspect-ratio: 3;
   }
   .xl\:aspect-ratio-3\/2, .xl\:hover\:aspect-ratio-3\/2:hover, .xl\:focus\:aspect-ratio-3\/2:focus, .xl\:active\:aspect-ratio-3\/2:active, .xl\:placeholder\:aspect-ratio-3\/2::placeholder {
-    aspect-ratio: "3/2";
+    aspect-ratio: 1.5;
   }
   .xl\:aspect-ratio-4\/1, .xl\:hover\:aspect-ratio-4\/1:hover, .xl\:focus\:aspect-ratio-4\/1:focus, .xl\:active\:aspect-ratio-4\/1:active, .xl\:placeholder\:aspect-ratio-4\/1::placeholder {
-    aspect-ratio: "4/1";
+    aspect-ratio: 4;
   }
   .xl\:aspect-ratio-4\/3, .xl\:hover\:aspect-ratio-4\/3:hover, .xl\:focus\:aspect-ratio-4\/3:focus, .xl\:active\:aspect-ratio-4\/3:active, .xl\:placeholder\:aspect-ratio-4\/3::placeholder {
-    aspect-ratio: "4/3";
+    aspect-ratio: 1.3333333333;
   }
   .xl\:aspect-ratio-5\/4, .xl\:hover\:aspect-ratio-5\/4:hover, .xl\:focus\:aspect-ratio-5\/4:focus, .xl\:active\:aspect-ratio-5\/4:active, .xl\:placeholder\:aspect-ratio-5\/4::placeholder {
-    aspect-ratio: "5/4";
+    aspect-ratio: 1.25;
   }
   .xl\:aspect-ratio-9\/16, .xl\:hover\:aspect-ratio-9\/16:hover, .xl\:focus\:aspect-ratio-9\/16:focus, .xl\:active\:aspect-ratio-9\/16:active, .xl\:placeholder\:aspect-ratio-9\/16::placeholder {
-    aspect-ratio: "9/16";
+    aspect-ratio: 0.5625;
   }
   .xl\:aspect-ratio-14\/9, .xl\:hover\:aspect-ratio-14\/9:hover, .xl\:focus\:aspect-ratio-14\/9:focus, .xl\:active\:aspect-ratio-14\/9:active, .xl\:placeholder\:aspect-ratio-14\/9::placeholder {
-    aspect-ratio: "14/9";
+    aspect-ratio: 1.5555555556;
   }
   .xl\:aspect-ratio-16\/7, .xl\:hover\:aspect-ratio-16\/7:hover, .xl\:focus\:aspect-ratio-16\/7:focus, .xl\:active\:aspect-ratio-16\/7:active, .xl\:placeholder\:aspect-ratio-16\/7::placeholder {
-    aspect-ratio: "16/7";
+    aspect-ratio: 2.2857142857;
   }
   .xl\:aspect-ratio-16\/9, .xl\:hover\:aspect-ratio-16\/9:hover, .xl\:focus\:aspect-ratio-16\/9:focus, .xl\:active\:aspect-ratio-16\/9:active, .xl\:placeholder\:aspect-ratio-16\/9::placeholder {
-    aspect-ratio: "16/9";
+    aspect-ratio: 1.7777777778;
   }
   .xl\:aspect-ratio-16\/10, .xl\:hover\:aspect-ratio-16\/10:hover, .xl\:focus\:aspect-ratio-16\/10:focus, .xl\:active\:aspect-ratio-16\/10:active, .xl\:placeholder\:aspect-ratio-16\/10::placeholder {
-    aspect-ratio: "16/10";
+    aspect-ratio: 1.6;
   }
   .xl\:aspect-ratio-auto, .xl\:hover\:aspect-ratio-auto:hover, .xl\:focus\:aspect-ratio-auto:focus, .xl\:active\:aspect-ratio-auto:active, .xl\:placeholder\:aspect-ratio-auto::placeholder {
-    aspect-ratio: "auto";
+    aspect-ratio: auto;
   }
 }
 .flex-none, .hover\:flex-none:hover, .focus\:flex-none:focus, .active\:flex-none:active, .placeholder\:flex-none::placeholder {

@@ -70,11 +70,11 @@ const ResourcesMenu = () => {
         gridColumnSpan={{ initial: 1, md: 2 }}
       >
         <Flex
-          p={{ initial: 'xl', sm: '2xl' }}
           radius={'2xl'}
           aspectRatio={'16/9'}
           justifyContent={'center'}
           backgroundColor={'gray-100'}
+          p={{ initial: 'xl', sm: '2xl' }}
           display={{ initial: 'hidden', md: 'block' }}
         >
           <Image

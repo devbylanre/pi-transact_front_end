@@ -43,10 +43,10 @@ const Footer = () => {
           gapX={'md'}
         >
           <Text size={16}>
-            <Link to={navigation.login}>Terms of use</Link>
+            <Link to={'/terms-of-use/'}>Terms of use</Link>
           </Text>
           <Text size={16}>
-            <Link to={navigation.login}>Privacy policy</Link>
+            <Link to={'/privacy-policy/'}>Privacy policy</Link>
           </Text>
         </Flex>
       </Box>
