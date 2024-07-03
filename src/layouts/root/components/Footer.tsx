@@ -11,9 +11,9 @@ import navigation from '../../../data/navigation';
 const Footer = () => {
   return (
     <Section
-      mt={'max'}
-      pt={'10xl'}
       pb={'xl'}
+      pt={'10xl'}
+      mt={'10xl'}
       as={'footer'}
       backgroundColor={'gray-100'}
     >

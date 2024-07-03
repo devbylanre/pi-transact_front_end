@@ -4,7 +4,6 @@ import Container from '../../../components/Container/Container';
 import Box from '../../../components/Box/Box';
 import Text from '../../../components/Text/Text';
 import Flex from '../../../components/Flex/Flex';
-import Button from '../../../components/Button/Button';
 import { useInView } from 'react-intersection-observer';
 import Anchor from '../../../components/Link/Anchor';
 
@@ -14,7 +13,7 @@ const Secure = () => {
   return (
     <Section
       px={'lg'}
-      mt={{ initial: '12xl', sm: 'max' }}
+      mt={'max'}
     >
       <Container
         mx={'auto'}
@@ -68,7 +67,7 @@ const Secure = () => {
             to={'/about/'}
             align={'center'}
           >
-            Learn more about Security at Pi-Transact
+            Learn more about Security
           </Anchor>
         </Flex>
       </Container>

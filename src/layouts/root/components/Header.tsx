@@ -17,8 +17,11 @@ const Header = () => {
       px={'lg'}
       as={'header'}
       position={'sticky'}
-      style={{ zIndex: 1 }}
-      backgroundColor={'white'}
+      style={{
+        zIndex: 1,
+        backdropFilter: 'blur(2rem)',
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+      }}
     >
       <Container
         mx={'auto'}

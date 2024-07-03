@@ -11,7 +11,7 @@ const Founder = () => {
   return (
     <Section
       px={'lg'}
-      mt={{ initial: '10xl', sm: 'max' }}
+      mt={'max'}
     >
       <Container
         mx={'auto'}

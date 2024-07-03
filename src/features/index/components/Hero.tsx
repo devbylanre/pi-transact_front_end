@@ -10,30 +10,28 @@ import { InView } from 'react-intersection-observer';
 
 const Hero = () => {
   return (
-    <Section px={'lg'}>
+    <Section
+      px={'lg'}
+      mt={{ initial: '2xl', sm: '8xl' }}
+    >
       <Container
         mx={'auto'}
         container={'xl'}
       >
         <Flex
-          mx={'auto'}
-          gapY={'5xl'}
-          alignItems={'center'}
+          gapY={'xl'}
           flexDirection={'column'}
-          justifyContent={'center'}
-          style={{ minHeight: '85vh', maxWidth: '80rem' }}
+          style={{ maxWidth: '60rem' }}
         >
           <Text
             as={'h1'}
             weight={500}
-            align={'center'}
-            size={{ initial: 56, sm: 80, lg: 96 }}
+            size={{ initial: 40, sm: 80 }}
           >
-            App for ambitious founders
+            Manage your finance like Pro's
           </Text>
           <Text
             as={'h2'}
-            align={'center'}
             color={'gray-20'}
             size={{ initial: 21, sm: 25 }}
             style={{ maxWidth: '56rem' }}
@@ -42,10 +40,7 @@ const Hero = () => {
             journey today
           </Text>
 
-          <Flex
-            gap={'lg'}
-            justifyContent={'center'}
-          >
+          <Flex gap={'lg'}>
             <Link to={'/register/'}>
               <Button>Open Account</Button>
             </Link>
@@ -61,6 +56,7 @@ const Hero = () => {
         </Flex>
 
         <Flex
+          mt={'5xl'}
           mb={'2xl'}
           radius={'2xl'}
           justifyContent={'center'}

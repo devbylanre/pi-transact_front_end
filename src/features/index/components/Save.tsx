@@ -27,7 +27,7 @@ const Save = () => {
   return (
     <Section
       px={'lg'}
-      mt={{ initial: '10xl', sm: 'max' }}
+      mt={'max'}
     >
       <Container
         mx={'auto'}
@@ -42,7 +42,7 @@ const Save = () => {
             as={'h2'}
             weight={500}
             align={'center'}
-            size={{ initial: 40, sm: 56, lg: 64 }}
+            size={{ initial: 32, sm: 56, lg: 64 }}
           >
             Save. Send. Spend.
           </Text>

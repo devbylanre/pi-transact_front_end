@@ -13,7 +13,7 @@ const Future = () => {
   return (
     <Section
       px={'lg'}
-      mt={{ initial: '12xl', sm: 'max' }}
+      mt={'max'}
     >
       <Container
         mx={'auto'}

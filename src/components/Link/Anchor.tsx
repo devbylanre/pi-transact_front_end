@@ -18,8 +18,8 @@ namespace Anchor {
 const Anchor = React.forwardRef((props: Anchor.Props, ref: Anchor.Ref) => {
   const {
     style,
-    size,
-    weight,
+    size = 16,
+    weight = 500,
     align,
     color = 'blue-50',
     decoration = 'none',
