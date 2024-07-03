@@ -6,6 +6,7 @@ import Text from '../../../components/Text/Text';
 import Flex from '../../../components/Flex/Flex';
 import Button from '../../../components/Button/Button';
 import { useInView } from 'react-intersection-observer';
+import Anchor from '../../../components/Link/Anchor';
 
 const Secure = () => {
   const { ref, inView } = useInView({ rootMargin: '-30% 0% -30% 0%' });
@@ -13,7 +14,7 @@ const Secure = () => {
   return (
     <Section
       px={'lg'}
-      mt={'max'}
+      mt={{ initial: '12xl', sm: 'max' }}
     >
       <Container
         mx={'auto'}
@@ -26,7 +27,7 @@ const Secure = () => {
           flexDirection={'column'}
           justifyContent={'between'}
           backgroundColor={'gray-100'}
-          p={{ initial: '2xl', md: '5xl' }}
+          p={{ initial: '3xl', md: '5xl' }}
           aspectRatio={{ initial: '1/1', sm: '2/1', md: '3/2' }}
         >
           <Flex
@@ -39,7 +40,7 @@ const Secure = () => {
               as={'h2'}
               weight={500}
               align={'center'}
-              size={{ initial: 40, sm: 48, md: 56 }}
+              size={{ initial: 32, sm: 48, md: 56 }}
               className={`${inView && 'animate--secureText'} secureText`}
             >
               <Text
@@ -63,18 +64,12 @@ const Secure = () => {
             </Text>
           </Box>
 
-          <Button
-            px={'min'}
-            border={0}
-            height={'fit'}
-            radius={'min'}
+          <Anchor
+            to={'/about/'}
             align={'center'}
-            transitionDuration={200}
-            backgroundColor={'inherit'}
-            pseudos={{ hover: { borderBottom: 1 } }}
           >
             Learn more about Security at Pi-Transact
-          </Button>
+          </Anchor>
         </Flex>
       </Container>
     </Section>

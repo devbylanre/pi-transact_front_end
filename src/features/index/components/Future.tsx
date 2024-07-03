@@ -13,7 +13,7 @@ const Future = () => {
   return (
     <Section
       px={'lg'}
-      mt={'max'}
+      mt={{ initial: '12xl', sm: 'max' }}
     >
       <Container
         mx={'auto'}
@@ -22,11 +22,11 @@ const Future = () => {
         <Box
           ref={ref}
           mx={'auto'}
-          spaceY={'4xl'}
           transition={'all'}
           transitionDuration={500}
           opacity={inView ? 100 : 0}
           translateY={inView ? 'min' : '3xl'}
+          spaceY={{ initial: 'xl', sm: '4xl' }}
           transitionTimingFunction={'ease-in-out'}
           style={{ maxWidth: '68rem' }}
         >
@@ -34,7 +34,7 @@ const Future = () => {
             as={'h2'}
             weight={500}
             align={'center'}
-            size={{ initial: 48, md: 56, lg: 64 }}
+            size={{ initial: 40, sm: 56, lg: 64 }}
           >
             The future of finance
           </Text>
@@ -52,7 +52,7 @@ const Future = () => {
         </Box>
 
         <Flex
-          mt={'8xl'}
+          mt={{ initial: '5xl', sm: '8xl' }}
           radius={'2xl'}
           justifyContent={'center'}
           backgroundColor={'gray-100'}

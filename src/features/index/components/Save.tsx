@@ -27,18 +27,22 @@ const Save = () => {
   return (
     <Section
       px={'lg'}
-      mt={'max'}
+      mt={{ initial: '10xl', sm: 'max' }}
     >
       <Container
         mx={'auto'}
-        container={'xs'}
+        container={'lg'}
       >
-        <Box spaceY={{ initial: 'xl', md: '4xl' }}>
+        <Box
+          mx={'auto'}
+          spaceY={{ initial: 'xl', md: '4xl' }}
+          style={{ maxWidth: '64rem' }}
+        >
           <Text
             as={'h2'}
             weight={500}
             align={'center'}
-            size={{ initial: 48, sm: 56, lg: 64 }}
+            size={{ initial: 40, sm: 56, lg: 64 }}
           >
             Save. Send. Spend.
           </Text>
@@ -46,20 +50,15 @@ const Save = () => {
             as={'h3'}
             weight={500}
             align={'center'}
-            size={{ initial: 16, md: 19 }}
+            size={{ initial: 17, md: 19 }}
           >
             Anyone can get started building and growing their business on
             Pi-Transact — with one-to-one guidance to suit the way you learn.
           </Text>
         </Box>
-      </Container>
 
-      <Container
-        mt={'6xl'}
-        mx={'auto'}
-        container={'lg'}
-      >
         <Flex
+          mt={'5xl'}
           radius={'2xl'}
           justifyContent={'center'}
           backgroundColor={'gray-100'}
@@ -82,9 +81,9 @@ const Save = () => {
         </Flex>
 
         <Grid
-          mt={'8xl'}
+          mt={'5xl'}
           gridColumn={{ initial: 1, sm: 3 }}
-          gap={{ initial: '6xl', md: '8xl' }}
+          gap={{ initial: '4xl', md: '8xl' }}
         >
           {features.map((feature, index) => (
             <Box

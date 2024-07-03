@@ -37,7 +37,7 @@ const Features = () => {
   return (
     <Section
       px={'lg'}
-      mt={'max'}
+      mt={{ initial: '10xl', sm: 'max' }}
     >
       <Container
         mt={'8xl'}
@@ -47,8 +47,8 @@ const Features = () => {
         <Box>
           <Text
             as={'h2'}
-            size={{ initial: 56, sm: 64, lg: 80 }}
             weight={500}
+            size={{ initial: 48, sm: 64, lg: 80 }}
           >
             More features. More you.
           </Text>

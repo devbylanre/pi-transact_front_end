@@ -21,13 +21,13 @@ const Hero = () => {
           alignItems={'center'}
           flexDirection={'column'}
           justifyContent={'center'}
-          style={{ minHeight: '87vh', maxWidth: '80rem' }}
+          style={{ minHeight: '85vh', maxWidth: '80rem' }}
         >
           <Text
             as={'h1'}
             weight={500}
             align={'center'}
-            size={{ initial: 64, sm: 80, lg: 96 }}
+            size={{ initial: 56, sm: 80, lg: 96 }}
           >
             App for ambitious founders
           </Text>
@@ -43,7 +43,7 @@ const Hero = () => {
           </Text>
 
           <Flex
-            gap={'xl'}
+            gap={'lg'}
             justifyContent={'center'}
           >
             <Link to={'/register/'}>
