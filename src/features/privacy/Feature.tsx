@@ -36,7 +36,7 @@ const PrivacyFeature = () => {
           <Text
             as={'h1'}
             weight={500}
-            size={{ initial: 40, sm: 48 }}
+            size={{ initial: 32, sm: 40 }}
           >
             Our privacy policy
           </Text>
@@ -94,8 +94,8 @@ const PrivacyFeature = () => {
 
           <Box
             as={'ul'}
-            px={'4xl'}
             spaceY={'md'}
+            px={{ initial: '2xl', sm: '4xl' }}
           >
             {policies.map((policy, index) => (
               <Text

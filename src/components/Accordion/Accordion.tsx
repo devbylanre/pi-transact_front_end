@@ -1,4 +1,4 @@
-import React, { Children, SetStateAction, createContext } from 'react';
+import React from 'react';
 import Box from '../Box/Box';
 import AccordionProvider from '../../contexts/AccordionContext';
 import Flex from '../Flex/Flex';

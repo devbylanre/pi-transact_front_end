@@ -34,7 +34,7 @@ const TermsFeature = () => {
           <Text
             as={'h1'}
             weight={500}
-            size={{ initial: 40, sm: 48 }}
+            size={{ initial: 32, sm: 40 }}
           >
             Terms of service
           </Text>
@@ -87,9 +87,9 @@ const TermsFeature = () => {
           </Text>
           <Box
             as={'ul'}
-            px={'4xl'}
             spaceY={'sm'}
             style={{ listStyle: 'number' }}
+            px={{ initial: '2xl', sm: '4xl' }}
           >
             {users.map((user, index) => (
               <Text
@@ -118,8 +118,8 @@ const TermsFeature = () => {
 
           <Box
             as={'ul'}
-            px={'4xl'}
             spaceY={'md'}
+            px={{ initial: '2xl', sm: '4xl' }}
           >
             {firstTerms.map((policy, index) => (
               <Text
@@ -152,8 +152,8 @@ const TermsFeature = () => {
 
           <Box
             as={'ul'}
-            px={'4xl'}
             spaceY={'md'}
+            px={{ initial: '2xl', sm: '4xl' }}
           >
             {secondTerms.map((policy, index) => (
               <Text

@@ -26,8 +26,8 @@ const navigation = {
       {
         name: 'Legal',
         subCategories: [
-          { name: 'Privacy policy', path: 'privacy-policy' },
-          { name: 'Terms of use', path: 'terms-of-use' },
+          { name: 'Privacy policy', path: '/privacy-policy/' },
+          { name: 'Terms of use', path: '/terms-of-use/' },
         ],
       },
     ],
