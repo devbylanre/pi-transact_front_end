@@ -13,7 +13,7 @@ const Plans = () => {
   return (
     <Section
       px={'lg'}
-      mt={'5xl'}
+      mt={'10xl'}
     >
       <Container
         mx={'auto'}
@@ -28,7 +28,7 @@ const Plans = () => {
         </Text>
 
         <Grid
-          mt={{ initial: 'xl', sm: '5xl' }}
+          mt={{ initial: 'lg', sm: '5xl' }}
           gridColumn={{ initial: 1, sm: 3 }}
           gap={{ initial: '2xl', sm: '5xl', md: '10xl' }}
         >
@@ -36,9 +36,9 @@ const Plans = () => {
             <React.Fragment key={index}>
               {index > 1 ? (
                 <Box
-                  py={'8xl'}
                   radius={'2xl'}
-                  px={index === 3 ? '4xl' : 'min'}
+                  px={index === 3 ? { initial: 'xl', sm: '4xl' } : 'min'}
+                  py={{ initial: '5xl', sm: '8xl' }}
                   backgroundColor={index === 3 ? 'gray-100' : 'inherit'}
                 >
                   <Box spaceY={'3xl'}>
@@ -139,9 +139,9 @@ const Plans = () => {
       </Container>
 
       <Container
-        mt={'max'}
         mx={'auto'}
         container={'xl'}
+        mt={{ initial: '10xl', sm: 'max' }}
       >
         <Text
           as={'h2'}
@@ -169,7 +169,7 @@ const Plans = () => {
                       as={'h3'}
                       weight={500}
                       transform={'capitalize'}
-                      size={{ initial: 32, sm: 56, md: 72 }}
+                      size={{ initial: 32, sm: 48 }}
                     >
                       {plan.name}
                     </Text>

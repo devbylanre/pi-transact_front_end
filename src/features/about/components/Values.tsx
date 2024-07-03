@@ -46,8 +46,8 @@ const Values = () => {
           <Text
             as={'h2'}
             weight={500}
-            align={'center'}
-            size={{ initial: 40, sm: 48 }}
+            align={'left'}
+            size={{ initial: 32, sm: 48 }}
           >
             Our values
           </Text>

@@ -28,26 +28,29 @@ const Name = () => {
           >
             Why choose us?
           </Text>
-          <Text
-            as={'h3'}
-            weight={500}
-            align={'center'}
-            size={{ initial: 56, sm: 64, lg: 80 }}
-          >
-            New Experience
-          </Text>
+          <Box spaceY={'2xl'}>
+            <Text
+              as={'h3'}
+              weight={500}
+              align={'center'}
+              size={{ initial: 40, sm: 64, lg: 80 }}
+            >
+              New Experience
+            </Text>
 
-          <Text
-            as={'p'}
-            size={16}
-            align={'center'}
-          >
-            We named ourselves Pi-Transact because our goal is to foster greater
-            prosperity globally. We dedicate considerable effort to envisioning
-            a future where more innovators thrive. Innovators are pivotal in
-            transforming our world for the better, enhancing the lives of their
-            users and customers, and ultimately benefiting humanity as a whole.
-          </Text>
+            <Text
+              as={'p'}
+              size={16}
+              align={'center'}
+            >
+              We named ourselves Pi-Transact because our goal is to foster
+              greater prosperity globally. We dedicate considerable effort to
+              envisioning a future where more innovators thrive. Innovators are
+              pivotal in transforming our world for the better, enhancing the
+              lives of their users and customers, and ultimately benefiting
+              humanity as a whole.
+            </Text>
+          </Box>
         </Box>
 
         <Flex

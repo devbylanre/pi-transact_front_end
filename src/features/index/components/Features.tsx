@@ -44,7 +44,7 @@ const Features = () => {
         mx={'auto'}
         container={'lg'}
       >
-        <Box>
+        <Box style={{ maxWidth: '56rem' }}>
           <Text
             as={'h2'}
             weight={500}

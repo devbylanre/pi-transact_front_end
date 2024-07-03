@@ -4,8 +4,7 @@ import Container from '../../../components/Container/Container';
 import Grid from '../../../components/Grid/Grid';
 import Box from '../../../components/Box/Box';
 import Text from '../../../components/Text/Text';
-import Button from '../../../components/Button/Button';
-import { Link } from 'react-router-dom';
+import Anchor from '../../../components/Link/Anchor';
 
 const helps = [
   {
@@ -29,15 +28,15 @@ const Answers = () => {
   return (
     <Section
       px={'lg'}
-      mt={'10xl'}
+      mt={{ initial: '2xl', sm: '10xl' }}
     >
       <Container
         mx={'auto'}
         container={'xl'}
       >
         <Grid
-          gridColumn={{ initial: 1, sm: 4 }}
           gap={'5xl'}
+          gridColumn={{ initial: 1, sm: 4 }}
         >
           <Box>
             <Text
@@ -67,17 +66,7 @@ const Answers = () => {
                 dangerouslySetInnerHTML={{ __html: help.body }}
               />
 
-              <Link to={help.button.url}>
-                <Button
-                  px={'min'}
-                  height={'fit'}
-                  radius={'min'}
-                  backgroundColor={'inherit'}
-                  pseudos={{ hover: { translateX: 'md' } }}
-                >
-                  {help.button.label}
-                </Button>
-              </Link>
+              <Anchor to={help.button.url}>{help.button.label}</Anchor>
             </Box>
           ))}
         </Grid>

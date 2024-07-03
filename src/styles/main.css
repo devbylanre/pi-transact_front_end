@@ -3657,19 +3657,19 @@ body.portal {
 
 .text-40, .hover\:text-40:hover, .focus\:text-40:focus, .active\:text-40:active, .placeholder\:text-40::placeholder {
   font-size: 4rem;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -0.03em;
 }
 
 .text-48, .hover\:text-48:hover, .focus\:text-48:focus, .active\:text-48:active, .placeholder\:text-48::placeholder {
   font-size: 4.8rem;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -0.03em;
 }
 
 .text-56, .hover\:text-56:hover, .focus\:text-56:focus, .active\:text-56:active, .placeholder\:text-56::placeholder {
   font-size: 5.6rem;
-  line-height: 1.15;
+  line-height: 1.1;
   letter-spacing: -0.03em;
 }
 
@@ -3682,19 +3682,19 @@ body.portal {
 .text-72, .hover\:text-72:hover, .focus\:text-72:focus, .active\:text-72:active, .placeholder\:text-72::placeholder {
   font-size: 7.2rem;
   line-height: 1.1;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.035em;
 }
 
 .text-80, .hover\:text-80:hover, .focus\:text-80:focus, .active\:text-80:active, .placeholder\:text-80::placeholder {
   font-size: 8rem;
-  line-height: 1;
-  letter-spacing: -0.03em;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
 }
 
 .text-96, .hover\:text-96:hover, .focus\:text-96:focus, .active\:text-96:active, .placeholder\:text-96::placeholder {
   font-size: 9.6rem;
   line-height: 0.95;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.05em;
 }
 
 .text-inherit, .hover\:text-inherit:hover, .focus\:text-inherit:focus, .active\:text-inherit:active, .placeholder\:text-inherit::placeholder {
@@ -3756,17 +3756,17 @@ body.portal {
   }
   .sm\:text-40, .sm\:hover\:text-40:hover, .sm\:focus\:text-40:focus, .sm\:active\:text-40:active, .sm\:placeholder\:text-40::placeholder {
     font-size: 4rem;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .sm\:text-48, .sm\:hover\:text-48:hover, .sm\:focus\:text-48:focus, .sm\:active\:text-48:active, .sm\:placeholder\:text-48::placeholder {
     font-size: 4.8rem;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .sm\:text-56, .sm\:hover\:text-56:hover, .sm\:focus\:text-56:focus, .sm\:active\:text-56:active, .sm\:placeholder\:text-56::placeholder {
     font-size: 5.6rem;
-    line-height: 1.15;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .sm\:text-64, .sm\:hover\:text-64:hover, .sm\:focus\:text-64:focus, .sm\:active\:text-64:active, .sm\:placeholder\:text-64::placeholder {
@@ -3777,17 +3777,17 @@ body.portal {
   .sm\:text-72, .sm\:hover\:text-72:hover, .sm\:focus\:text-72:focus, .sm\:active\:text-72:active, .sm\:placeholder\:text-72::placeholder {
     font-size: 7.2rem;
     line-height: 1.1;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.035em;
   }
   .sm\:text-80, .sm\:hover\:text-80:hover, .sm\:focus\:text-80:focus, .sm\:active\:text-80:active, .sm\:placeholder\:text-80::placeholder {
     font-size: 8rem;
-    line-height: 1;
-    letter-spacing: -0.03em;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
   }
   .sm\:text-96, .sm\:hover\:text-96:hover, .sm\:focus\:text-96:focus, .sm\:active\:text-96:active, .sm\:placeholder\:text-96::placeholder {
     font-size: 9.6rem;
     line-height: 0.95;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.05em;
   }
   .sm\:text-inherit, .sm\:hover\:text-inherit:hover, .sm\:focus\:text-inherit:focus, .sm\:active\:text-inherit:active, .sm\:placeholder\:text-inherit::placeholder {
     font-size: inherit;
@@ -3848,17 +3848,17 @@ body.portal {
   }
   .md\:text-40, .md\:hover\:text-40:hover, .md\:focus\:text-40:focus, .md\:active\:text-40:active, .md\:placeholder\:text-40::placeholder {
     font-size: 4rem;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .md\:text-48, .md\:hover\:text-48:hover, .md\:focus\:text-48:focus, .md\:active\:text-48:active, .md\:placeholder\:text-48::placeholder {
     font-size: 4.8rem;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .md\:text-56, .md\:hover\:text-56:hover, .md\:focus\:text-56:focus, .md\:active\:text-56:active, .md\:placeholder\:text-56::placeholder {
     font-size: 5.6rem;
-    line-height: 1.15;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .md\:text-64, .md\:hover\:text-64:hover, .md\:focus\:text-64:focus, .md\:active\:text-64:active, .md\:placeholder\:text-64::placeholder {
@@ -3869,17 +3869,17 @@ body.portal {
   .md\:text-72, .md\:hover\:text-72:hover, .md\:focus\:text-72:focus, .md\:active\:text-72:active, .md\:placeholder\:text-72::placeholder {
     font-size: 7.2rem;
     line-height: 1.1;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.035em;
   }
   .md\:text-80, .md\:hover\:text-80:hover, .md\:focus\:text-80:focus, .md\:active\:text-80:active, .md\:placeholder\:text-80::placeholder {
     font-size: 8rem;
-    line-height: 1;
-    letter-spacing: -0.03em;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
   }
   .md\:text-96, .md\:hover\:text-96:hover, .md\:focus\:text-96:focus, .md\:active\:text-96:active, .md\:placeholder\:text-96::placeholder {
     font-size: 9.6rem;
     line-height: 0.95;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.05em;
   }
   .md\:text-inherit, .md\:hover\:text-inherit:hover, .md\:focus\:text-inherit:focus, .md\:active\:text-inherit:active, .md\:placeholder\:text-inherit::placeholder {
     font-size: inherit;
@@ -3940,17 +3940,17 @@ body.portal {
   }
   .lg\:text-40, .lg\:hover\:text-40:hover, .lg\:focus\:text-40:focus, .lg\:active\:text-40:active, .lg\:placeholder\:text-40::placeholder {
     font-size: 4rem;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .lg\:text-48, .lg\:hover\:text-48:hover, .lg\:focus\:text-48:focus, .lg\:active\:text-48:active, .lg\:placeholder\:text-48::placeholder {
     font-size: 4.8rem;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .lg\:text-56, .lg\:hover\:text-56:hover, .lg\:focus\:text-56:focus, .lg\:active\:text-56:active, .lg\:placeholder\:text-56::placeholder {
     font-size: 5.6rem;
-    line-height: 1.15;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .lg\:text-64, .lg\:hover\:text-64:hover, .lg\:focus\:text-64:focus, .lg\:active\:text-64:active, .lg\:placeholder\:text-64::placeholder {
@@ -3961,17 +3961,17 @@ body.portal {
   .lg\:text-72, .lg\:hover\:text-72:hover, .lg\:focus\:text-72:focus, .lg\:active\:text-72:active, .lg\:placeholder\:text-72::placeholder {
     font-size: 7.2rem;
     line-height: 1.1;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.035em;
   }
   .lg\:text-80, .lg\:hover\:text-80:hover, .lg\:focus\:text-80:focus, .lg\:active\:text-80:active, .lg\:placeholder\:text-80::placeholder {
     font-size: 8rem;
-    line-height: 1;
-    letter-spacing: -0.03em;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
   }
   .lg\:text-96, .lg\:hover\:text-96:hover, .lg\:focus\:text-96:focus, .lg\:active\:text-96:active, .lg\:placeholder\:text-96::placeholder {
     font-size: 9.6rem;
     line-height: 0.95;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.05em;
   }
   .lg\:text-inherit, .lg\:hover\:text-inherit:hover, .lg\:focus\:text-inherit:focus, .lg\:active\:text-inherit:active, .lg\:placeholder\:text-inherit::placeholder {
     font-size: inherit;
@@ -4032,17 +4032,17 @@ body.portal {
   }
   .xl\:text-40, .xl\:hover\:text-40:hover, .xl\:focus\:text-40:focus, .xl\:active\:text-40:active, .xl\:placeholder\:text-40::placeholder {
     font-size: 4rem;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .xl\:text-48, .xl\:hover\:text-48:hover, .xl\:focus\:text-48:focus, .xl\:active\:text-48:active, .xl\:placeholder\:text-48::placeholder {
     font-size: 4.8rem;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .xl\:text-56, .xl\:hover\:text-56:hover, .xl\:focus\:text-56:focus, .xl\:active\:text-56:active, .xl\:placeholder\:text-56::placeholder {
     font-size: 5.6rem;
-    line-height: 1.15;
+    line-height: 1.1;
     letter-spacing: -0.03em;
   }
   .xl\:text-64, .xl\:hover\:text-64:hover, .xl\:focus\:text-64:focus, .xl\:active\:text-64:active, .xl\:placeholder\:text-64::placeholder {
@@ -4053,17 +4053,17 @@ body.portal {
   .xl\:text-72, .xl\:hover\:text-72:hover, .xl\:focus\:text-72:focus, .xl\:active\:text-72:active, .xl\:placeholder\:text-72::placeholder {
     font-size: 7.2rem;
     line-height: 1.1;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.035em;
   }
   .xl\:text-80, .xl\:hover\:text-80:hover, .xl\:focus\:text-80:focus, .xl\:active\:text-80:active, .xl\:placeholder\:text-80::placeholder {
     font-size: 8rem;
-    line-height: 1;
-    letter-spacing: -0.03em;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
   }
   .xl\:text-96, .xl\:hover\:text-96:hover, .xl\:focus\:text-96:focus, .xl\:active\:text-96:active, .xl\:placeholder\:text-96::placeholder {
     font-size: 9.6rem;
     line-height: 0.95;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.05em;
   }
   .xl\:text-inherit, .xl\:hover\:text-inherit:hover, .xl\:focus\:text-inherit:focus, .xl\:active\:text-inherit:active, .xl\:placeholder\:text-inherit::placeholder {
     font-size: inherit;

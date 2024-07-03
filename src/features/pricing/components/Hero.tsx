@@ -4,10 +4,14 @@ import Container from '../../../components/Container/Container';
 import Flex from '../../../components/Flex/Flex';
 import Text from '../../../components/Text/Text';
 import Button from '../../../components/Button/Button';
+import Anchor from '../../../components/Link/Anchor';
 
 const Hero = () => {
   return (
-    <Section px={'lg'}>
+    <Section
+      px={'lg'}
+      mt={{ initial: '5xl', sm: '8xl' }}
+    >
       <Container
         mx={'auto'}
         container={'xs'}
@@ -17,13 +21,12 @@ const Hero = () => {
           alignItems={'center'}
           flexDirection={'column'}
           justifyContent={'center'}
-          style={{ minHeight: '68vh' }}
         >
           <Text
             as={'h1'}
             weight={500}
             align={'center'}
-            size={{ initial: 56, sm: 64, md: 72 }}
+            size={{ initial: 40, sm: 64, md: 80 }}
           >
             Start for free. Pay as you grow
           </Text>
@@ -42,7 +45,9 @@ const Hero = () => {
             flexDirection={'column'}
             style={{ maxWidth: '38rem' }}
           >
-            <Button>Start spending on For free</Button>
+            <Anchor to={'/auth/new/'}>
+              <Button>Start spending on For free</Button>
+            </Anchor>
             <Text
               as={'p'}
               size={14}

@@ -5,19 +5,39 @@ import Text from '../../../components/Text/Text';
 import Box from '../../../components/Box/Box';
 import Flex from '../../../components/Flex/Flex';
 import Grid from '../../../components/Grid/Grid';
+import Anchor from '../../../components/Link/Anchor';
 
 const options = [
   {
     title: 'Email',
-    body: 'Shoot an email to <a style="text-decoration: none" href="mailto:support@pi-transact.com" class="text-blue-50 weight-500">support@pi-transact.com</a> with any questions',
+    body: (
+      <>
+        Shoot an email to{' '}
+        <Anchor to='mailto:support@pi-transact.com'>
+          support@pi-transact.com
+        </Anchor>{' '}
+        with any questions
+      </>
+    ),
   },
   {
     title: 'Phone',
-    body: 'Give us a call on Pi-Transact <a style="text-decoration: none" href="tel:+1 254 678 655 4567" class="text-blue-50 weight-500">support line</a> with any questions',
+    body: (
+      <>
+        Give us a call on Pi-Transact{' '}
+        <Anchor to='tel:+1 254 678 655 4567'>support line</Anchor> with any
+        questions
+      </>
+    ),
   },
   {
     title: 'Live chat',
-    body: 'Reach out to a human via the in-product help widget, and we’ll get back to as soon as we can. Average response time is 3 hours.',
+    body: (
+      <>
+        Reach out to a human via the in-product help widget, and we'll get back
+        to as soon as we can. Average response time is 3 hours.
+      </>
+    ),
   },
 ];
 
@@ -32,15 +52,15 @@ const Speak = () => {
         container={'md'}
       >
         <Flex
-          gapY={'6xl'}
           alignItems={'center'}
           flexDirection={'column'}
+          gapY={{ initial: '2xl', sm: '5xl' }}
         >
           <Text
             as={'h2'}
             weight={500}
             align={'center'}
-            size={{ initial: 40, sm: 48 }}
+            size={{ initial: 32, sm: 48 }}
           >
             Speak to a human
           </Text>
@@ -79,8 +99,9 @@ const Speak = () => {
               <Text
                 as={'p'}
                 size={16}
-                dangerouslySetInnerHTML={{ __html: option.body }}
-              />
+              >
+                {option.body}
+              </Text>
             </Box>
           ))}
         </Grid>

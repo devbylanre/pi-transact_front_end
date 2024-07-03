@@ -3,20 +3,22 @@ import Section from '../../../components/Section/Section';
 import Container from '../../../components/Container/Container';
 import Flex from '../../../components/Flex/Flex';
 import Text from '../../../components/Text/Text';
+import Box from '../../../components/Box/Box';
 
 const Hero = () => {
   return (
-    <Section px={'lg'}>
+    <Section
+      px={'lg'}
+      mt={'5xl'}
+    >
       <Container
         mx={'auto'}
         container={'lg'}
       >
-        <Flex
-          gapY={'4xl'}
-          alignItems={'center'}
-          flexDirection={'column'}
-          justifyContent={'center'}
-          style={{ minHeight: '60vh' }}
+        <Box
+          mx={'auto'}
+          spaceY={'4xl'}
+          style={{ maxWidth: '60rem', minHeight: '60vh' }}
         >
           <Text
             as={'h1'}
@@ -30,10 +32,9 @@ const Hero = () => {
             as={'h2'}
             weight={500}
             align={'center'}
-            size={{ initial: 56, sm: 80, lg: 96 }}
-            style={{ maxWidth: '80rem' }}
+            size={{ initial: 40, sm: 80 }}
           >
-            Smart support for smart businesses
+            Get the most of Pi-transact.
           </Text>
 
           <Text
@@ -47,7 +48,7 @@ const Hero = () => {
             you're just beginning or already managing a thriving business, our
             team is here to support you in maintaining your course.
           </Text>
-        </Flex>
+        </Box>
       </Container>
     </Section>
   );
